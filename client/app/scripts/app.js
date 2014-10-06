@@ -28,6 +28,10 @@ var app = angular.module('confeaApp', [
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
       })
+	    .when('/signin', {
+		    templateUrl: 'views/login.html',
+		    controller: 'SigninCtrl'
+	    })
       .otherwise({
         redirectTo: '/'
       });

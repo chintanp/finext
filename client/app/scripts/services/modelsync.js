@@ -5,19 +5,19 @@
 
 'use strict';
 
-app.factory('Sync', function($firebase, FIREBASE_URL) {
+app.factory('ModelSync', function($firebase, FIREBASE_URL) {
 
-	var ref = new Firebase(FIREBASE_URL + 'modelInfo');
+	var ref = new Firebase(FIREBASE_URL + 'models');
 
-	var modelInfo = $firebase(ref).$asArray();
+	var models = $firebase(ref).$asArray();
 
 	// CRUD functions exposed in this service, to work on modelInfo object.
-	var Sync = {
+	var ModelSync = {
 
-		all: modelInfo,
+		all: models,
 
 		create: function(model) {
-			return modelInfo.$add(model);
+			return models.$add(model);
 		},
 
 		find: function(modelId) {
@@ -25,9 +25,9 @@ app.factory('Sync', function($firebase, FIREBASE_URL) {
 		},
 
 		delete: function(model) {
-			return modelInfo.$remove(model);
+			return models.$remove(model);
 		}
 	};
 
-	return Sync;
+	return ModelSync;
 });

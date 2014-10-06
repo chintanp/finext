@@ -1,6 +1,6 @@
 <form class="form-horizontal" role="form" ng-submit="solve()">
 
-		<div class="form-group" >
+		<div class="form-group" style="z-index: 80">
 
 			<label for="contexttype" class="col-sm-5 control-label">Use Context</label>
 			<div class="col-sm-5">
@@ -10,35 +10,35 @@
 
 
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 2">
 			<label for="length" class="col-sm-5 control-label">Length</label>
 			<div class="col-sm-5">
 				<input type="number" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 2">
 			<label for="breadth" class="col-sm-5 control-label">Breadth</label>
 			<div class="col-sm-5">
 				<input type="number" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 2">
 			<label for="thickness" class="col-sm-5 control-label">Thickness</label>
 			<div class="col-sm-5">
 				<input type="number" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 3">
 			<label for="endtype" class="col-sm-5 control-label">End Type</label>
 			<div class="col-sm-5">
 				<div class="btn btn-default dropdown-toggle form-control" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 2">
 			<div class="row">
 				<label for="loadtype" class="col-xs-3 control-label">Load Type</label>
 				<div class="col-xs-3">
@@ -52,24 +52,24 @@
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 1">
 			<label for="elementtype" class="col-sm-5 control-label">Element Type</label>
 			<div class="col-sm-5">
 				<div class="btn btn-default dropdown-toggle form-control" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 0">
 			<label for="divx" class="col-sm-5 control-label">Divisions in X</label>
 			<div class="col-sm-5">
-				<input type="text" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
+				<input type="number" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="z-index: 0">
 			<label for="divy" class="col-sm-5 control-label">Divisions in Y</label>
 			<div class="col-sm-5">
-				<input type="text" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
+				<input type="number" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
 			</div>
 		</div>
 
