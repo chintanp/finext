@@ -12,17 +12,32 @@ app.set('port', process.env.PORT || 3000);
 var sylvester = require('sylvester'),
 	numeric = require('numeric'),
 	mathjs = require('mathjs'),
-	http = require('http');
+	http = require('http'),
+	request = require('request');
 
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 
+var Firebase = require('firebase');
+
+const FIREBASE_URL = 'https://finext.firebaseio.com/';
+
+// var finext = new Firebase('http://finext.firebaseio.com/');
+
+var modelRef = new Firebase( FIREBASE_URL + '/models/');
+
 io.on('connection', function(socket) {
 	console.log("Socket connected");
-	socket.emit('newz', { hello: 'world'});
-	socket.on('event', function(data) {
-		console.log("server evented");
-		console.log(data);
+	//socket.emit('newz', { hello: 'world'});
+	socket.on('BeginSolve', function(uid) {
+		//var data = JSON.parse(uid);
+		console.log("server evented: " + uid.id);
+		request.get(FIREBASE_URL + '/models/' + uid.id + '.json', function optionalCallback (err, httpResponse, body) {
+			if (err) {
+				return console.error('query to FB failed', err);
+			}
+			console.log('Firebase responded with:', body);
+		});
 	});
 });
 
@@ -38,13 +53,7 @@ var formbeeb = require('./serverjs/formbeeb');
 var formbees = require('./serverjs/formbees');
 var form_KK = require('./serverjs/form_KK');
 
-var Firebase = require('firebase');
 
-const FIREBASE_URL = 'http://finext.firebaseio.com/';
-
-// var finext = new Firebase('http://finext.firebaseio.com/');
-
-var modelRef = new Firebase( FIREBASE_URL + '/models/');
 
 modelRef.endAt().limit(1).on('child_added', function(snapshot) {
 

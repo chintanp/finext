@@ -92,7 +92,7 @@ app.controller('InputCtrl', function($scope, ModelSync, socket) {
 		$scope.solve = function() {
 				ModelSync.create($scope.model).then(function() {
 
-					//console.log("$push returned : " + ref.name());
+					//console.log("$push returned : in CTRL: " + ref.name());
 					// May reset the UI to initial state.
 					alert("Data saved, new model created");
 				});

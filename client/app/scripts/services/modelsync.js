@@ -5,7 +5,7 @@
 
 'use strict';
 
-app.factory('ModelSync', function($firebase, FIREBASE_URL) {
+app.factory('ModelSync', function($firebase, FIREBASE_URL, socket) {
 
 	var ref = new Firebase(FIREBASE_URL + 'models');
 
@@ -19,6 +19,8 @@ app.factory('ModelSync', function($firebase, FIREBASE_URL) {
 		create: function(model) {
 			return models.$add(model).then(function(ref) {
 				console.log("Firebase replied with : " + ref.name());
+				var uid = ref.name();
+				socket.emit('BeginSolve', {id: uid});
 			});
 		},
 
