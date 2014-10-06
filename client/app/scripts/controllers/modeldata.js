@@ -4,7 +4,7 @@
 
 'use strict';
 
-app.controller('InputCtrl', function($scope, ModelSync) {
+app.controller('InputCtrl', function($scope, ModelSync, socket) {
 
 		//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
 
@@ -91,9 +91,17 @@ app.controller('InputCtrl', function($scope, ModelSync) {
 
 		$scope.solve = function() {
 				ModelSync.create($scope.model).then(function() {
+
+					//console.log("$push returned : " + ref.name());
 					// May reset the UI to initial state.
 					alert("Data saved, new model created");
 				});
 		};
+
+		/*socket.on('newz', function(data) {
+			console.log("The server sent: " + data);
+			//alert("The server sent: " + data);
+			socket.emit('event', {my: 'data'});
+		});*/
 
 });

@@ -11,7 +11,20 @@ app.set('port', process.env.PORT || 3000);
 
 var sylvester = require('sylvester'),
 	numeric = require('numeric'),
-	mathjs = require('mathjs');
+	mathjs = require('mathjs'),
+	http = require('http');
+
+var server = http.createServer(app);
+var io = require('socket.io').listen(server);
+
+io.on('connection', function(socket) {
+	console.log("Socket connected");
+	socket.emit('newz', { hello: 'world'});
+	socket.on('event', function(data) {
+		console.log("server evented");
+		console.log(data);
+	});
+});
 
 var Q4_mesh = require('./serverjs/mesher').Q4_mesh;
 var Q8_mesh = require('./serverjs/mesher').Q8_mesh;
@@ -31,7 +44,7 @@ const FIREBASE_URL = 'http://finext.firebaseio.com/';
 
 // var finext = new Firebase('http://finext.firebaseio.com/');
 
-var modelRef = new Firebase( FIREBASE_URL + '/modelInfo/');
+var modelRef = new Firebase( FIREBASE_URL + '/models/');
 
 modelRef.endAt().limit(1).on('child_added', function(snapshot) {
 
@@ -485,7 +498,8 @@ modelRef.endAt().limit(1).on('child_added', function(snapshot) {
 	 console.log(connec);*/
 });
 
-
+server.listen(3000);
+/*
 var server = app.listen(app.get('port'), function() {
 	debug('Express server listening on port ' + server.address().port);
-});
+});*/

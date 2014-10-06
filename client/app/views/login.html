@@ -1,14 +1,45 @@
-<div class="auth-forms">
+<div class="auth-forms signup-container">
 
 	<h2>Log In</h2>
 
-	<form ng-submit="login()">
+	<div class="signin-form">
+
+
+	<form class="form-horizontal" ng-submit="login()">
 		<p ng-show="error" class="text-danger"></p>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="email">Email</label>
+			<div class="col-md-5">
+				<input id="email" name="email" type="email" placeholder="Email ID" class="form-control input-md" ng-model="user.email">
+
+			</div>
+		</div>
+
+		<!-- Password input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="password">Password</label>
+			<div class="col-md-5">
+				<input id="password" name="password" type="password" placeholder="Enter your Password" class="form-control input-md" ng-model="user.password">
+
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="login"></label>
+			<div class="col-md-5">
+				<button type="submit" id="login" name="login" class="btn btn-success btn-block">Log In</button>
+			</div>
+		</div>
+		<!--
 		<input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
 		<input type="password" placeholder="Password" class="form-control"><br>
-		<input type="submit" value="Log in" class="btn btn-primary" />
+		<input type="submit" value="Log in" class="btn btn-primary" /> -->
 
 	</form>
+	</div>
 </div>
 
 

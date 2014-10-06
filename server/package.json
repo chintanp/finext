@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "start": "set NODE_ENV=production && nodemon ./bin/www.js",
-    "test" : "set NODE_ENV=development && nodemon ./bin/www.js"
+    "test": "set NODE_ENV=development && nodemon ./bin/www.js"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
-    "debug": "~0.7.4"
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.0.0",
+    "morgan": "~1.0.0",
+    "socket.io": "^1.1.0",
+    "static-favicon": "~1.0.0"
   }
 }

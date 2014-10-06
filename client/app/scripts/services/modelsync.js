@@ -17,7 +17,9 @@ app.factory('ModelSync', function($firebase, FIREBASE_URL) {
 		all: models,
 
 		create: function(model) {
-			return models.$add(model);
+			return models.$add(model).then(function(ref) {
+				console.log("Firebase replied with : " + ref.name());
+			});
 		},
 
 		find: function(modelId) {

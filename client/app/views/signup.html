@@ -1,29 +1,22 @@
-<div class="signup-container">
+<div class="signup-container auth-forms">
 	<div class="col-md-12">
 		<h3 class="signup-header">Signup as a New User</h3>
 		<hr>
 		<br>
 	</div>
 
-	<div class="signup-form">
+	<div class="signup-form" >
 
-		<form class="form-horizontal">
+		<form class="form-horizontal" ng-submit="register()">
 
+			<!-- Error Display -->
+			<p ng-show="error" class="text-danger"></p>
 
-			<!-- Text input-->
+			<!-- Text input - Username-->
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="firstname">First Name</label>
+				<label class="col-md-4 control-label" for="username">Username</label>
 				<div class="col-md-5">
-					<input id="firstname" name="firstname" type="text" placeholder="First Name" class="form-control input-md">
-
-				</div>
-			</div>
-
-			<!-- Text input-->
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="lastname">Last Name</label>
-				<div class="col-md-5">
-					<input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control input-md">
+					<input id="username" name="username" type="text" placeholder="Enter your Username" class="form-control input-md" ng-model="user.username">
 
 				</div>
 			</div>
@@ -32,7 +25,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="email">Email</label>
 				<div class="col-md-5">
-					<input id="email" name="email" type="text" placeholder="Email ID" class="form-control input-md">
+					<input id="email" name="email" type="text" placeholder="Email ID" class="form-control input-md" ng-model="user.email">
 
 				</div>
 			</div>
@@ -41,7 +34,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="password1">Password</label>
 				<div class="col-md-5">
-					<input id="password1" name="password1" type="password" placeholder="Choose a Password" class="form-control input-md">
+					<input id="password1" name="password1" type="password" placeholder="Choose a Password" class="form-control input-md" ng-model="user.password">
 
 				</div>
 			</div>
@@ -59,7 +52,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="signup"></label>
 				<div class="col-md-5">
-					<button id="signup" name="signup" class="btn btn-success btn-block">Signup!</button>
+					<button type="submit" id="signup" name="signup" class="btn btn-success btn-block">Signup!</button>
 				</div>
 			</div>
 
