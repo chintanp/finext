@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 // Development settings
 
-if(app.get('env') === 'development ') {
+if(app.get('env') === 'development') {
 	console.log('In development'  + 'and _dirname = ' + __dirname);
 	app.use(express.static(path.join(__dirname, '../client')));
 	app.use(express.static(path.join(__dirname, '../client/.tmp')));
@@ -44,7 +44,7 @@ if(app.get('env') === 'development ') {
 
 // Production settings
 
-if(app.get('env') === 'production ') {
+if(app.get('env') === 'production') {
 	app.use(express.static(path.join(__dirname, '/dist')));
 
 	// Production error handler

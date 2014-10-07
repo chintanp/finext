@@ -1,79 +1,160 @@
-/* Space out content a bit */
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.centered {
+    text-align: center;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+/* Links */
+a {
+    color: #3bc492;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background-color: #34495e;
+	padding-top: 60px;
+}
+
+#headerwrap h1 {
+	margin-top: 30px;
+	color: white;
+	font-size: 70px;
+	
+}
+
+#headerwrap h3 {
+	color: white;
+	font-size: 30px;
+}
+
+#headerwrap h5 {
+	color: white;
+	font-weight: 700;
+	text-align: left;
+}
+
+#headerwrap p {
+	text-align: left;
+	color: white
+}
+
+/* intro Wrap */
+
+#intro {
+	padding-top: 50px;
+	border-top: #bdc3c7 solid 5px;
+}
+
+#features {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#features .ac a{
+	font-size: 20px;
+}
+
+/* Showcase Wrap */
+
+#showcase {
+	display: block;
+	background-color: #34495e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase h1 {
+	color: white;
+}
+
+#footerwrap {
+	background-color: #2f2f2f;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+#footerwrap h3 {
+	font-size: 28px;
+	color: white;
+}
+
+#footerwrap p {
+	color: white;
+	font-size: 18px;
+}
+
+/* Copyright Wrap */
+
+#c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: right;
+}
+
+#c p {
+	color: white
+}
+
