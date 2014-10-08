@@ -1,85 +1,86 @@
-<form class="form-horizontal" role="form" ng-submit="solve()">
+<form class="form-horizontal col-lg-8" role="form" ng-submit="solve()">
 
 		<div class="form-group" style="z-index: 80">
 
-			<label for="contexttype" class="col-sm-5 control-label">Use Context</label>
-			<div class="col-sm-5">
+			<label for="ddcontext" class="col-lg-4 control-label">Use Context</label>
+			<div class="col-lg-4" id="ddcontext">
 				<div class="btn btn-default dropdown-toggle form-control" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
 			</div>
 		</div>
 
-
-
 		<div class="form-group" style="z-index: 2">
-			<label for="length" class="col-sm-5 control-label">Length</label>
-			<div class="col-sm-5">
+			<label for="tblength" class="col-lg-4 control-label">Length</label>
+			<div class="col-lg-2" id="tblength">
 				<input type="number" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 2">
-			<label for="breadth" class="col-sm-5 control-label">Breadth</label>
-			<div class="col-sm-5">
+			<label for="tbbreadth" class="col-lg-4 control-label">Breadth</label>
+			<div class="col-lg-2" id="tbbreadth">
 				<input type="number" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 2">
-			<label for="thickness" class="col-sm-5 control-label">Thickness</label>
-			<div class="col-sm-5">
+			<label for="tbthickness" class="col-lg-4 control-label">Thickness</label>
+			<div class="col-lg-2" id="tbthickness">
 				<input type="number" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 3">
-			<label for="endtype" class="col-sm-5 control-label">End Type</label>
-			<div class="col-sm-5">
+			<label for="ddendtype" class="col-lg-4 control-label">End Type</label>
+			<div class="col-lg-2" id="ddendtype">
 				<div class="btn btn-default dropdown-toggle form-control" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 2">
 			<div class="row">
-				<label for="loadtype" class="col-xs-3 control-label">Load Type</label>
-				<div class="col-xs-3">
+				<label for="ddloadtype" class="col-lg-1 control-label">Load Type</label>
+				<div class="col-lg-2" id="ddloadtype">
 					<div class="btn btn-default dropdown-toggle form-control" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
 				</div>
 
-				<label for="load" class="col-xs-2 control-label">Load</label>
-				<div class="col-xs-2">
+				<label for="load" class="col-lg-1 control-label">Load</label>
+				<div class="col-lg-2" id="load">
 					<input type="number" class="form-control" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
 				</div>
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 1">
-			<label for="elementtype" class="col-sm-5 control-label">Element Type</label>
-			<div class="col-sm-5">
+			<label for="ddelementtype" class="col-lg-4 control-label">Element Type</label>
+			<div class="col-lg-4" id="ddelementtype">
 				<div class="btn btn-default dropdown-toggle form-control" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 0">
-			<label for="divx" class="col-sm-5 control-label">Divisions in X</label>
-			<div class="col-sm-5">
+			<label for="tbdivx" class="col-lg-4 control-label">Divisions in X</label>
+			<div class="col-lg-2" id="tbdivx">
 				<input type="number" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
 			</div>
 		</div>
 
 		<div class="form-group" style="z-index: 0">
-			<label for="divy" class="col-sm-5 control-label">Divisions in Y</label>
-			<div class="col-sm-5">
+			<label for="tbdivy" class="col-lg-4 control-label">Divisions in Y</label>
+			<div class="col-lg-2" id="tbdivy">
 				<input type="number" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
 			</div>
 		</div>
 
-		<div class="form-group">
-			<div class="col-sm-5">
+		<button type="reset" class="btn btn-large col-lg-4 ">RESET</button>
+		<button type="submit" class="btn btn-large btn-success col-lg-4">SUBMIT</button>
+
+		<!--<div class="form-group">
+			<div class="col-lg-2">
 				<input type="reset" class="btn btn-default form-control" value="Reset" />
 			</div>
-			<div class="col-sm-5">
+			<div class="col-lg-2">
 				<input type="submit" class="btn btn-default form-control" value="Solve" />
 			</div>
-		</div>
+		</div>-->
 
 </form>

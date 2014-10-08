@@ -17,7 +17,7 @@ var app = angular.module('confeaApp', [
  app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/input.html',
+        templateUrl: 'views/home.html',
         controller: 'InputCtrl'
       })
       .when('/about', {
