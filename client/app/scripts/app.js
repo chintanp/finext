@@ -20,6 +20,10 @@ var app = angular.module('confeaApp', [
         templateUrl: 'views/home.html',
         controller: 'InputCtrl'
       })
+	    .when('/input', {
+		    templateUrl: 'views/input.html',
+		    controller: 'InputCtrl'
+	    })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
@@ -28,7 +32,7 @@ var app = angular.module('confeaApp', [
         templateUrl: 'views/signup.html',
         controller: 'AuthCtrl'
       })
-	    .when('/signin', {
+	    .when('/login', {
 		    templateUrl: 'views/login.html',
 		    controller: 'AuthCtrl'
 	    })

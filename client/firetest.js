@@ -4,6 +4,7 @@
 // Variable declaration
 // Some of these are matrices, so they will need to treated separately
 
+/*
 var sylvester = require('sylvester'),
     numeric = require('numeric'),
     mathjs = require('mathjs');
@@ -19,6 +20,7 @@ var fmquad = require('./serverjs/fmquad');
 var formbeeb = require('./serverjs/formbeeb');
 var formbees = require('./serverjs/formbees');
 var form_KK = require('./serverjs/form_KK');
+*/
 
 var Firebase = require('firebase');
 
@@ -26,13 +28,15 @@ const FIREBASE_URL = 'http://finext.firebaseio.com/';
 
 // var finext = new Firebase('http://finext.firebaseio.com/');
 
-var modelRef = new Firebase( FIREBASE_URL + '/modelInfo/');
+var modelRef = new Firebase( FIREBASE_URL + '/models/');
+modelRef = modelRef.limit(1);
 
-modelRef.endAt().limit(1).on('child_added', function(snapshot) {
 
-	var localModel = snapshot.val();
+modelRef.on('child_added', function(snapshot) {
 
-	console.log(localModel.length);
+	var localModel = snapshot.name();
+
+	console.log("The new push id is: " + localModel);
 	/*console.log("modelInfo object properties: ");
 
 	console.log("length:  " + localModel.length);
