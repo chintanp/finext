@@ -3,17 +3,17 @@
 app.controller('AuthCtrl',
 	function($scope, $location, Auth, User) {
 		if(Auth.signedIn()) {
-			$location.path('/');
+			$location.path('/input');
 		}
 
 		$scope.$on('$firebaseSimpleLogin:login', function(e, user) {
 			console.log('User ' + user.id + ' successfully logged in. ')
-			$location.path('/');
+			$location.path('/input');
 		});
 
 		$scope.login = function() {
 			Auth.login($scope.user).then(function() {
-				$location.path('/');
+				$location.path('/input');
 			}, function(error) {
 				$scope.error = error.toString();
 			});
@@ -24,7 +24,7 @@ app.controller('AuthCtrl',
 				User.create(authUser, $scope.user.username);
 				console.log(authUser);
 				Auth.login($scope.user).then(function () {
-					$location.path('/');
+					$location.path('/input');
 				});
 			});
 		};

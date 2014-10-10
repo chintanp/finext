@@ -4,104 +4,110 @@
 
 'use strict';
 
-app.controller('InputCtrl', function($scope, ModelSync, socket) {
+app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket) {
 
-		//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
+	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
 
-		$scope.modelInfo = ModelSync.all; /*{ length : " ",
-													breadth : " ",
-													thickness : " ",
-													divx : " ",
-													divy : " "
-													};
-*/
+	$scope.logout = function() {
+		Auth.logout();
+		$location.path('/');
+	};
 
-		$scope.model = { length : ' ',
-			breadth : '',
-			thickness : '',
-			divx : '',
-			divy : ''
-		};
+	//$scope.username = Auth.
+	$scope.modelInfo = ModelSync.all; /*{ length : " ",
+	 breadth : " ",
+	 thickness : " ",
+	 divx : " ",
+	 divy : " "
+	 };
+	 */
 
-		$scope.endTypeOptions = [
-			{
-				text: 'Simply Supported',
-				value: 0
-			},
-			{
-				text: 'Fixed',
-				value: 1
-			},
-			{
-				text: 'Beam Supported',
-				value: 2
-			}
-		];
+	$scope.model = { length : ' ',
+		breadth : '',
+		thickness : '',
+		divx : '',
+		divy : ''
+	};
 
-		$scope.model.endTypeSelected = {};
+	$scope.endTypeOptions = [
+		{
+			text: 'Simply Supported',
+			value: 0
+		},
+		{
+			text: 'Fixed',
+			value: 1
+		},
+		{
+			text: 'Beam Supported',
+			value: 2
+		}
+	];
 
-		$scope.loadTypeOptions = [
-			{
-				text: 'UDL',
-				value: 0
-			},
-			{
-				text: 'Concentrated at Center',
-				value: 1
-			}
-		];
+	$scope.model.endTypeSelected = {};
 
-		$scope.model.loadData = {};
-		$scope.model.loadData.loadTypeSelected = {};
-		$scope.model.loadData.loadValue = {};
+	$scope.loadTypeOptions = [
+		{
+			text: 'UDL',
+			value: 0
+		},
+		{
+			text: 'Concentrated at Center',
+			value: 1
+		}
+	];
 
-		$scope.elementTypeOptions = [
-			{
-				text: '4-Noded',
-				value: 0
-			},
-			{
-				text: '8-Noded',
-				value: 1
-			}
-		];
+	$scope.model.loadData = {};
+	$scope.model.loadData.loadTypeSelected = {};
+	$scope.model.loadData.loadValue = {};
 
-		$scope.model.elementTypeSelected = {};
+	$scope.elementTypeOptions = [
+		{
+			text: '4-Noded',
+			value: 0
+		},
+		{
+			text: '8-Noded',
+			value: 1
+		}
+	];
 
-		$scope.contextTypeOptions = [
-			{
-				text: 'Use Context',
-				value: 0
-			},
-			{
-				text: 'Use Default',
-				value: 1
-			},
-			{
-				divider: true
-			},
-			{
-				text: 'Context Settings',
-				value: 2
-			}
-		];
+	$scope.model.elementTypeSelected = {};
 
-		$scope.contextTypeSelected = {};
+	$scope.contextTypeOptions = [
+		{
+			text: 'Use Context',
+			value: 0
+		},
+		{
+			text: 'Use Default',
+			value: 1
+		},
+		{
+			divider: true
+		},
+		{
+			text: 'Context Settings',
+			value: 2
+		}
+	];
+
+	$scope.contextTypeSelected = {};
 
 
-		$scope.solve = function() {
-				ModelSync.create($scope.model).then(function() {
+	$scope.solve = function() {
+		ModelSync.create($scope.model).then(function() {
 
-					//console.log("$push returned : in CTRL: " + ref.name());
-					// May reset the UI to initial state.
-					alert("Data saved, new model created");
-				});
-		};
+			//console.log("$push returned : in CTRL: " + ref.name());
+			// May reset the UI to initial state.
+			alert("Data saved, new model created");
+		});
+	};
 
-		/*socket.on('newz', function(data) {
-			console.log("The server sent: " + data);
-			//alert("The server sent: " + data);
-			socket.emit('event', {my: 'data'});
-		});*/
+	/*socket.on('newz', function(data) {
+	 console.log("The server sent: " + data);
+	 //alert("The server sent: " + data);
+	 socket.emit('event', {my: 'data'});
+	 });*/
 
 });

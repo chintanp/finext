@@ -21,6 +21,11 @@ app.factory('User', function($firebase, FIREBASE_URL, Auth) {
 				user.$priority = authUser.uid;
 				user.$save();
 			});
+		},
+		findByUsername: function(username) {
+			if(username) {
+				return ($firebase(ref.child(username)).$asObject());
+			}
 		}
 	};
 
