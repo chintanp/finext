@@ -83,7 +83,7 @@ io.on('connection', function(socket) {
 
 			var divx = body.divx;			// Divisions in X and Y
 			var divy = body.divy;
-
+		// TODO: update the front end settings for matching the code i.e change the elementTypeSelected.value to 1 and 2 and so on for other types.
 			var etype_index = 1 //body.elementTypeSelected.value + 1;    // Type of element, 1=4-noded or 2=8-noded
 			var end_index = 1 //body.endTypeSelected + 1;      // Type of end condition, 1=SS, 2=Fixed, 3=Beams
 			var loadtype_index = 1 //body.loadTypeSelected.value + 1;     // Type of load - 1=Conc, 2=UDL
@@ -92,7 +92,7 @@ io.on('connection', function(socket) {
 			var Y_origin = 0;
 			var dim = 2;
 
-
+    // TODO: Update the code so load value gets updated from front end.
 		// ******************************************************************************
 		// ******************************************************************************
 		if (etype_index == 1)           // 4-noded thick plate
@@ -139,21 +139,21 @@ io.on('connection', function(socket) {
 		{
 			for (var i = 1; i <= nnd; i++)
 			{
-				if (geom.subset(math.index(i - 1, 0)) == 0)
+				if (geom._data[i-1][0] == 0)                 // subset(math.index(i - 1, 0))
 				{
 					nf.subset(math.index(i - 1, 0), 0);
 					nf.subset(math.index(i - 1, 2), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 1)) == 0)
+				else if (geom._data[i-1][1] == 0)         // subset(math.index(i - 1, 1))
 				{
 					nf.subset(math.index(i - 1, 0), 0);
 					nf.subset(math.index(i - 1, 1), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 0)) == Lx)
+				else if (geom._data[i-1][0] == Lx)        // subset(math.index(i - 1, 0))
 				{
 					nf.subset(math.index(i - 1, 1), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 1)) == Ly)
+				else if (geom._data[i-1][1] == Ly)        // subset(math.index(i - 1, 1))
 				{
 					nf.subset(math.index(i - 1, 2), 0);
 				}
@@ -163,23 +163,23 @@ io.on('connection', function(socket) {
 		{
 			for (var i = 1; i <= nnd; i++)
 			{
-				if (geom.subset(math.index(i - 1, 0)) == 0)
+				if (geom._data[i-1][0] == 0)          // subset(math.index(i - 1, 0))
 				{
 					nf.subset(math.index(i - 1, 0), 0);
 					nf.subset(math.index(i - 1, 1), 0);
 					nf.subset(math.index(i - 1, 2), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 1)) == 0)
+				else if (geom._data[i-1][1] == 0)         // subset(math.index(i - 1, 1))
 				{
 					nf.subset(math.index(i - 1, 0), 0);
 					nf.subset(math.index(i - 1, 1), 0);
 					nf.subset(math.index(i - 1, 2), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 0)) == Lx)
+				else if (geom._data[i-1][0] == Lx)            // subset(math.index(i - 1, 0))
 				{
 					nf.subset(math.index(i - 1, 1), 0);
 				}
-				else if (geom.subset(math.index(i - 1, 1)) == Ly)
+				else if (geom._data[i-1][1] == Ly)          // subset(math.index(i - 1, 1))
 				{
 					nf.subset(math.index(i - 1, 2), 0);
 				}
@@ -225,7 +225,7 @@ io.on('connection', function(socket) {
 		{
 			for(var i = 1; i <= nnd; i++)
 			{
-				if (geom.subset(math.index(i - 1, 0)) == Lx && geom.subset(math.index(i - 1, 1)) == Ly) {
+				if (geom._data[i-1][0]== Lx && geom._data[i-1][1] == Ly) {           // subset(math.index(i - 1, 0))  &  subset(math.index(i - 1, 1))
 					load.subset(math.index(i - 1, 0), -1 * conc_load / 4);             // -1 to account for -Y axis and /4 as the conc load get divided among four symmetric plates
 				}
 			}
@@ -328,10 +328,10 @@ io.on('connection', function(socket) {
 
 			for(var ig = 1; ig <= ngpb; ig++)
 			{
-				wi = sampb.subset(math.index(ig-1, 1));
+				wi = sampb._data[ig-1][1];               // subset(math.index(ig-1, 1))
 				for(var jg = 1; jg <= ngpb; jg++)
 				{
-					wj = sampb.subset(math.index(jg-1, 1));
+					wj = sampb._data[jg-1][1];           // subset(math.index(jg-1, 1))
 
 					if(etype_index == 1)
 					{

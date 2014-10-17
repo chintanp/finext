@@ -2,8 +2,8 @@
  * Created by chin on 02/07/2014.
  */
 
-var mathjs = require('mathjs');
-var math = mathjs();
+var math = require('mathjs');
+//var math = mathjs();
 
 var platelem_q8 = function(input, i) {
 
@@ -25,7 +25,7 @@ var platelem_q8 = function(input, i) {
         for(var j = 1; j <= input.nodof; j++)
         {
             l = l + 1;
-            this.g.subset(math.index(l-1), input.nf.subset(math.index(input.connec.subset(math.index(i-1,k-1))-1, j-1)))
+            this.g.subset(math.index(l-1), input.nf._data[input.connec.subset(math.index(i-1, k-1))-1][j-1]);                    // subset(math.index(input.connec.subset(math.index(i-1,k-1))-1, j-1))
         }
     }
     return {coord: this.coord, g: this.g};

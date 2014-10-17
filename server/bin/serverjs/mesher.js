@@ -2,8 +2,8 @@
  * Created by chin on 02/07/2014.
  */
 
-var mathjs = require('mathjs');
-var math = mathjs();
+var math = require('mathjs');
+//var math = mathjs();
 
 
 var Q4_mesh = function(len, wid, div_x, div_y, xo, yo) {

@@ -1,5 +1,5 @@
-var mathjs = require('mathjs');
-var math = mathjs();
+var math = require('mathjs');
+//var math = mathjs();
 
 
 var formdeeb = function(E, vu, thick) {

@@ -1,113 +1,131 @@
-<div id="navigation" class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><b>FinEXT</b></a>
+<div class="row">
+	<div id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><b>FinEXT</b></a>
 
-			<div class="dropdownp">
+				<div class="dropdownp">
 
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Slab</a></li>
-				<li><a href="#">Beam</a></li>
-			</ul>
-			</li></div>
-		</div>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Slab</a></li>
+						<li><a href="#">Beam</a></li>
+					</ul>
+					</li></div>
+			</div>
 
-		<div class="navbar-right">
+			<div class="navbar-right">
 
-			<ul class="nav navbar-nav navbar-collapse collapse">
-				<li class="active"><a href="#home" class="smothscroll">{{ username }}</a></li>
-			</ul>
+				<ul class="nav navbar-nav navbar-collapse collapse">
+					<li class="active"><a href="#home" class="smothscroll">{{ username }}</a></li>
 
-			<button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
+				</ul>
+				<button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
+
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="panel panel-primary">
-	<div class="panel-body">
+<div class="container-fluid">
+	<div class="panel panel-success">
+		<div class="panel-body text center  ">
 
-		<form class="form-horizontal col-lg-8" role="form" ng-submit="solve()">
+			<!-- Form Controls for Input -->
 
-			<div class="form-group" style="z-index: 80">
+			<form class="form-horizontal " role="form" ng-submit="solve()">
 
-				<label for="ddcontext" class="col-lg-4 control-label">Use Context</label>
-				<div class="col-lg-4" id="ddcontext">
-					<div class="btn btn-default dropdown-toggle form-control" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
-				</div>
-			</div>
-
-			<div class="form-group" style="z-index: 2">
-				<label for="tblength" class="col-lg-4 control-label">Length</label>
-				<div class="col-lg-2" id="tblength">
-					<input type="number" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
-				</div>
-			</div>
-
-			<div class="form-group" style="z-index: 2">
-				<label for="tbbreadth" class="col-lg-4 control-label">Breadth</label>
-				<div class="col-lg-2" id="tbbreadth">
-					<input type="number" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
-				</div>
-			</div>
-
-			<div class="form-group" style="z-index: 2">
-				<label for="tbthickness" class="col-lg-4 control-label">Thickness</label>
-				<div class="col-lg-2" id="tbthickness">
-					<input type="number" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
-				</div>
-			</div>
-
-			<div class="form-group" style="z-index: 3">
-				<label for="ddendtype" class="col-lg-4 control-label">End Type</label>
-				<div class="col-lg-2" id="ddendtype">
-					<div class="btn btn-default dropdown-toggle form-control" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
-				</div>
-			</div>
-
-			<div class="form-group" style="z-index: 2">
-				<div class="row">
-					<label for="ddloadtype" class="col-lg-1 control-label">Load Type</label>
-					<div class="col-lg-2" id="ddloadtype">
-						<div class="btn btn-default dropdown-toggle form-control" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
-					</div>
-
-					<label for="load" class="col-lg-1 control-label">Load</label>
-					<div class="col-lg-2" id="load">
-						<input type="number" class="form-control" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
+				<!-- Context DropDown -->
+				<div class="form-group" >
+					<label for="ddcontext" class="col-xs-3 col-xs-offset-2 control-label">Use Context</label>
+					<div class="col-xs-2" style="z-index: 2"  id="ddcontext">
+						<div class="btn btn-default dropdown-toggle form-control" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
 					</div>
 				</div>
-			</div>
 
-			<div class="form-group" style="z-index: 1">
-				<label for="ddelementtype" class="col-lg-4 control-label">Element Type</label>
-				<div class="col-lg-4" id="ddelementtype">
-					<div class="btn btn-default dropdown-toggle form-control" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
+				<!-- Length -->
+				<div class="form-group" >
+					<label for="tblength" class="col-xs-3 col-xs-offset-2  control-label">Length</label>
+					<div class="col-xs-2" id="tblength">
+						<input type="number" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
+					</div>
 				</div>
-			</div>
 
-			<div class="form-group" style="z-index: 0">
-				<label for="tbdivx" class="col-lg-4 control-label">Divisions in X</label>
-				<div class="col-lg-2" id="tbdivx">
-					<input type="number" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
+				<!-- Breadth -->
+				<div class="form-group">
+					<label for="tbbreadth" class="col-xs-3 col-xs-offset-2  control-label">Breadth</label>
+					<div class="col-xs-2" id="tbbreadth">
+						<input type="number" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
+					</div>
 				</div>
-			</div>
 
-			<div class="form-group" style="z-index: 0">
-				<label for="tbdivy" class="col-lg-4 control-label">Divisions in Y</label>
-				<div class="col-lg-2" id="tbdivy">
-					<input type="number" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
+				<!-- Thickness -->
+				<div class="form-group" >
+					<label for="tbthickness" class="col-xs-3 col-xs-offset-2  control-label">Thickness</label>
+					<div class="col-xs-2" id="tbthickness">
+						<input type="number" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
+					</div>
 				</div>
-			</div>
 
-			<button type="reset" class="btn btn-large col-lg-4 ">RESET</button>
-			<button type="submit" class="btn btn-large btn-success col-lg-4">SOLVE</button>
+				<!-- EndType DropDown -->
+				<div class="form-group">
+					<label for="ddendtype" class="col-xs-3 col-xs-offset-2 control-label">End Type</label>
+					<div class="col-xs-2" style="z-index: 5"  id="ddendtype">
+						<div class="btn btn-default dropdown-toggle form-control" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
+					</div>
+				</div>
 
-		</form>
+				<!-- Load DropDown & TextBox-->
+				<div class="form-group" >
+					<div class="row">
+						<label for="ddloadtype" class="col-xs-3 col-xs-offset-2 control-label">Load Type</label>
+						<div class="col-xs-2" style="z-index: 4"  id="ddloadtype">
+							<div class="btn btn-default dropdown-toggle form-control" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
+						</div>
+						<label for="load" class="col-xs-1 control-label">Load</label>
+						<div class="col-xs-2" id="load">
+							<input type="number" class="form-control" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
+						</div>
+					</div>
+				</div>
 
+				<!-- Element-Type DropDown -->
+				<div class="form-group" >
+					<label for="ddelementtype" class="col-xs-3 col-xs-offset-2 control-label">Element Type</label>
+					<div class="col-xs-2" style="z-index: 2"  id="ddelementtype">
+						<div class="btn btn-default dropdown-toggle form-control" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
+					</div>
+				</div>
+
+				<!-- Divisions in X -->
+				<div class="form-group" >
+					<label for="tbdivx" class="col-xs-3 col-xs-offset-2 control-label">Divisions in X</label>
+					<div class="col-xs-2" id="tbdivx">
+						<input type="number" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
+					</div>
+				</div>
+
+				<!-- Divisions in Y -->
+				<div class="form-group" >
+					<label for="tbdivy" class="col-xs-3 col-xs-offset-2 control-label">Divisions in Y</label>
+					<div class="col-xs-2" id="tbdivy">
+						<input type="number" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
+					</div>
+				</div>
+
+				<!-- Buttons for Solve and Reset -->
+				<div class="col-xs-offset-4" style="padding-right: 20">
+					<button type="reset" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
+				</div>
+				<div class="col-xs-offset-2" style="padding-left: 20">
+					<button type="submit" class="btn btn-lg btn-success col-lg-2 col-xs-4">SOLVE</button>
+				</div>
+			</form>
+
+		</div>
 	</div>
 </div>
