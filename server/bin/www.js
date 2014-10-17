@@ -344,11 +344,10 @@ io.on('connection', function(socket) {
 						fun = fmquad(sampb, ig, jg).fun;
 					}
 
-					jac = math.multiply(der, coord);
-					d = math.det(jac);
+					jac = math.multiply(der.valueOf(), coord.valueOf());    // Tweak to make the multiply work .valueOf()
 
 					// Create a clone of the matrix, but a sylvester object now
-					var jacs = Matrix.create(jac._data);
+					var jacs = Matrix.create(jac);              // This change as jac is now purely an array, and doesnt have other mathjs stuff
 
 					// Calculate the inverse of the sylvester matrix
 					var jacis = jacs.inverse();
@@ -362,7 +361,7 @@ io.on('connection', function(socket) {
 						}
 					}
 
-					deriv = math.multiply(jacim, der);
+					deriv = math.multiply(jacim.valueOf(), der.valueOf());
 					beeb = formbeeb(deriv, nne, eldof);
 
 					// Tranpose the matrix

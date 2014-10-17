@@ -21,12 +21,12 @@ var formbeeb = function(deriv, nne, eldof) {
     {
         k = 3 * m;
         j = k - 1;
-        x = deriv.subset(math.index(0,m-1));
-        beeb.subset(math.index(0,j-1), x);
-        beeb.subset(math.index(2, k-1), x);
-        y = deriv.subset(math.index(1,m-1));
-        beeb.subset(math.index(1,k-1), y);
-        beeb.subset(math.index(2, j-1), y);
+        x = deriv[0][m-1];      // Removed as type-error due to upstream change  .subset(math.index(0,m-1));
+        beeb._data[0][j-1] = x;   // Changed .subset(math.index(0,j-1), x);
+        beeb._data[2][k-1] = x;   // Changed subset(math.index(2, k-1), x);
+        y = deriv[1][m-1];         // Changed .subset(math.index(1,m-1));
+        beeb._data[1][k-1] = y;   // Changed subset(math.index(1,k-1), y);
+        beeb._data[2][j-1] = y;     // Changed subset(math.index(2, j-1), y);
     }
     return beeb;
 
