@@ -36,6 +36,10 @@ var app = angular.module('confeaApp', [
 		    templateUrl: 'views/login.html',
 		    controller: 'AuthCtrl'
 	    })
+	    .when('/results', {
+		    templateUrl: 'views/results.html',
+		    controller: 'ResultCtrl'
+	    })
       .otherwise({
         redirectTo: '/'
       });

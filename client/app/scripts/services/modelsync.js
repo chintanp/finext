@@ -5,7 +5,7 @@
 
 'use strict';
 
-app.factory('ModelSync', function($firebase, FIREBASE_URL, socket) {
+app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
 	var ref = new Firebase(FIREBASE_URL + 'models');
 
@@ -20,6 +20,7 @@ app.factory('ModelSync', function($firebase, FIREBASE_URL, socket) {
 			return models.$add(model).then(function(ref) {
 				console.log("Firebase replied with : " + ref.name());
 				var uid = ref.name();
+				$rootScope.uid = uid;
 				socket.emit('BeginSolve', {id: uid});
 			});
 		},
@@ -30,6 +31,18 @@ app.factory('ModelSync', function($firebase, FIREBASE_URL, socket) {
 
 		delete: function(model) {
 			return models.$remove(model);
+		},
+
+		getResults: function(modelId) {
+			console.log("ModelId:" + modelId);
+			var results = $firebase(ref.child(modelId).child("results")).$asArray();
+			results.$loaded().then(function(data) {
+				console.log("Data in getResults: " + data);
+				$rootScope.resultSet = data;
+				return;
+			});
+
+
 		}
 	};
 

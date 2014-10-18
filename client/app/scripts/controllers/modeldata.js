@@ -96,7 +96,10 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 			//console.log("$push returned : in CTRL: " + ref.name());
 			// May reset the UI to initial state.
+			// TODO change the alert box to a AngularUI modal to get the values confirmed from the user
 			alert("Data saved, new model created");
+			$location.path('/results');
+
 		});
 	};
 
