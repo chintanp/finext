@@ -29,18 +29,20 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		divy : ''
 	};
 
+	// Types updated to match the backend, now start from one, all except context.
+
 	$scope.endTypeOptions = [
 		{
 			text: 'Simply Supported',
-			value: 0
-		},
-		{
-			text: 'Fixed',
 			value: 1
 		},
 		{
-			text: 'Beam Supported',
+			text: 'Fixed',
 			value: 2
+		},
+		{
+			text: 'Beam Supported',
+			value: 3
 		}
 	];
 
@@ -48,12 +50,12 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 	$scope.loadTypeOptions = [
 		{
-			text: 'UDL',
-			value: 0
-		},
-		{
 			text: 'Concentrated at Center',
 			value: 1
+		},
+		{
+			text: 'UDL',
+			value: 2
 		}
 	];
 
@@ -64,11 +66,11 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 	$scope.elementTypeOptions = [
 		{
 			text: '4-Noded',
-			value: 0
+			value: 1
 		},
 		{
 			text: '8-Noded',
-			value: 1
+			value: 2
 		}
 	];
 
@@ -82,14 +84,8 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		{
 			text: 'Use Default',
 			value: 1
-		},
-		{
-			divider: true
-		},
-		{
-			text: 'Context Settings',
-			value: 2
 		}
+
 	];
 
 	$scope.contextTypeSelected = {};

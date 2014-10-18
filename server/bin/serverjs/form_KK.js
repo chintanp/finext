@@ -21,7 +21,7 @@ var form_KK = function(input, KK, kg, g) {
                 var gj = g.subset(math.index(j-1));
                 if(gj != 0)
                 {
-                    KK.subset(math.index(gi-1, gj-1), KK.subset(math.index(gi-1, gj-1)) + kg.subset(math.index(i-1,j-1)));
+                    KK._data[gi-1][gj-1] = KK._data[gi-1][gj-1] + kg[i-1][j-1];  // subset(math.index(i-1,j-1))); //subset(math.index(gi-1, gj-1)) //subset(math.index(gi-1, gj-1)
                   }
             }
         }
