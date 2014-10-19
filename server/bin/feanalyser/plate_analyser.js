@@ -390,5 +390,4 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 
 }
 
-
 module.exports = plate_analyser;
