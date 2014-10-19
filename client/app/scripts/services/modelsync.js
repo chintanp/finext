@@ -38,7 +38,12 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 			var results = $firebase(ref.child(modelId).child("results")).$asArray();
 			results.$loaded().then(function(data) {
 				console.log("Data in getResults: " + data);
-				$rootScope.resultSet = data;
+				if(data) {
+					console.log("Data received from firebase");
+					$rootScope.resultsAvailable = true;
+					$rootScope.resultSet = data;
+				}
+
 				return;
 			});
 

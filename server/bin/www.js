@@ -66,7 +66,7 @@ io.on('connection', function(socket) {
 			}
 
 
-			var delta_n = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadType.value, body.loadData.loadValue);
+			var delta_n = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue);
 
 			var modelRef = new Firebase( FIREBASE_URL + '/models/');
 			var resultRef = modelRef.child(g_uid).child("results");

@@ -36,16 +36,16 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	var samps = math.matrix();
 
 // ******** These are the dimensions of the quarter plate, for total dimension of plate multiply each by two.******
-	var Lx = body.length; //  localModel.length; 			// Test values, will update from UI later on
-	var Ly = body.breadth;
-	var thick = body.thickness;
+	var Lx = len; //body.length; //  localModel.length; 			// Test values, will update from UI later on
+	var Ly = wid; // body.breadth;
+	var thick = thk; //body.thickness;
 
-	var divx = body.divx;			// Divisions in X and Y
-	var divy = body.divy;
+	var divx = div_x; // body.divx;			// Divisions in X and Y
+	var divy = div_y; // body.divy;
 
-	var etype_index = body.elementTypeSelected.value;    // Type of element, 1=4-noded or 2=8-noded
-	var end_index = body.endTypeSelected;      // Type of end condition, 1=SS, 2=Fixed, 3=Beams
-	var loadtype_index = body.loadData.loadTypeSelected.value;     // Type of load - 1=Conc, 2=UDL
+	var etype_index = element_type; // body.elementTypeSelected.value;    // Type of element, 1=4-noded or 2=8-noded
+	var end_index = end_type; // body.endTypeSelected;      // Type of end condition, 1=SS, 2=Fixed, 3=Beams
+	var loadtype_index = load_type; // body.loadData.loadTypeSelected.value;     // Type of load - 1=Conc, 2=UDL
 
 	var X_origin = 0;
 	var Y_origin = 0;
@@ -169,7 +169,7 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 
 	if (loadtype_index == 1)                 // Concentrated Load
 	{
-		var conc_load = body.loadData.loadValue;
+		var conc_load = loadVal; // body.loadData.loadValue;
 
 		for (var i = 1; i <= nnd; i++) {
 			if (geom._data[i - 1][0] == Lx && geom._data[i - 1][1] == Ly) {           // subset(math.index(i - 1, 0))  &  subset(math.index(i - 1, 1))
@@ -180,7 +180,7 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	else if (loadtype_index == 2)           // UDL
 	{
 		var dead_load = density * thick;
-		var live_load = body.loadData.loadValue;              // To be updated from UI
+		var live_load = loadVal; // body.loadData.loadValue;              // To be updated from UI
 		var total_load_int = dead_load + live_load;         // Total intensity of loading
 		var total_load = total_load_int * Lx * Ly;          // Multiplied by area to get total load
 

@@ -33,7 +33,23 @@
 
 
 <div class="container-fluid">
+
+	<p class="" ng-hide="resultsAvailable">Calculating the results... </p>
 	<div class="table">
 		Results in a table.
+		<table class="table table-striped" ng-show="resultsAvailable">
+			<thead>
+				<tr>
+					<td>Node No.</td>
+					<td>Displacement</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="displacement in displacements">
+					<td>{{ $index + 1 }}</td>
+					<td>{{ displacement }}</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
