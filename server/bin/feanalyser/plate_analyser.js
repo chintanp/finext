@@ -196,6 +196,8 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 				load.subset(math.index(i - 1, 0), -1 * count * total_load / (4 * nel));
 			}
 		}
+
+		//TODO verify the distribution of UDL to nodes, from FEM book on RCC
 		else if (etype_index == 2) {
 			for (var i = 1; i <= nnd; i++) {
 				count = 0;
@@ -283,6 +285,7 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 				}
 
 				jac = math.multiply(der.valueOf(), coord.valueOf());    // Tweak to make the multiply work .valueOf()
+				d = math.det(jac);
 
 				// Create a clone of the matrix, but a sylvester object now
 				var jacs = Matrix.create(jac);              // This change as jac is now purely an array, and doesnt have other mathjs stuff
@@ -384,6 +387,8 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	var fgn = fg._data;
 
 	var deltan = numeric.solve(kkn, fgn);
+
+
 
 	//TODO to look at how to return more than one value,  look at the implementation of mesher
 	return deltan;
