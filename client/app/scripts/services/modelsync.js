@@ -31,28 +31,31 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
 		delete: function(model) {
 			return models.$remove(model);
-		},
+		}
 
-		getResults: function(modelId) {
-			console.log("ModelId:" + modelId);
+		/*getResults: function(modelId) {
+			*//*console.log("ModelId:" + modelId);
 
 			$rootScope. resultSet = {};
 			$rootScope.resultSet.displacements = [];
 
 			$rootScope.resultSet.displacements = $firebase(ref.child(modelId).child("results")).$asArray();
-			/*results.$loaded().then(function(data) {
+			*//**//*results.$loaded().then(function(data) {
 				console.log("Data in getResults: " + data);
 				if(data) {
 					console.log("Data received from firebase");
 					$rootScope.resultsAvailable = true;
 					$rootScope.resultSet = data;
-				}*/
+				}*//**//*
 			if($rootScope.resultSet.displacements) {
 				$rootScope.resultsAvailable = true;
+				$rootScope.resultSet.displacements = JSON.parse($rootScope.resultSet.displacements);
 			}
+*//*
+
 
 			return;
-		}
+		}*/
 	};
 
 	return ModelSync;

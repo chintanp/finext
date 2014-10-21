@@ -35,21 +35,34 @@
 <div class="container-fluid">
 
 	<p class="" ng-hide="resultsAvailable">Calculating the results... </p>
-	<div class="table">
-		Results in a table.
-		<table class="table table-striped" ng-show="resultsAvailable">
-			<thead>
+	<div class="container">
+		<ul class="nav nav-pills">
+           <li><a href="pane1">Displacements</a></li>
+			<li><a href="pane2">Moments</a></li>
+		</ul>
+	</div>
+
+	<div class="tab-content">
+		<div id="pane1">
+			<table class="table table-striped table-bordered table-hover table-condensed" ng-show="resultsAvailable">
+				<thead>
 				<tr>
 					<td>Node No.</td>
 					<td>Displacement</td>
 				</tr>
-			</thead>
-			<tbody>
+				</thead>
+				<tbody>
 				<tr ng-repeat="displacement in resultSet.displacements">
 					<td>{{ $index + 1 }}</td>
-					<td>{{ displacement }}</td>
+					<td>{{ resultSet.displacements[$index] }}</td>
 				</tr>
-			</tbody>
-		</table>
+				</tbody>
+			</table>
+		</div>
+		<div id="pane2">
+			<p>
+				This is where we display moments and shears etc.
+			</p>
+		</div>
 	</div>
 </div>

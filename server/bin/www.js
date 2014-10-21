@@ -73,6 +73,11 @@ io.on('connection', function(socket) {
 
 			resultRef.set({displacements : delta_n});
 
+
+			// Emit the event and send result data along
+
+			socket.emit('ModelSolved', {resultSet: delta_n});
+
 			console.log("Deltan: " + delta_n);
 			console.log("Typeof deltan: " + typeof(delta_n));
 
