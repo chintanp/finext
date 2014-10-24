@@ -16,6 +16,7 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	var formbeeb = require('./formbeeb');
 	var formbees = require('./formbees');
 	var form_KK = require('./form_KK');
+	var Forces_at_nodes_plate = require('./Forces_at_nodes_plate');
 
 	var Matrix = sylvester.Matrix,
 		Vector = sylvester.Vector;
@@ -218,7 +219,9 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 		geom: geom,
 		connec: connec,
 		nf: nf,
-		dim: dim};
+		dim: dim,
+		nel: nel,
+		nnd: nnd};
 
 // ************************ End of Input *************
 
@@ -388,10 +391,165 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 
 	var deltan = numeric.solve(kkn, fgn);
 
+/*	for i=1: nnd %
+	if nf(i,1) == 0 %
+	w_disp =0.;
+	else
+		w_disp = delta(nf(i,1)); %
+	end
+	%
+	if nf(i,2) == 0 %
+	x_slope = 0.; %
+	else
+	x_slope = delta(nf(i,2)); %
+	end
+	%
+	if nf(i,3) == 0 %
+	y_slope = 0.; %
+	else
+	y_slope = delta(nf(i,3)); %
+	end
+
+	disp([i w_disp x_slope y_slope])                    % Display displacements of each node
+	DISP(i,:) = [ w_disp x_slope y_slope];
+	end*/
+
+	var w_disp = 0,
+		x_slope = 0,
+		y_slope = 0;
+
+	var disp_rots = math.matrix();
+
+ for (var i = 1; i <= nnd; i++) {
+	 if(nf.subset(math.index(i - 1, 0)) == 0) {
+		 w_disp = 0;    // May need to define this before
+	 }
+	 else
+	 w_disp = deltan[nf.subset(math.index(i - 1, 0)) - 1];
+
+	 if(nf.subset(math.index(i - 1, 1)) == 0) {
+		 x_slope = 0;
+	 }
+	 else
+	 x_slope = deltan[nf.subset(math.index(i - 1, 1)) - 1];
+
+	 if(nf.subset(math.index(i - 1, 2)) == 0) {
+		 y_slope = 0;
+	 }
+	 else
+	 y_slope = deltan[nf.subset(math.index(i - 1, 2)) - 1];
+
+	 // disp_rots contains displacements, and rotations for various nodes, also to be stored in Firebase
+	 disp_rots.subset(math.index(i-1, 0), w_disp);
+	 disp_rots.subset(math.index(i-1, 1), x_slope);
+	 disp_rots.subset(math.index(i-1, 2), y_slope);
+
+ }
+
+	// Calculate moment and shear at the center of each element
+
+	var Moment = math.matrix();
+	var Shear = math.matrix();
+	var Element_Forces = math.matrix();
+	var chi_b = math.matrix();
+	var chi_s = math.matrix();
+
+
+	var ngp = 1;
+	var samp = gauss(ngp);
+
+	for(var ii = 1; ii <= nel; ii++) {
+
+		coord = platelem_q8(inputs, ii).coord;
+		g = platelem_q8(inputs, ii).g;
+
+		var eld = math.zeros(eldof, 1);
+
+		for(var m = 1; m <= eldof; m++) {
+			if(g._data[m-1] == 0) {
+				eld._data[m-1] = 0;
+			}
+			else {
+				eld._data[m-1] = deltan[g._data[m-1] - 1];
+			}
+
+		}
+
+		for(var ig = 1; ig <= ngp; ig++) {
+
+			wi = samp._data[ig-1][1];
+
+			for(var jg = 1; jg <= ngp; jg++) {
+
+				wj = samp._data[jg-1][1];
+
+				if(etype_index == 1) {
+					der = fmlin(samp, ig, jg).der;
+					fun = fmlin(samp, ig, jg).fun;
+				}
+				else if (etype_index == 2) {
+					der = fmquad(samp, ig, jg).der;
+					fun = fmquad(samp, ig, jg).fun;
+				}
+
+				jac = math.multiply(der.valueOf(), coord.valueOf());    // Tweak to make the multiply work .valueOf()
+				d = math.det(jac);
+
+				// Create a clone of the matrix, but a sylvester object now
+				var jacs = Matrix.create(jac);              // This change as jac is now purely an array, and doesnt have other mathjs stuff
+
+				// Calculate the inverse of the sylvester matrix
+				var jacis = jacs.inverse();
+
+				// Take it back to the mathjs matrix
+				for (var p = 1; p <= jacis.rows(); p++) {
+					for (var q = 1; q <= jacis.cols(); q++) {
+						jacim.subset(math.index(p - 1, q - 1), jacis.e(p, q)); // sylvester matrix brought to a mathjs matrix
+					}
+				}
+
+				deriv = math.multiply(jacim.valueOf(), der.valueOf());
+				beeb = formbeeb(deriv, nne, eldof);
+
+				chi_b = math.multiply(beeb.valueOf(), eld.valueOf());
+				Moment = math.multiply(deeb.valueOf(), chi_b.valueOf());
+				bees = formbees(deriv, fun, nne, eldof);
+				chi_s = math.multiply(bees.valueOf(), eld.valueOf());
+				Shear = math.multiply(dees.valueOf(), chi_s.valueOf());
+			}
+		}
+
+		for(var j = 1; j <= Moment.length; j++) {
+			Element_Forces.subset(math.index(ii-1, j-1), Moment[j-1]);
+		}
+		for(var k = Moment.length; k <= Moment.length + Shear.length - 1; k++) {
+			Element_Forces.subset(math.index(ii-1, k), Shear[k - Moment.length]);
+		}
+	}
+
+	var W = math.matrix();
+
+	for(var i = 1; i <= nnd; i++) {
+		W.subset(math.index(i-1), disp_rots._data[i-1][0]);
+	}
+
+	var MX = math.matrix();
+	var MY = math.matrix();
+	var MXY = math.matrix();
+	var QX = math.matrix();
+	var QY = math.matrix();
+
+
+	MX = Forces_at_nodes_plate(inputs, Element_Forces).MX;
+	MY = Forces_at_nodes_plate(inputs, Element_Forces).MY;
+	MXY = Forces_at_nodes_plate(inputs, Element_Forces).MXY;
+	QX = Forces_at_nodes_plate(inputs, Element_Forces).QX;
+	QY = Forces_at_nodes_plate(inputs, Element_Forces).QY;
+
 
 
 	//TODO to look at how to return more than one value,  look at the implementation of mesher
-	return deltan;
+	return { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data };
 
 }
 

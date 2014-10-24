@@ -66,17 +66,24 @@ io.on('connection', function(socket) {
 			}
 
 
-			var delta_n = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue);
+			var delta_n = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).delta;
+			var disp_rots = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).disp_rot;
+			var W = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).w;
+			var MX = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).mx;
+			var MY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).my;
+			var MXY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).mxy;
+			var QX = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qx
+			var QY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qy;
 
 			var modelRef = new Firebase( FIREBASE_URL + '/models/');
 			var resultRef = modelRef.child(g_uid).child("results");
 
-			resultRef.set({displacements : delta_n});
+			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY});
 
 
 			// Emit the event and send result data along
 
-			socket.emit('ModelSolved', {resultSet: delta_n});
+			socket.emit('ModelSolved', {resultSet: {displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY}});
 
 			console.log("Deltan: " + delta_n);
 			console.log("Typeof deltan: " + typeof(delta_n));
@@ -84,7 +91,7 @@ io.on('connection', function(socket) {
 
 			// TODO enable option to check the results against staad-pro
 
-			// TODO calculate other quatities like moments and shear here and also send to firebase
+
 			// request.post(FIREBASE_URL + '/models/' + uid.id + '/results/' );
 		});
 

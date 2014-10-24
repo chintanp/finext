@@ -1,15 +1,18 @@
 'use strict';
 
+// Is the user dependency injected here ?
+
 app.controller('AuthCtrl',
-	function($scope, $location, Auth, User) {
+	function($scope, $location, Auth, user) {
+
 		if(Auth.signedIn()) {
 			$location.path('/input');
 		}
 
-		$scope.$on('$firebaseSimpleLogin:login', function(e, user) {
+		/*$scope.$on('$firebaseSimpleLogin:login', function(e, user) {
 			console.log('User ' + user.id + ' successfully logged in. ')
 			$location.path('/input');
-		});
+		});*/
 
 		$scope.login = function() {
 			Auth.login($scope.user).then(function() {
@@ -20,12 +23,17 @@ app.controller('AuthCtrl',
 		};
 
 		$scope.register = function() {
-			Auth.register($scope.user).then(function(authUser) {
-				User.create(authUser, $scope.user.username);
-				console.log(authUser);
-				Auth.login($scope.user).then(function () {
+			Auth.register($scope.user).then(function(user) {
+				return Auth.login($scope.user).then(function () {
+					user.username = $scope.user.username;
+					return Auth.createProfile(user);
+				}).then(function () {
 					$location.path('/input');
 				});
+			}, function(error) {
+				$scope.error = error.toString();
 			});
 		};
+
+
 	});

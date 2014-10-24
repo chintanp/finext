@@ -22,12 +22,27 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, 
 	//console.log("$scope in ResultCtrl: " + $scope);
 	//alert("results.displacements: " + $scope.resultSet.displacements);
 
-	$rootScope. resultSet = {};
+  $scope.signedIn = Auth.signedIn;
+
+  if(Auth.signedIn()) {
+    $scope.user = Auth.user;
+  }
+
+  // console.log(user);
+
+  $scope.logout = function() {
+    Auth.logout();
+    $location.path('/');
+  };
+
+	$rootScope.resultSet = {};
 	$rootScope.resultSet.displacements = [];
 
 	socket.on('ModelSolved', function(data) {
+
 		console.log("model Solved with data: " + data);
-		$rootScope.resultSet.displacements = data.resultSet;
+		$rootScope.resultSet = data.resultSet;
+		localStorage.setItem("resultSet", data.resultSet);
 
 		if($rootScope.resultSet.displacements) {
 			$rootScope.resultsAvailable = true;

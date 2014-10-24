@@ -8,10 +8,22 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
 
+  $scope.signedIn = Auth.signedIn;
+
+	if(Auth.signedIn()) {
+		$scope.user = Auth.user;
+	}
+
+  // console.log(user);
+
 	$scope.logout = function() {
 		Auth.logout();
 		$location.path('/');
 	};
+
+
+
+  //$scope.logout = Auth.logout;
 
 	//$scope.username = Auth.
 	$scope.modelInfo = ModelSync.all; /*{ length : " ",
@@ -92,6 +104,10 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 
 	$scope.solve = function() {
+
+		$scope.model.creator = $scope.user.profile.username;
+		$scope.model.creatorUID = $scope.user.uid;
+
 		ModelSync.create($scope.model).then(function() {
 
 			//console.log("$push returned : in CTRL: " + ref.name());

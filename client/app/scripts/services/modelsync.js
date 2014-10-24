@@ -8,6 +8,7 @@
 app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
 	var ref = new Firebase(FIREBASE_URL + 'models');
+  var baseRef = new Firebase(FIREBASE_URL);
 
 	var models = $firebase(ref).$asArray();
 
@@ -18,10 +19,16 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
 		create: function(model) {
 			return models.$add(model).then(function(ref) {
+
+				// Also save the model UID to the user_models collection for ease of retrieval.
+				// $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
+        $firebase(baseRef.child('user_models').child(model.creatorUID)).$push(ref.name());
+
 				console.log("Firebase replied with : " + ref.name());
 				var uid = ref.name();
 				$rootScope.uid = uid;
 				socket.emit('BeginSolve', {id: uid});
+				localStorage.setItem("id", uid);
 			});
 		},
 
