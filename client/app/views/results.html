@@ -39,15 +39,10 @@
 <div class="container-fluid">
 
 	<p class="" ng-hide="resultsAvailable">Calculating the results... </p>
-	<div class="container">
-		<ul class="nav nav-pills">
-           <li><a href="#pane1" data-toggle="tab">Displacements</a></li>
-			<li><a href="#pane2" data-toggle="tab">Moments</a></li>
-		</ul>
-	</div>
+
 	<!-- TODO Create filters for formatting data -->
 
-	<div class="tab-content">
+	<div>
 		<div id="pane1">
 			<table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
 				<thead>
@@ -59,15 +54,91 @@
 				<tbody>
 				<tr ng-repeat="displacement in resultSet.displacements">
 					<td>{{ $index + 1 }}</td>
-					<td>{{ resultSet.displacements[$index] }}</td>
+					<td>{{ displacement }}</td>
 				</tr>
 				</tbody>
 			</table>
 		</div>
-		<div id="pane2">
-			<p>
-				This is where we display moments and shears etc.
-			</p>
-		</div>
+    <div id="pane2">
+      <table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
+        <thead>
+        <tr>
+          <td>Node No.</td>
+          <td>MX</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="momentx in resultSet.mx">
+          <td>{{ $index + 1 }}</td>
+          <td>{{ momentx }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pane3">
+      <table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
+        <thead>
+        <tr>
+          <td>Node No.</td>
+          <td>MY</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="momenty in resultSet.my">
+          <td>{{ $index + 1 }}</td>
+          <td>{{ momenty }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pane4">
+      <table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
+        <thead>
+        <tr>
+          <td>Node No.</td>
+          <td>MXY</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="momentxy in resultSet.mxy">
+          <td>{{ $index + 1 }}</td>
+          <td>{{ momentxy }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pane5">
+      <table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
+        <thead>
+        <tr>
+          <td>Node No.</td>
+          <td>QX</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="shearx in resultSet.qx" >
+          <td>{{ $index + 1 }}</td>
+          <td>{{ shearx }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pane6">
+      <table class="table table-striped table-bordered table-hover table-condensed text-center" ng-show="resultsAvailable">
+        <thead>
+        <tr>
+          <td>Node No.</td>
+          <td>QY</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="sheary in resultSet.qy">
+          <td>{{ $index + 1 }}</td>
+          <td>{{ sheary }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
 	</div>
+
 </div>

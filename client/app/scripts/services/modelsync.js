@@ -28,7 +28,7 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 				var uid = ref.name();
 				$rootScope.uid = uid;
 				socket.emit('BeginSolve', {id: uid});
-				localStorage.setItem("id", uid);
+				//localStorage.setItem("id", uid);
 			});
 		},
 

@@ -15,10 +15,10 @@ var fmlin = function(samp, ig, jg) {
     this.fun = math.matrix();
     this.der = math.matrix();
 
-    this.fun.subset(math.index(0,0), 0.25*(1.0-xi-eta+xi*eta));
-    this.fun.subset(math.index(1,0), 0.25*(1.0+xi-eta-xi*eta));
-    this.fun.subset(math.index(2,0), 0.25*(1.0+xi+eta+xi*eta));
-    this.fun.subset(math.index(3,0), 0.25*(1.0-xi+eta-xi*eta));
+    this.fun.subset(math.index(0), 0.25*(1.0-xi-eta+xi*eta));
+    this.fun.subset(math.index(1), 0.25*(1.0+xi-eta-xi*eta));
+    this.fun.subset(math.index(2), 0.25*(1.0+xi+eta+xi*eta));
+    this.fun.subset(math.index(3), 0.25*(1.0-xi+eta-xi*eta));
 
     this.der.subset(math.index(0,0), 0.25*(eta-1));
     this.der.subset(math.index(0,1), 0.25*(1-eta));

@@ -80,10 +80,20 @@ io.on('connection', function(socket) {
 
 			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY});
 
+			var resultSet = {
+				displacements: delta_n,
+				disp_rot: disp_rots,
+				w: W,
+				mx: MX,
+				my: MY,
+				mxy: MXY,
+				qx: QX,
+				qy: QY
+			};
 
 			// Emit the event and send result data along
 
-			socket.emit('ModelSolved', {resultSet: {displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY}});
+			socket.emit('ModelSolved', resultSet); //{"displacements" : delta_n, "disp_rot": disp_rots, "w": W, "mx": MX,  "my": MY,  "mxy": MXY, "qx": QX,  "qy": QY}});
 
 			console.log("Deltan: " + delta_n);
 			console.log("Typeof deltan: " + typeof(delta_n));

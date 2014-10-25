@@ -9,18 +9,6 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, 
 
 	$rootScope.resultsAvailable = false;
 
-	//$scope.resultSet = {};
-	//$scope.resultSet.displacements = [];
-
-	// ModelSync.getResults();
-
-	//angular.copy($rootScope.resultSet.displacements, $scope.resultSet.displacements);
-	//$scope.resultSet.displacements = $rootScope.resultSet.displacements;
-	//alert("uid: " + $rootScope.uid)
-
-	//console.log("results in ResultCtrl: " + results);
-	//console.log("$scope in ResultCtrl: " + $scope);
-	//alert("results.displacements: " + $scope.resultSet.displacements);
 
   $scope.signedIn = Auth.signedIn;
 
@@ -40,11 +28,11 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, 
 
 	socket.on('ModelSolved', function(data) {
 
-		console.log("model Solved with data: " + data);
-		$rootScope.resultSet = data.resultSet;
-		localStorage.setItem("resultSet", data.resultSet);
+		console.log("model Solved with displacements: " + data.displacements);
+		$rootScope.resultSet = data;
+	//	localStorage.setItem("resultSet", data.resultSet);
 
-		if($rootScope.resultSet.displacements) {
+		if(data) {
 			$rootScope.resultsAvailable = true;
 		}
 	});
