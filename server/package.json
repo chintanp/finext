@@ -2,6 +2,7 @@
   "name": "finext_server",
   "version": "0.0.1",
   "private": true,
+  "main": "./bin/www.js",
   "scripts": {
     "start": "set NODE_ENV=production && nodemon ./bin/www.js",
     "test": "set NODE_ENV=development && nodemon ./bin/www.js"
@@ -14,6 +15,13 @@
     "morgan": "~1.0.0",
     "request": "^2.44.0",
     "socket.io": "^1.1.0",
-    "static-favicon": "~1.0.0"
+    "static-favicon": "~1.0.0",
+    "sylvester": "0.0.21",
+    "mathjs": "~0.25.0",
+    "numeric": "1.2.6",
+    "firebase": "latest"
+  },
+  "engines": {
+    "node": "0.10.32"
   }
 }

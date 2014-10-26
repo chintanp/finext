@@ -2,7 +2,6 @@
   "name": "feanalyser",
   "version": "0.0.0",
   "description": "A small library providing finite element analysis capabilities",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

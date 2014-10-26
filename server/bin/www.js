@@ -1,6 +1,6 @@
 var	http = require('http'),
-	request = require('request'),
-	rest = require('restler');
+	request = require('request');
+
 
 var debug = require('debug')('my-application');
 var app = require('../app');
@@ -113,4 +113,5 @@ io.on('connection', function(socket) {
 	});
 });
 
-server.listen(3000);
+
+server.listen(app.get('port'));  //process.env.PORT);

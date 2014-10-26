@@ -1,0 +1,9 @@
+{
+  "firebase": "finext",
+  "public": "server",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
