@@ -1,3 +1,4 @@
+<!-- TODO add some speech recognition library like annyang for data input -->
 <div class="row">
 	<div id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -21,8 +22,12 @@
 			<div class="navbar-right">
 
 				<ul class="nav navbar-nav navbar-collapse collapse">
-					<li class="active"><a href="#home" class="smothscroll">{{ username }}</a></li>
-
+					<li class="active">
+						<a ng-href="#/users/{{ user.profile.uid }}" class="smothscroll">
+							<img width="25" height="25" ng-src="http://www.gravatar.com/avatar/{{ user.profile.md5_hash }}" class="nav-pic">
+							{{ user.profile.username }}
+						</a>
+					</li>
 				</ul>
 				<button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
 
@@ -37,13 +42,13 @@
 
 			<!-- Form Controls for Input -->
 
-			<form class="form-horizontal " role="form" ng-submit="solve()">
+			<form class="form-horizontal" name="input_form" role="form" ng-submit="solve()">
 
 				<!-- Context DropDown -->
 				<div class="form-group" >
 					<label for="ddcontext" class="col-xs-3 col-xs-offset-2 control-label">Use Context</label>
 					<div class="col-xs-2" style="z-index: 2"  id="ddcontext">
-						<div class="btn btn-default dropdown-toggle form-control" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
+						<div class="btn btn-default dropdown-toggle form-control" tabindex="1" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
 					</div>
 				</div>
 
@@ -51,7 +56,7 @@
 				<div class="form-group" >
 					<label for="tblength" class="col-xs-3 col-xs-offset-2  control-label">Length</label>
 					<div class="col-xs-2" id="tblength">
-						<input type="number" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
+						<input type="number" required tabindex="2" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
 					</div>
 				</div>
 
@@ -59,7 +64,7 @@
 				<div class="form-group">
 					<label for="tbbreadth" class="col-xs-3 col-xs-offset-2  control-label">Breadth</label>
 					<div class="col-xs-2" id="tbbreadth">
-						<input type="number" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
+						<input type="number" required tabindex="3" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
 					</div>
 				</div>
 
@@ -67,7 +72,7 @@
 				<div class="form-group" >
 					<label for="tbthickness" class="col-xs-3 col-xs-offset-2  control-label">Thickness</label>
 					<div class="col-xs-2" id="tbthickness">
-						<input type="number" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
+						<input type="number" required tabindex="4" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
 					</div>
 				</div>
 
@@ -75,7 +80,7 @@
 				<div class="form-group">
 					<label for="ddendtype" class="col-xs-3 col-xs-offset-2 control-label">End Type</label>
 					<div class="col-xs-2" style="z-index: 5"  id="ddendtype">
-						<div class="btn btn-default dropdown-toggle form-control" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
+						<div class="btn btn-default dropdown-toggle form-control" tabindex="5" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
 					</div>
 				</div>
 
@@ -84,11 +89,11 @@
 					<div class="row">
 						<label for="ddloadtype" class="col-xs-3 col-xs-offset-2 control-label">Load Type</label>
 						<div class="col-xs-2" style="z-index: 4"  id="ddloadtype">
-							<div class="btn btn-default dropdown-toggle form-control" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
+							<div class="btn btn-default dropdown-toggle form-control" tabindex="6" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
 						</div>
 						<label for="load" class="col-xs-1 control-label">Load</label>
 						<div class="col-xs-2" id="load">
-							<input type="number" class="form-control" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
+							<input type="number" required class="form-control" tabindex="7" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
 						</div>
 					</div>
 				</div>
@@ -97,7 +102,7 @@
 				<div class="form-group" >
 					<label for="ddelementtype" class="col-xs-3 col-xs-offset-2 control-label">Element Type</label>
 					<div class="col-xs-2" style="z-index: 2"  id="ddelementtype">
-						<div class="btn btn-default dropdown-toggle form-control" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
+						<div class="btn btn-default dropdown-toggle form-control" tabindex="8" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
 					</div>
 				</div>
 
@@ -105,7 +110,7 @@
 				<div class="form-group" >
 					<label for="tbdivx" class="col-xs-3 col-xs-offset-2 control-label">Divisions in X</label>
 					<div class="col-xs-2" id="tbdivx">
-						<input type="number" min="0" step="1" id="inp_divx" class="form-control" ng-model="model.divx" />
+						<input type="number" min="0" required step="1" id="inp_divx" tabindex="9" class="form-control" ng-model="model.divx" />
 					</div>
 				</div>
 
@@ -113,16 +118,16 @@
 				<div class="form-group" >
 					<label for="tbdivy" class="col-xs-3 col-xs-offset-2 control-label">Divisions in Y</label>
 					<div class="col-xs-2" id="tbdivy">
-						<input type="number" min="0" step="1" id="inp_divy" class="form-control" ng-model="model.divy" />
+						<input type="number" min="0" required step="1" id="inp_divy" tabindex="10" class="form-control" ng-model="model.divy" />
 					</div>
 				</div>
 
 				<!-- Buttons for Solve and Reset -->
 				<div class="col-xs-offset-4" style="padding-right: 20">
-					<button type="reset" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
+					<button type="reset" tabindex="11" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
 				</div>
 				<div class="col-xs-offset-2" style="padding-left: 20">
-					<button type="submit" class="btn btn-lg btn-success col-lg-2 col-xs-4">SOLVE</button>
+					<button type="submit" tabindex="12" class="btn btn-lg btn-success col-lg-2 col-xs-4" ng-show="signedIn()">SOLVE</button>
 				</div>
 			</form>
 

@@ -27,6 +27,7 @@ app.use(cookieParser());
 
 if(app.get('env') === 'development'  || app.get('env') === 'development ') {
 	console.log('In development'  + 'and _dirname = ' + __dirname);
+	console.log('Process.env.PORT: ' + process.env.PORT )
 	app.use(express.static(path.join(__dirname, '../client')));
 	app.use(express.static(path.join(__dirname, '../client/.tmp')));
 	//app.use(express.static(path.join(__dirname, '../client/bower_components')));
@@ -44,7 +45,7 @@ if(app.get('env') === 'development'  || app.get('env') === 'development ') {
 
 // Production settings
 
-if(app.get('env') === 'production') {
+if(app.get('env') === 'production' || app.get('env') === 'production ') {
 	app.use(express.static(path.join(__dirname, '/dist')));
 
 	// Production error handler

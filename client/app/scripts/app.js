@@ -1,5 +1,9 @@
 'use strict';
 
+
+// TODO global error and exception handling,
+// TODO offline firebase connection or API mockup
+
 /* global app:true */
 
 var app = angular.module('confeaApp', [
@@ -10,7 +14,8 @@ var app = angular.module('confeaApp', [
     'ngSanitize',
     'ngTouch',
 		'ngDropdowns',
-		'firebase'
+		'firebase',
+    'ngTable'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
@@ -30,11 +35,25 @@ var app = angular.module('confeaApp', [
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
-        controller: 'AuthCtrl'
+        controller: 'AuthCtrl',
+		    resolve: {
+			    user: function(Auth) {
+				    return Auth.resolveUser();
+			    }
+		    }
       })
 	    .when('/login', {
 		    templateUrl: 'views/login.html',
-		    controller: 'AuthCtrl'
+		    controller: 'AuthCtrl',
+		    resolve: {
+			    user: function(Auth) {
+				    return Auth.resolveUser();
+			    }
+		    }
+	    })
+	    .when('/results', {
+		    templateUrl: 'views/results.html',
+		    controller: 'ResultCtrl'
 	    })
       .otherwise({
         redirectTo: '/'

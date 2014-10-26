@@ -8,10 +8,22 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
 
+  $scope.signedIn = Auth.signedIn;
+
+	if(Auth.signedIn()) {
+		$scope.user = Auth.user;
+	}
+
+  // console.log(user);
+
 	$scope.logout = function() {
 		Auth.logout();
 		$location.path('/');
 	};
+
+
+
+  //$scope.logout = Auth.logout;
 
 	//$scope.username = Auth.
 	$scope.modelInfo = ModelSync.all; /*{ length : " ",
@@ -29,18 +41,20 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		divy : ''
 	};
 
+	// Types updated to match the backend, now start from one, all except context.
+
 	$scope.endTypeOptions = [
 		{
 			text: 'Simply Supported',
-			value: 0
-		},
-		{
-			text: 'Fixed',
 			value: 1
 		},
 		{
-			text: 'Beam Supported',
+			text: 'Fixed',
 			value: 2
+		},
+		{
+			text: 'Beam Supported',
+			value: 3
 		}
 	];
 
@@ -48,12 +62,12 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 	$scope.loadTypeOptions = [
 		{
-			text: 'UDL',
-			value: 0
-		},
-		{
 			text: 'Concentrated at Center',
 			value: 1
+		},
+		{
+			text: 'UDL',
+			value: 2
 		}
 	];
 
@@ -64,11 +78,11 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 	$scope.elementTypeOptions = [
 		{
 			text: '4-Noded',
-			value: 0
+			value: 1
 		},
 		{
 			text: '8-Noded',
-			value: 1
+			value: 2
 		}
 	];
 
@@ -82,25 +96,26 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		{
 			text: 'Use Default',
 			value: 1
-		},
-		{
-			divider: true
-		},
-		{
-			text: 'Context Settings',
-			value: 2
 		}
+
 	];
 
 	$scope.contextTypeSelected = {};
 
 
 	$scope.solve = function() {
+
+		$scope.model.creator = $scope.user.profile.username;
+		$scope.model.creatorUID = $scope.user.uid;
+
 		ModelSync.create($scope.model).then(function() {
 
 			//console.log("$push returned : in CTRL: " + ref.name());
 			// May reset the UI to initial state.
+			// TODO change the alert box to a AngularUI modal to get the values confirmed from the user
 			alert("Data saved, new model created");
+			$location.path('/results');
+
 		});
 	};
 
