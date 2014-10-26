@@ -4,7 +4,7 @@
 
 // Controller for formatting results etc.
 
-app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, Auth, socket) {
+app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket) {
 
 	$rootScope.resultsAvailable = false;
 
@@ -24,17 +24,19 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, 
 
 	socket.on('ModelSolved', function(data) {
 
-		console.log("model Solved with displacements: " + data.displacements);
-		$rootScope.resultSet = data;
+    console.log("model Solved with displacements: " + data.displacements);
+    $rootScope.resultSet = data;
 
-		if(data) {
-			$rootScope.resultsAvailable = true;
-		}
-	});
+    if (data) {
+      $rootScope.resultsAvailable = true;
+    }
+  });
 
 	$scope.logout = function() {
 		Auth.logout();
 		$location.path('/');
 	};
+
+
 
 });
