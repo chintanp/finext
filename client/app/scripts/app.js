@@ -14,7 +14,8 @@ var app = angular.module('confeaApp', [
     'ngSanitize',
     'ngTouch',
 		'ngDropdowns',
-		'firebase'
+		'firebase',
+    'ngTable'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 

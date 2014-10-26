@@ -6,17 +6,13 @@
 
 app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, Auth, socket) {
 
-
 	$rootScope.resultsAvailable = false;
-
 
   $scope.signedIn = Auth.signedIn;
 
   if(Auth.signedIn()) {
     $scope.user = Auth.user;
   }
-
-  // console.log(user);
 
   $scope.logout = function() {
     Auth.logout();
@@ -30,7 +26,6 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, ModelSync, 
 
 		console.log("model Solved with displacements: " + data.displacements);
 		$rootScope.resultSet = data;
-	//	localStorage.setItem("resultSet", data.resultSet);
 
 		if(data) {
 			$rootScope.resultsAvailable = true;
