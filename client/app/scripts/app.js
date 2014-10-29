@@ -14,8 +14,7 @@ var app = angular.module('confeaApp', [
     'ngSanitize',
     'ngTouch',
 		'ngDropdowns',
-		'firebase',
-    'ngTable'
+		'firebase'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
@@ -55,6 +54,10 @@ var app = angular.module('confeaApp', [
 		    templateUrl: 'views/results.html',
 		    controller: 'ResultCtrl'
 	    })
+      .when('/graph', {
+        templateUrl: 'views/graph.html',
+        controller: 'GraphCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

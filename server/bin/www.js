@@ -74,11 +74,11 @@ io.on('connection', function(socket) {
 			var MXY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).mxy;
 			var QX = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qx
 			var QY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qy;
-
+			var inputs = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).inputs;
 			var modelRef = new Firebase( FIREBASE_URL + '/models/');
 			var resultRef = modelRef.child(g_uid).child("results");
 
-			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY});
+			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY, inputs: inputs});
 
 			var resultSet = {
 				displacements: delta_n,
@@ -88,7 +88,8 @@ io.on('connection', function(socket) {
 				my: MY,
 				mxy: MXY,
 				qx: QX,
-				qy: QY
+				qy: QY,
+				inputs: inputs
 			};
 
 			// Emit the event and send result data along

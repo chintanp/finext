@@ -549,7 +549,7 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 
 
 	//TODO to look at how to return more than one value,  look at the implementation of mesher
-	return { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data };
+	return { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data, inputs: inputs };
 
 }
 
