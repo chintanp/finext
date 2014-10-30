@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87d1d7c5-bb85-43f5-94e3-20690d45204e" name="Default" comment="">
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\body-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\highlight-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\hr.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\octocat-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\tar-gz-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\images\zip-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\javascripts\main.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\arrow1.bf36524e.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\arrow2.e03e40e4.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\context.3ba85906.gif" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\fea.8b7ee8f7.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\home.13734535.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\open-source2.b5b12713.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\open_source.404d3337.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\images\yeoman.acaa0fd5.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\server\dist\scripts\scripts.058cb94e.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\stylesheets\print.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\stylesheets\pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="H:\angular\finext_d\stylesheets\stylesheet.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="87d1d7c5-bb85-43f5-94e3-20690d45204e" name="Default" comment="" />
     <ignored path="finext_d.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
