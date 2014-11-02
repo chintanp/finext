@@ -62,5 +62,8 @@ app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, Mod
     surfacePlot.draw(data, options);
     surfacePlot2.draw(data, options);
   }
+
+  setUp();
+
 });
 

@@ -546,7 +546,9 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	QX = Forces_at_nodes_plate(inputs, Element_Forces).QX;
 	QY = Forces_at_nodes_plate(inputs, Element_Forces).QY;
 
-
+	inputs.geom = inputs.geom._data;
+	inputs.nf = inputs.nf._data;
+	inputs.connec = inputs.connec._data;F5
 
 	//TODO to look at how to return more than one value,  look at the implementation of mesher
 	return { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data, inputs: inputs };
