@@ -3,7 +3,7 @@ var sylvester = require('sylvester'),
 	math = require('mathjs');
 
 
-var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_type, load_type, loadVal) {
+var plate_analyser = function(len, wid, thk, dens, elas, poiss, div_x, div_y, element_type, end_type, load_type, loadVal) {
 
 	var Q4_mesh = require('./mesher').Q4_mesh;
 	var Q8_mesh = require('./mesher').Q8_mesh;
@@ -82,9 +82,9 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	nodof = 3;              // Number of degrees of freedom per node
 	eldof = nne * nodof;    // number of degrees of freedom per element
 
-	density = 0.090318230000872;
-	E = 30.e+6;
-	vu = 0.3;
+	var density = dens;
+	var E = elas;
+	var vu = poiss;
 
 	deeb = formdeeb(E, vu, thick);
 	dees = formdees(E, vu, thick);
@@ -539,19 +539,21 @@ var plate_analyser = function(len, wid, thk, div_x, div_y, element_type, end_typ
 	var QX = math.matrix();
 	var QY = math.matrix();
 
+	var forces = Forces_at_nodes_plate(inputs, Element_Forces);
 
-	MX = Forces_at_nodes_plate(inputs, Element_Forces).MX;
-	MY = Forces_at_nodes_plate(inputs, Element_Forces).MY;
-	MXY = Forces_at_nodes_plate(inputs, Element_Forces).MXY;
-	QX = Forces_at_nodes_plate(inputs, Element_Forces).QX;
-	QY = Forces_at_nodes_plate(inputs, Element_Forces).QY;
+	MX = forces.MX;
+	MY = forces.MY;
+	MXY = forces.MXY;
+	QX = forces.QX;
+	QY = forces.QY;
 
 	inputs.geom = inputs.geom._data;
 	inputs.nf = inputs.nf._data;
-	inputs.connec = inputs.connec._data;F5
+	inputs.connec = inputs.connec._data;
 
-	//TODO to look at how to return more than one value,  look at the implementation of mesher
-	return { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data, inputs: inputs };
+	var results = { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data, inputs: inputs };
+
+	return results;
 
 }
 

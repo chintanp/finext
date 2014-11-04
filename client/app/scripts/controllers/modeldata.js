@@ -37,6 +37,9 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 	$scope.model = { length : ' ',
 		breadth : '',
 		thickness : '',
+    density : '',
+    elasticity: '',
+    poisson: '',
 		divx : '',
 		divy : ''
 	};

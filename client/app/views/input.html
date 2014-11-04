@@ -76,6 +76,30 @@
 					</div>
 				</div>
 
+        <!-- Density -->
+        <div class="form-group" >
+          <label for="tbdensity" class="col-xs-3 col-xs-offset-2  control-label">Density</label>
+          <div class="col-xs-4" id="tbdensity">
+            <input type="number" required tabindex="5" min="0" step="any" class="form-control" id="inp_density" placeholder="Density" ng-model="model.density">
+          </div>
+        </div>
+
+        <!-- Modulus of Elasticity -->
+        <div class="form-group" >
+          <label for="tbelasticity" class="col-xs-3 col-xs-offset-2  control-label">Modulus of Elasticity</label>
+          <div class="col-xs-4" id="tbelasticity">
+            <input type="number" required tabindex="6" min="0" step="any" class="form-control" id="inp_elasticity" placeholder="Modulus of elasticity" ng-model="model.elasticity">
+          </div>
+        </div>
+
+        <!-- Poisson's ratio -->
+        <div class="form-group" >
+          <label for="tbpoisson" class="col-xs-3 col-xs-offset-2  control-label">Poisson's Ratio</label>
+          <div class="col-xs-4" id="tbpoisson">
+            <input type="number" required tabindex="7" min="0" step="any" class="form-control" id="inp_poisson" placeholder="Poisson's Ratio" ng-model="model.poisson">
+          </div>
+        </div>
+
 				<!-- EndType DropDown -->
 				<div class="form-group">
 					<label for="ddendtype" class="col-xs-3 col-xs-offset-2 control-label">End Type</label>
