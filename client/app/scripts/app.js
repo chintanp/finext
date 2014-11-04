@@ -14,6 +14,7 @@ var app = angular.module('confeaApp', [
     'ngSanitize',
     'ngTouch',
 		'ngDropdowns',
+    'mobile-angular-ui',
 		'firebase'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
@@ -28,9 +29,9 @@ var app = angular.module('confeaApp', [
 		    templateUrl: 'views/input.html',
 		    controller: 'InputCtrl'
 	    })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/users/:userId', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',

@@ -73,7 +73,7 @@ io.on('connection', function(socket) {
 			var MX = results.mx;
 			var MY = results.my;
 			var MXY = results.mxy;
-			var QX = results.qx
+			var QX = results.qx;
 			var QY = results.qy;
 			var inputs = results.inputs;
 

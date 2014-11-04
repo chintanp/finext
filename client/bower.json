@@ -16,7 +16,8 @@
     "firebase": "1.0.24",
     "angularfire": "~0.8.2",
     "socket.io": "~1.1.0",
-    "socket.io-client": "~1.1.0"
+    "socket.io-client": "~1.1.0",
+    "mobile-angular-ui": "~1.1.0-beta.30"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

@@ -10,6 +10,9 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="bower_components/angular-dropdowns/dist/angular-dropdowns.css" />
+	<link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-hover.css" />
+	<link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.css" />
+	<link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-desktop.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:css(.tmp) styles/main.css -->
@@ -17,9 +20,6 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <!-- ng-table css -->
-  <link data-require="ng-table@*" data-semver="0.3.0" rel="stylesheet" href="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.css" />
-
 
 	<!-- endbuild -->
   <!-- <script type="text/javascript" src="/socket.io/socket.io.js"></script> -->
@@ -88,18 +88,17 @@
 <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
 <script src="bower_components/mockfirebase/dist/mockfirebase.js"></script>
 <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<!-- ng-table js -->
-<script data-require="ng-table@*" data-semver="0.3.0" src="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.js"></script>
 
 <script src="scripts/smoothscroll.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/modeldata.js"></script>
 <script src="scripts/controllers/contextdata.js"></script>
-<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/profile.js"></script>
 <script src="scripts/controllers/auth.js"></script>
 <script src="scripts/controllers/nav.js"></script>
 <script src="scripts/controllers/result.js"></script>
@@ -108,6 +107,7 @@
 <script src="scripts/services/contextsync.js"></script>
 <script src="scripts/services/auth.js"></script>
 <script src="scripts/services/socket.js"></script>
+<script src="scripts/services/profile.js"></script>
 
 
 

@@ -1,9 +1,70 @@
-<!--
-https://wrapbootstrap.com/theme/gin-admin-WB0L805L0
+<div class="row">
+  <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><b>FinEXT</b></a>
 
-http://bootsnipp.com/tags/forms
+        <div class="dropdownp">
 
-http://bootsnipp.com/snippets/featured/bootstrap-number-spinner
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Slab</a></li>
+            <li><a href="#">Beam</a></li>
+          </ul>
+          </li></div>
+      </div>
 
-http://bootsnipp.com/tags/profile
--->
+      <div class="navbar-right">
+
+        <ul class="nav navbar-nav navbar-collapse collapse">
+          <li class="active">
+          </li>
+        </ul>
+        <button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading" toggle target="collapseOne">
+      <h4 class="panel-title">
+        Models Created
+      </h4>
+    </div>
+    <div id="collapseOne" toggleable active-class="in" exclusion-group="accordion1" default="active" class="panel-collapse collapse">
+      <div class="panel-body">
+        List of all the created models here
+        <div class="row" ng-repeat="(key, model) in models">
+          <div class="col-md-8 col-xs-10">
+            <div class="info">
+              <a ng-href="#/input">{{ key }}</a>
+              <a ng-href="#/results">results </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" toggle target="collapseTwo">
+      <h4 class="panel-title">
+        Context Settings
+      </h4>
+    </div>
+    <div id="collapseTwo" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+      <div class="panel-body">
+        Options to create Context here
+      </div>
+    </div>
+  </div>
+
+</div>
