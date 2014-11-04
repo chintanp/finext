@@ -1,0 +1,17 @@
+<p class="" ng-hide="resultsAvailable">Calculating the results... </p>
+<div ng-show="resultsAvailable">
+	<h1 class="header text-centered">RESULTS</h1>
+	<div id="pane1">
+		<h2 class="header">Displacements</h2>
+		<table ng-show="resultsAvailable">
+			<tbody>
+			<tr ng-repeat="datarow in resultSet.disp_rot track by $index">
+				<td data-title="'Node No.'" >{{ $index + 1 }}</td>
+				<td data-title="'Displacement in Z'" >{{ datarow[0] }}</td>
+				<td data-title="'Rotation in X'" >{{ datarow[1] }}</td>
+				<td data-title="'Rotation in Y'" >{{ datarow[2] }}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
