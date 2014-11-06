@@ -6,7 +6,7 @@
 
 app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket) {
 
-	$rootScope.resultsAvailable = false;
+
 
   $scope.signedIn = Auth.signedIn;
 
@@ -19,8 +19,15 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Mo
     $location.path('/');
   };
 
-	$rootScope.resultSet = {};
-	$rootScope.resultSet.displacements = [];
+  if($rootScope.model.results) {
+    $rootScope.resultsAvailable = true;
+    $rootScope.resultSet = $rootScope.model.results || {};
+  }
+  else {
+    $rootScope.resultsAvailable = false;
+    $rootScope.resultSet = {};
+  }
+
 
 	socket.on('ModelSolved', function(data) {
 

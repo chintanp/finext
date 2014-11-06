@@ -4,9 +4,11 @@
 
 'use strict'
 
-app.factory('Profile', function($window, FIREBASE_URL, $firebase, ModelSync, $q) {
+app.factory('Profile', function($window, FIREBASE_URL, $filter, $firebase, ModelSync, $q) {
 
   var ref = new $window.Firebase(FIREBASE_URL);
+  var ref1 = new Firebase(FIREBASE_URL + '/models');
+  var sync = $firebase(ref1);
 
   var profile = {
     get: function(userId) {
@@ -31,6 +33,50 @@ app.factory('Profile', function($window, FIREBASE_URL, $firebase, ModelSync, $q)
         });
 
       return defer.promise;
+    },
+
+    getCurrentModel: function (modelId) {
+
+      /*var defer = $q.defer();
+
+      $firebase(ref.child('models').child(modelId))
+        .$asArray()
+        .$loaded()
+        .then(function(data) {
+
+          var model = {};
+
+          if(data) {
+            model = $filter('json')(data);
+          }
+
+          defer.resolve(model);
+        });
+
+      return defer.promise;*/
+
+     /* var data = $firebase(ref.child('models').child(modelId)).$asArray();
+
+      var model = {};
+
+      if(data) {
+        model = $filter('json')(data);
+      }
+
+      return model;*/
+
+      var sync = $firebase(ref1.child(modelId));
+      var list = sync.$asArray();
+      var obj = {};
+      list.$loaded().then(function() {
+        console.log("List: " + list);
+        return list;
+
+
+      });
+
+
+
     }
   };
 

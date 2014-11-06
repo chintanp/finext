@@ -1,160 +1,165 @@
 <!-- TODO add some speech recognition library like annyang for data input -->
-<div class="row">
-	<div id="navigation" class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><b>FinEXT</b></a>
+<div class="app" ng-cloak>
+  <div class="row">
+    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>FinEXT</b></a>
 
-				<div class="dropdownp">
+          <div class="dropdownp">
 
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Slab</a></li>
-						<li><a href="#">Beam</a></li>
-					</ul>
-					</li></div>
-			</div>
-
-			<div class="navbar-right">
-
-				<ul class="nav navbar-nav navbar-collapse collapse">
-					<li class="active">
-						<a ng-href="#/users/{{ user.uid }}" class="smothscroll">
-							<img width="25" height="25" ng-src="http://www.gravatar.com/avatar/{{ user.profile.md5_hash }}" class="nav-pic">
-							{{ user.profile.username }}
-						</a>
-					</li>
-				</ul>
-				<button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid">
-	<div class="panel panel-success">
-		<div class="panel-body text center  ">
-
-			<!-- Form Controls for Input -->
-
-			<form class="form-horizontal" name="input_form" role="form" ng-submit="solve()">
-
-				<!-- Context DropDown -->
-				<div class="form-group" >
-					<label for="ddcontext" class="col-xs-3 col-xs-offset-2 control-label">Use Context</label>
-					<div class="col-xs-2" style="z-index: 2"  id="ddcontext">
-						<div class="btn btn-default dropdown-toggle form-control" tabindex="1" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
-					</div>
-				</div>
-
-				<!-- Length -->
-				<div class="form-group" >
-					<label for="tblength" class="col-xs-3 col-xs-offset-2  control-label">Length</label>
-					<div class="col-xs-4" id="tblength">
-						<input type="number" required tabindex="2" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
-					</div>
-				</div>
-
-				<!-- Breadth -->
-				<div class="form-group">
-					<label for="tbbreadth" class="col-xs-3 col-xs-offset-2  control-label">Breadth</label>
-					<div class="col-xs-4" id="tbbreadth">
-						<input type="number" required tabindex="3" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
-					</div>
-				</div>
-
-				<!-- Thickness -->
-				<div class="form-group" >
-					<label for="tbthickness" class="col-xs-3 col-xs-offset-2  control-label">Thickness</label>
-					<div class="col-xs-4" id="tbthickness">
-						<input type="number" required tabindex="4" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
-					</div>
-				</div>
-
-        <!-- Density -->
-        <div class="form-group" >
-          <label for="tbdensity" class="col-xs-3 col-xs-offset-2  control-label">Density</label>
-          <div class="col-xs-4" id="tbdensity">
-            <input type="number" required tabindex="5" min="0" step="any" class="form-control" id="inp_density" placeholder="Density" ng-model="model.density">
-          </div>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Slab</a></li>
+              <li><a href="#">Beam</a></li>
+            </ul>
+            </li></div>
         </div>
 
-        <!-- Modulus of Elasticity -->
-        <div class="form-group" >
-          <label for="tbelasticity" class="col-xs-3 col-xs-offset-2  control-label">Modulus of Elasticity</label>
-          <div class="col-xs-4" id="tbelasticity">
-            <input type="number" required tabindex="6" min="0" step="any" class="form-control" id="inp_elasticity" placeholder="Modulus of elasticity" ng-model="model.elasticity">
-          </div>
+        <div class="navbar-right">
+
+          <ul class="nav navbar-nav navbar-collapse collapse">
+            <li class="active">
+              <a ng-href="#/users/{{ user.uid }}" class="smothscroll">
+                <img width="25" height="25" ng-src="http://www.gravatar.com/avatar/{{ user.profile.md5_hash }}" class="nav-pic">
+                <span class="" ng-bind="user.profile.username">Loading...
+                </span>
+              </a>
+            </li>
+          </ul>
+          <button type="submit" ng-click="logout()" class="btn btn-large btn-primary navbar-btn">LOGOUT</button>
+
         </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Poisson's ratio -->
-        <div class="form-group" >
-          <label for="tbpoisson" class="col-xs-3 col-xs-offset-2  control-label">Poisson's Ratio</label>
-          <div class="col-xs-4" id="tbpoisson">
-            <input type="number" required tabindex="7" min="0" step="any" class="form-control" id="inp_poisson" placeholder="Poisson's Ratio" ng-model="model.poisson">
-          </div>
+  <div class="app-body">
+    <div class="container-fluid">
+      <div class="panel panel-success">
+        <div class="panel-body text center  ">
+
+          <!-- Form Controls for Input -->
+
+          <form class="form-horizontal" name="input_form" role="form" ng-submit="solve()">
+
+            <!-- Context DropDown -->
+            <div class="form-group" >
+              <label for="ddcontext" class="col-xs-3 col-xs-offset-2 control-label">Use Context</label>
+              <div class="col-xs-2" style="z-index: 2"  id="ddcontext">
+                <div class="btn btn-default dropdown-toggle form-control" tabindex="1" id="dd_contexttype" dropdown-select="contextTypeOptions" dropdown-model="contextTypeSelected" dropdown-item-label="text"></div>
+              </div>
+            </div>
+
+            <!-- Length -->
+            <div class="form-group" >
+              <label for="tblength" class="col-xs-3 col-xs-offset-2  control-label">Length</label>
+              <div class="col-xs-4" id="tblength">
+                <input type="number" required tabindex="2" min="0" step="any" class="form-control" id="inp_length" placeholder="Length" ng-model="model.length">
+              </div>
+            </div>
+
+            <!-- Breadth -->
+            <div class="form-group">
+              <label for="tbbreadth" class="col-xs-3 col-xs-offset-2  control-label">Breadth</label>
+              <div class="col-xs-4" id="tbbreadth">
+                <input type="number" required tabindex="3" min="0" step="any" class="form-control" id="inp_breadth" placeholder="Breadth" ng-model="model.breadth">
+              </div>
+            </div>
+
+            <!-- Thickness -->
+            <div class="form-group" >
+              <label for="tbthickness" class="col-xs-3 col-xs-offset-2  control-label">Thickness</label>
+              <div class="col-xs-4" id="tbthickness">
+                <input type="number" required tabindex="4" min="0" step="any" class="form-control" id="inp_thickness" placeholder="Thickness" ng-model="model.thickness">
+              </div>
+            </div>
+
+            <!-- Density -->
+            <div class="form-group" >
+              <label for="tbdensity" class="col-xs-3 col-xs-offset-2  control-label">Density</label>
+              <div class="col-xs-4" id="tbdensity">
+                <input type="number" required tabindex="5" min="0" step="any" class="form-control" id="inp_density" placeholder="Density" ng-model="model.density">
+              </div>
+            </div>
+
+            <!-- Modulus of Elasticity -->
+            <div class="form-group" >
+              <label for="tbelasticity" class="col-xs-3 col-xs-offset-2  control-label">Modulus of Elasticity</label>
+              <div class="col-xs-4" id="tbelasticity">
+                <input type="number" required tabindex="6" min="0" step="any" class="form-control" id="inp_elasticity" placeholder="Modulus of elasticity" ng-model="model.elasticity">
+              </div>
+            </div>
+
+            <!-- Poisson's ratio -->
+            <div class="form-group" >
+              <label for="tbpoisson" class="col-xs-3 col-xs-offset-2  control-label">Poisson's Ratio</label>
+              <div class="col-xs-4" id="tbpoisson">
+                <input type="number" required tabindex="7" min="0" step="any" class="form-control" id="inp_poisson" placeholder="Poisson's Ratio" ng-model="model.poisson">
+              </div>
+            </div>
+
+            <!-- EndType DropDown -->
+            <div class="form-group">
+              <label for="ddendtype" class="col-xs-3 col-xs-offset-2 control-label">End Type</label>
+              <div class="col-xs-4" style="z-index: 5"  id="ddendtype">
+                <div class="btn btn-default dropdown-toggle form-control" tabindex="5" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
+              </div>
+            </div>
+
+            <!-- Load DropDown & TextBox-->
+            <div class="form-group" >
+              <div class="row">
+                <label for="ddloadtype" class="col-xs-3 col-xs-offset-2 control-label">Load Type</label>
+                <div class="col-xs-2" style="z-index: 4"  id="ddloadtype">
+                  <div class="btn btn-default dropdown-toggle form-control" tabindex="6" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
+                </div>
+                <label for="load" class="col-xs-1 control-label">Load</label>
+                <div class="col-xs-2" id="load">
+                  <input type="number" required class="form-control" tabindex="7" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
+                </div>
+              </div>
+            </div>
+
+            <!-- Element-Type DropDown -->
+            <div class="form-group" >
+              <label for="ddelementtype" class="col-xs-3 col-xs-offset-2 control-label">Element Type</label>
+              <div class="col-xs-2" style="z-index: 2"  id="ddelementtype">
+                <div class="btn btn-default dropdown-toggle form-control" tabindex="8" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
+              </div>
+            </div>
+
+            <!-- Divisions in X -->
+            <div class="form-group" >
+              <label for="tbdivx" class="col-xs-3 col-xs-offset-2 control-label">Divisions in X</label>
+              <div class="col-xs-2" id="tbdivx">
+                <input type="number" min="0" required step="1" id="inp_divx" tabindex="9" class="form-control" ng-model="model.divx" />
+              </div>
+            </div>
+
+            <!-- Divisions in Y -->
+            <div class="form-group" >
+              <label for="tbdivy" class="col-xs-3 col-xs-offset-2 control-label">Divisions in Y</label>
+              <div class="col-xs-2" id="tbdivy">
+                <input type="number" min="0" required step="1" id="inp_divy" tabindex="10" class="form-control" ng-model="model.divy" />
+              </div>
+            </div>
+
+            <!-- Buttons for Solve and Reset -->
+            <div class="col-xs-offset-4" style="padding-right: 20">
+              <button type="reset" tabindex="11" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
+            </div>
+            <div class="col-xs-offset-2" style="padding-left: 20">
+              <button type="submit" tabindex="12" class="btn btn-lg btn-success col-lg-2 col-xs-4" ng-show="signedIn()">SOLVE</button>
+            </div>
+          </form>
+
         </div>
-
-				<!-- EndType DropDown -->
-				<div class="form-group">
-					<label for="ddendtype" class="col-xs-3 col-xs-offset-2 control-label">End Type</label>
-					<div class="col-xs-4" style="z-index: 5"  id="ddendtype">
-						<div class="btn btn-default dropdown-toggle form-control" tabindex="5" id="dd_endtype" dropdown-select="endTypeOptions" dropdown-model="model.endTypeSelected" dropdown-item-label="text"></div>
-					</div>
-				</div>
-
-				<!-- Load DropDown & TextBox-->
-				<div class="form-group" >
-					<div class="row">
-						<label for="ddloadtype" class="col-xs-3 col-xs-offset-2 control-label">Load Type</label>
-						<div class="col-xs-2" style="z-index: 4"  id="ddloadtype">
-							<div class="btn btn-default dropdown-toggle form-control" tabindex="6" id="dd_loadtype" dropdown-select="loadTypeOptions" dropdown-model="model.loadData.loadTypeSelected" dropdown-item-label="text"></div>
-						</div>
-						<label for="load" class="col-xs-1 control-label">Load</label>
-						<div class="col-xs-2" id="load">
-							<input type="number" required class="form-control" tabindex="7" id="inp_load" placeholder="Load Value" ng-model="model.loadData.loadValue">
-						</div>
-					</div>
-				</div>
-
-				<!-- Element-Type DropDown -->
-				<div class="form-group" >
-					<label for="ddelementtype" class="col-xs-3 col-xs-offset-2 control-label">Element Type</label>
-					<div class="col-xs-2" style="z-index: 2"  id="ddelementtype">
-						<div class="btn btn-default dropdown-toggle form-control" tabindex="8" dropdown-select="elementTypeOptions" dropdown-model="model.elementTypeSelected" dropdown-item-label="text"></div>
-					</div>
-				</div>
-
-				<!-- Divisions in X -->
-				<div class="form-group" >
-					<label for="tbdivx" class="col-xs-3 col-xs-offset-2 control-label">Divisions in X</label>
-					<div class="col-xs-2" id="tbdivx">
-						<input type="number" min="0" required step="1" id="inp_divx" tabindex="9" class="form-control" ng-model="model.divx" />
-					</div>
-				</div>
-
-				<!-- Divisions in Y -->
-				<div class="form-group" >
-					<label for="tbdivy" class="col-xs-3 col-xs-offset-2 control-label">Divisions in Y</label>
-					<div class="col-xs-2" id="tbdivy">
-						<input type="number" min="0" required step="1" id="inp_divy" tabindex="10" class="form-control" ng-model="model.divy" />
-					</div>
-				</div>
-
-				<!-- Buttons for Solve and Reset -->
-				<div class="col-xs-offset-4" style="padding-right: 20">
-					<button type="reset" tabindex="11" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
-				</div>
-				<div class="col-xs-offset-2" style="padding-left: 20">
-					<button type="submit" tabindex="12" class="btn btn-lg btn-success col-lg-2 col-xs-4" ng-show="signedIn()">SOLVE</button>
-				</div>
-			</form>
-
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>

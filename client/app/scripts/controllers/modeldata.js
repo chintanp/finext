@@ -4,7 +4,7 @@
 
 'use strict';
 
-app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket) {
+app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth, socket) {
 
 	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
 
@@ -32,17 +32,41 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 	 divx : " ",
 	 divy : " "
 	 };
-	 */
+  */
+  if($rootScope.model) {
+    $scope.model =  { length : $rootScope.model.length || ' ',
+      breadth : $rootScope.model.breadth || '',
+      thickness : $rootScope.model.thickness || '',
+      density : $rootScope.model.density || '',
+      elasticity: $rootScope.model.elasticity || '',
+      poisson: $rootScope.model.poisson || '',
+      divx : $rootScope.model.divx || '',
+      divy : $rootScope.model.divy || ''
+    };
 
-	$scope.model = { length : ' ',
-		breadth : '',
-		thickness : '',
-    density : '',
-    elasticity: '',
-    poisson: '',
-		divx : '',
-		divy : ''
-	};
+    $scope.model.loadData = $rootScope.model.loadData || { };
+    $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || {};
+    $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || {};
+  }
+
+  else {
+    $scope.model = {
+      length: '',
+      breadth: '',
+      thickness: '',
+      density: '',
+      elasticity: '',
+      poisson: '',
+      divx: '',
+      divy: ''
+    };
+
+    $scope.model.loadData = { };
+    $scope.model.loadData.loadTypeSelected = {};
+    $scope.model.loadData.loadValue = {};
+  }
+
+
 
 	// Types updated to match the backend, now start from one, all except context.
 
@@ -61,7 +85,7 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		}
 	];
 
-	$scope.model.endTypeSelected = {};
+	// $scope.model.endTypeSelected = {};
 
 	$scope.loadTypeOptions = [
 		{
@@ -74,9 +98,7 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		}
 	];
 
-	$scope.model.loadData = {};
-	$scope.model.loadData.loadTypeSelected = {};
-	$scope.model.loadData.loadValue = {};
+
 
 	$scope.elementTypeOptions = [
 		{
@@ -89,7 +111,7 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		}
 	];
 
-	$scope.model.elementTypeSelected = {};
+	// $scope.model.elementTypeSelected = {};
 
 	$scope.contextTypeOptions = [
 		{

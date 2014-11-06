@@ -55,6 +55,14 @@ var app = angular.module('confeaApp', [
 		    templateUrl: 'views/results.html',
 		    controller: 'ResultCtrl'
 	    })
+      .when('/users/:userId/modelOverlay', {
+        templateUrl: 'views/model.html',
+        controller: ''
+      })
+      .when('/users/:userId/resultOverlay', {
+        templateUrl: 'views/resultO.html',
+        controller: 'ProfileCtrl'
+      })
       .when('/graph', {
         templateUrl: 'views/graph.html',
         controller: 'GraphCtrl'
