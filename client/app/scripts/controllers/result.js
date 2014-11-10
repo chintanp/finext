@@ -4,9 +4,10 @@
 
 // Controller for formatting results etc.
 
-app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket) {
+app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Auth, socket) {
 
 
+  $rootScope.resultsAvailable = false;
 
   $scope.signedIn = Auth.signedIn;
 
@@ -40,6 +41,7 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Mo
   });
 
 	$scope.logout = function() {
+    $rootScope.model = {};
 		Auth.logout();
 		$location.path('/');
 	};

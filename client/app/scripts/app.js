@@ -23,15 +23,25 @@ var app = angular.module('confeaApp', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'InputCtrl'
+        controller: ''
       })
 	    .when('/input', {
 		    templateUrl: 'views/input.html',
-		    controller: 'InputCtrl'
+		    controller: 'InputCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
 	    })
       .when('/users/:userId', {
         templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl'
+        controller: 'ProfileCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
@@ -53,19 +63,21 @@ var app = angular.module('confeaApp', [
 	    })
 	    .when('/results', {
 		    templateUrl: 'views/results.html',
-		    controller: 'ResultCtrl'
+		    controller: 'ResultCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
 	    })
-      .when('/users/:userId/modelOverlay', {
-        templateUrl: 'views/model.html',
-        controller: ''
-      })
-      .when('/users/:userId/resultOverlay', {
-        templateUrl: 'views/resultO.html',
-        controller: 'ProfileCtrl'
-      })
       .when('/graph', {
         templateUrl: 'views/graph.html',
-        controller: 'GraphCtrl'
+        controller: 'GraphCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'

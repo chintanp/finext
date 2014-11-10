@@ -47,10 +47,14 @@ app.factory('Auth',
 			console.log("Logged in: ");
 			angular.copy(user, Auth.user);
 
+     /* $rootScope.model = {};
+      $rootScope.model.results = {};*/
+
       //Auth.user = user;
 
-      // TODO check the properties of Auth.user, does angular.copy work as expected, ?
 			Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();
+
+      //$scope.$apply(Auth.user);
 
 			console.log(Auth.user);
 
@@ -58,6 +62,9 @@ app.factory('Auth',
 
 		$rootScope.$on('$firebaseSimpleLogin:logout', function() {
 			console.log("Logged out: ");
+
+      /*$rootScope.model = {};
+      $rootScope.model.results = {};*/
 
 			if(Auth.user && Auth.user.profile) {
 				Auth.user.profile.$destroy();

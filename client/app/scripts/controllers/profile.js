@@ -2,7 +2,7 @@
 
 'use strict'
 
-app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routeParams, Profile, ModelSync) {
+app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routeParams, Profile, Auth) {
 
   var uid = $routeParams.userId;
 
@@ -11,9 +11,27 @@ app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routePara
 
   $scope.profile = Profile.get(uid);
 
+  var prof = $scope.profile;
+
+  prof.$loaded().then(function() {
+
+    /*angular.forEach(prof, function(value, key) {
+
+      $scope.profile[key] = value;
+
+    });*/
+  });
+
   Profile.getModels(uid).then(function(models) {
 
-    $scope.models = models;
+    if(!models) {
+      $scope.modelsExist = false;
+    }
+    else {
+      $scope.models = models;
+      $scope.modelsExist = true;
+    }
+
 
   });
 
@@ -37,5 +55,20 @@ app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routePara
 
     $location.path('/results');
   }
+
+  $scope.deleteModel = function(key, model) {
+
+    Profile.delete(uid, key, model);
+    delete $scope.models[key];
+
+  }
+
+  $scope.logout = function() {
+
+    $rootScope.model = {};
+    Auth.logout();
+    $location.path('/');
+  };
+
 });
 

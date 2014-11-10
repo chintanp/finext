@@ -27,5 +27,7 @@ build/Release
 # Users Environment Variables
 .lock-wscript
 
+#webstorms folder
+.idea
 #webstorm settings folder
 .idea

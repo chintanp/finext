@@ -7,63 +7,69 @@
 
 app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
-	var ref = new Firebase(FIREBASE_URL + 'models');
+  var ref = new Firebase(FIREBASE_URL + 'models');
   var baseRef = new Firebase(FIREBASE_URL);
 
-	var models = $firebase(ref).$asArray();
+  var models = $firebase(ref).$asArray();
 
-	// CRUD functions exposed in this service, to work on modelInfo object.
-	var ModelSync = {
+  // CRUD functions exposed in this service, to work on modelInfo object.
+  var ModelSync = {
 
-		all: models,
+    all: models,
 
-		create: function(model) {
-			return models.$add(model).then(function(ref) {
+    create: function(model) {
+      $rootScope.model = model;
+      return models.$add(model).then(function(ref) {
 
-				// Also save the model UID to the user_models collection for ease of retrieval.
-				// $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
+        // Also save the model UID to the user_models collection for ease of retrieval.
+        // $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
         $firebase(baseRef.child('user_models').child(model.creatorUID)).$push(ref.name());
 
-				console.log("Firebase replied with : " + ref.name());
-				var uid = ref.name();
-				$rootScope.uid = uid;
-				socket.emit('BeginSolve', {id: uid});
-				//localStorage.setItem("id", uid);
-			});
-		},
+        console.log("Firebase replied with : " + ref.name());
+        var uid = ref.name();
+        $rootScope.uid = uid;
 
-		find: function(modelId) {
-			return $firebase(ref.child(modelId)).$asObject();
-		},
+        socket.emit('BeginSolve', {id: uid});
+        //localStorage.setItem("id", uid);
+      });
+    },
 
-		delete: function(model) {
-			return models.$remove(model);
-		}
+    find: function(modelId) {
+      return $firebase(ref.child(modelId)).$asObject();
+    },
 
-		/*getResults: function(modelId) {
-			*//*console.log("ModelId:" + modelId);
+    delete: function(model) {
 
-			$rootScope. resultSet = {};
-			$rootScope.resultSet.displacements = [];
+      $firebase(ref.child('models')).$remove(model.$id);
+      /*models.$remove(model).then(function(ref) {
+        return ref.name();
+      });*/
+    }
 
-			$rootScope.resultSet.displacements = $firebase(ref.child(modelId).child("results")).$asArray();
-			*//**//*results.$loaded().then(function(data) {
-				console.log("Data in getResults: " + data);
-				if(data) {
-					console.log("Data received from firebase");
-					$rootScope.resultsAvailable = true;
-					$rootScope.resultSet = data;
-				}*//**//*
-			if($rootScope.resultSet.displacements) {
-				$rootScope.resultsAvailable = true;
-				$rootScope.resultSet.displacements = JSON.parse($rootScope.resultSet.displacements);
-			}
-*//*
+    /*getResults: function(modelId) {
+     *//*console.log("ModelId:" + modelId);
+
+     $rootScope. resultSet = {};
+     $rootScope.resultSet.displacements = [];
+
+     $rootScope.resultSet.displacements = $firebase(ref.child(modelId).child("results")).$asArray();
+     *//**//*results.$loaded().then(function(data) {
+     console.log("Data in getResults: " + data);
+     if(data) {
+     console.log("Data received from firebase");
+     $rootScope.resultsAvailable = true;
+     $rootScope.resultSet = data;
+     }*//**//*
+     if($rootScope.resultSet.displacements) {
+     $rootScope.resultsAvailable = true;
+     $rootScope.resultSet.displacements = JSON.parse($rootScope.resultSet.displacements);
+     }
+     *//*
 
 
-			return;
-		}*/
-	};
+     return;
+     }*/
+  };
 
-	return ModelSync;
+  return ModelSync;
 });

@@ -3,7 +3,7 @@
 // Is the user dependency injected here ?
 
 app.controller('AuthCtrl',
-	function($scope, $location, Auth, user) {
+	function($scope, $rootScope, $location, Auth, user) {
 
 		if(Auth.signedIn()) {
 			$location.path('/input');
@@ -28,6 +28,7 @@ app.controller('AuthCtrl',
 					user.username = $scope.user.username;
 					return Auth.createProfile(user);
 				}).then(function () {
+          $rootScope.model = {};
 					$location.path('/input');
 				});
 			}, function(error) {

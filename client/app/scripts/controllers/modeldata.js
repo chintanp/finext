@@ -4,53 +4,17 @@
 
 'use strict';
 
-app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth, socket) {
-
-	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
+app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth) {
 
   $scope.signedIn = Auth.signedIn;
 
+
 	if(Auth.signedIn()) {
-		$scope.user = Auth.user;
+		$rootScope.user = Auth.user;
 	}
 
-  // console.log(user);
-
-	$scope.logout = function() {
-		Auth.logout();
-		$location.path('/');
-	};
-
-
-
-  //$scope.logout = Auth.logout;
-
-	//$scope.username = Auth.
-	$scope.modelInfo = ModelSync.all; /*{ length : " ",
-	 breadth : " ",
-	 thickness : " ",
-	 divx : " ",
-	 divy : " "
-	 };
-  */
-  if($rootScope.model) {
-    $scope.model =  { length : $rootScope.model.length || ' ',
-      breadth : $rootScope.model.breadth || '',
-      thickness : $rootScope.model.thickness || '',
-      density : $rootScope.model.density || '',
-      elasticity: $rootScope.model.elasticity || '',
-      poisson: $rootScope.model.poisson || '',
-      divx : $rootScope.model.divx || '',
-      divy : $rootScope.model.divy || ''
-    };
-
-    $scope.model.loadData = $rootScope.model.loadData || { };
-    $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || {};
-    $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || {};
-  }
-
-  else {
-    $scope.model = {
+  if(typeof $rootScope.model === 'undefined') {
+    $rootScope.model = {
       length: '',
       breadth: '',
       thickness: '',
@@ -61,12 +25,33 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
       divy: ''
     };
 
-    $scope.model.loadData = { };
-    $scope.model.loadData.loadTypeSelected = {};
-    $scope.model.loadData.loadValue = {};
+    $rootScope.model.loadData = {};
+    $rootScope.model.loadData.loadTypeSelected = {};
+    $rootScope.model.loadData.loadValue = {};
+
+    $rootScope.model.endTypeSelected = {};
+    $rootScope.model.elementTypeSelected = {};
   }
 
+  /*else {
+    $scope.model =  { length : $rootScope.model.length || ' ',
+      breadth : $rootScope.model.breadth || '',
+      thickness : $rootScope.model.thickness || '',
+      density : $rootScope.model.density || '',
+      elasticity: $rootScope.model.elasticity || '',
+      poisson: $rootScope.model.poisson || '',
+      divx : $rootScope.model.divx || '',
+      divy : $rootScope.model.divy || ''
+    };
 
+    $scope.model.loadData = $rootScope.model.loadData || '';
+    $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || '';
+    $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || '';
+
+    $scope.model.endTypeSelected = $rootScope.model.endTypeSelected || '';
+    $scope.model.elementTypeSelected = $rootScope.model.elementTypeSelected || '';
+
+  }*/
 
 	// Types updated to match the backend, now start from one, all except context.
 
@@ -85,8 +70,6 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 		}
 	];
 
-	// $scope.model.endTypeSelected = {};
-
 	$scope.loadTypeOptions = [
 		{
 			text: 'Concentrated at Center',
@@ -98,8 +81,6 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 		}
 	];
 
-
-
 	$scope.elementTypeOptions = [
 		{
 			text: '4-Noded',
@@ -110,8 +91,6 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 			value: 2
 		}
 	];
-
-	// $scope.model.elementTypeSelected = {};
 
 	$scope.contextTypeOptions = [
 		{
@@ -127,13 +106,16 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 
 	$scope.contextTypeSelected = {};
 
+  //angular.copy($scope.user, Auth.user);
 
 	$scope.solve = function() {
 
-		$scope.model.creator = $scope.user.profile.username;
-		$scope.model.creatorUID = $scope.user.uid;
+   // angular.copy($scope.user, Auth.user);
 
-		ModelSync.create($scope.model).then(function() {
+		$rootScope.model.creator = $scope.user.profile.username;
+		$rootScope.model.creatorUID = $scope.user.uid;
+
+		ModelSync.create($rootScope.model).then(function() {
 
 			//console.log("$push returned : in CTRL: " + ref.name());
 			// May reset the UI to initial state.
@@ -144,10 +126,11 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 		});
 	};
 
-	/*socket.on('newz', function(data) {
-	 console.log("The server sent: " + data);
-	 //alert("The server sent: " + data);
-	 socket.emit('event', {my: 'data'});
-	 });*/
+  $scope.logout = function() {
+    $rootScope.model = {};
+    $rootScope.model.results = {};
+    Auth.logout();
+    $location.path('/');
+  };
 
 });

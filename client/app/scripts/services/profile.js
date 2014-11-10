@@ -8,24 +8,24 @@ app.factory('Profile', function($window, FIREBASE_URL, $filter, $firebase, Model
 
   var ref = new $window.Firebase(FIREBASE_URL);
   var ref1 = new Firebase(FIREBASE_URL + '/models');
-  var sync = $firebase(ref1);
+  var ref2 = new Firebase(FIREBASE_URL);
 
   var profile = {
-    get: function(userId) {
+    get: function (userId) {
       return $firebase(ref.child('profile').child(userId)).$asObject();
     },
 
-    getModels: function(userId) {
+    getModels: function (userId) {
 
       var defer = $q.defer();
 
       $firebase(ref.child('user_models').child(userId))
         .$asArray()
         .$loaded()
-        .then(function(data) {
+        .then(function (data) {
           var models = {};
 
-          for(var i = 0; i < data.length; i++) {
+          for (var i = 0; i < data.length; i++) {
             var value = data[i].$value;
             models[value] = ModelSync.find(value);
           }
@@ -35,50 +35,24 @@ app.factory('Profile', function($window, FIREBASE_URL, $filter, $firebase, Model
       return defer.promise;
     },
 
-    getCurrentModel: function (modelId) {
+    delete: function (userId, key, model) {
+      // ModelSync.delete(model);
 
-      /*var defer = $q.defer();
+      $firebase(ref.child('models')).$remove(key);
 
-      $firebase(ref.child('models').child(modelId))
+      $firebase(ref.child('user_models').child(userId))
         .$asArray()
         .$loaded()
-        .then(function(data) {
-
-          var model = {};
-
-          if(data) {
-            model = $filter('json')(data);
+        .then(function (data) {
+          for (var i = 0; i < data.length; i++) {
+            var value = data[i].$value;
+            if (value === key) {
+              $firebase(ref.child('user_models').child(userId)).$remove(data[i].$id);
+              alert("Record removed");
+            }
           }
-
-          defer.resolve(model);
-        });
-
-      return defer.promise;*/
-
-     /* var data = $firebase(ref.child('models').child(modelId)).$asArray();
-
-      var model = {};
-
-      if(data) {
-        model = $filter('json')(data);
-      }
-
-      return model;*/
-
-      var sync = $firebase(ref1.child(modelId));
-      var list = sync.$asArray();
-      var obj = {};
-      list.$loaded().then(function() {
-        console.log("List: " + list);
-        return list;
-
-
-      });
-
-
-
+        })
     }
-  };
-
+  }
   return profile;
 });
