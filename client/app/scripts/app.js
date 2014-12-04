@@ -7,7 +7,6 @@
 /* global app:true */
 
 var app = angular.module('confeaApp', [
-    'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -45,12 +44,7 @@ var app = angular.module('confeaApp', [
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
-        controller: 'AuthCtrl',
-		    resolve: {
-			    user: function(Auth) {
-				    return Auth.resolveUser();
-			    }
-		    }
+        controller: 'AuthCtrl'
       })
 	    .when('/login', {
 		    templateUrl: 'views/login.html',

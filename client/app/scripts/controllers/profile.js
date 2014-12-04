@@ -60,7 +60,8 @@ app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routePara
 
     Profile.delete(uid, key, model);
     delete $scope.models[key];
-
+    $rootScope.model = {};
+    $rootScope.model.results = {};
   }
 
   $scope.logout = function() {
