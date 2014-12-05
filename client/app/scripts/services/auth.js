@@ -79,8 +79,8 @@ app.factory('Auth',
 				var authData = $rootScope.auth.$getAuth();
 
 				if (authData) {
-					angular.copy(user, Auth.user);
-					Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();
+					/*angular.copy(user, Auth.user);
+					Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();*/
 					return true;
 				} else {
 					return false;
@@ -94,7 +94,7 @@ app.factory('Auth',
 		 return Auth.signedIn();
 		 };*/
 
-		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
+		/*$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
 		 console.log("Logged in: ");
 		 angular.copy(user, Auth.user);
 
@@ -109,7 +109,7 @@ app.factory('Auth',
 
 		 console.log(Auth.user);
 
-		 });
+		 });*/
 
 		/* $rootScope.$on('$firebaseSimpleLogin:logout', function() {
 		 console.log("Logged out: ");
