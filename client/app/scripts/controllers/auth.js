@@ -17,7 +17,7 @@ app.controller('AuthCtrl',
 
       $rootScope.auth.$authWithPassword($scope.user).then(function(authData) {
         console.log("Logged in as:", authData.uid);
-
+	      Auth.login(authData);
         $location.path('/input');
       }).catch(function(error) {
         console.error("Authentication failed:", error);
@@ -44,6 +44,7 @@ app.controller('AuthCtrl',
         user.md5_hash = CryptoJS.MD5($rootScope.user.email).toString();
         user.uid = authData.uid;
         Auth.createProfile(user);
+	      Auth.login(user);
         $location.path('/input');
 
       }).catch(function(error) {
