@@ -2,7 +2,7 @@
  * Created by chin on 28/10/2014.
  */
 
-app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket) {
+app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket, $document) {
 
   google.load("visualization", "1");
   google.setOnLoadCallback(setUp);
@@ -59,8 +59,11 @@ app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, Mod
       tooltips: tooltipStrings, xTitle: xAxisHeader, yTitle: yAxisHeader, zTitle: zAxisHeader, restrictXRotation: false
     };
 
-    surfacePlot.draw(data, options);
-    surfacePlot2.draw(data, options);
+	  $document.ready( function() {
+		  surfacePlot.draw(data, options);
+		  surfacePlot2.draw(data, options);
+	  });
+
   }
 
   setUp();
