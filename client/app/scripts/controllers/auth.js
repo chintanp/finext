@@ -39,9 +39,9 @@ app.controller('AuthCtrl',
       }).then(function(authData) {
         console.log("Logged in as:", authData.uid);
         var user = {};
-        user.username = $rootScope.user.username;
-        user.email = $rootScope.user.email;
-        user.md5_hash = CryptoJS.MD5($rootScope.user.email).toString();
+        user.username = $scope.user.username;
+        user.email = $scope.user.email;
+        user.md5_hash = CryptoJS.MD5($scope.user.email).toString();
         user.uid = authData.uid;
         Auth.createProfile(user);
 	      Auth.login(user);

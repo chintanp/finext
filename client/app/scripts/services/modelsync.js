@@ -25,8 +25,8 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
         // $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
         $firebase(baseRef.child('user_models').child(model.creatorUID)).$push(ref.name());
 
-        console.log("Firebase replied with : " + ref.name());
-        var uid = ref.name();
+        console.log("Firebase replied with : " + ref.key());
+        var uid = ref.key();
         $rootScope.uid = uid;
 
         socket.emit('BeginSolve', {id: uid});

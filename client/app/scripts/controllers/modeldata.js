@@ -127,8 +127,8 @@ app.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, A
 	};
 
   $scope.logout = function() {
-    $rootScope.model = {};
-    $rootScope.model.results = {};
+  /*  $rootScope.model = {};
+    $rootScope.model.results = {};*/
     Auth.logout();
     $location.path('/');
   };

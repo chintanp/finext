@@ -45,17 +45,18 @@ app.factory('Auth',
 				console.log("Logged in: ");
 				angular.copy(user, Auth.user);
 
-				$rootScope.model = {};
-				$rootScope.model.results = {};
-
+			/*	$rootScope.model = {};
+				$rootScope.model.results = {};*/
+			 angular.copy(user, $rootScope.user);
 				Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();
 
 				console.log(Auth.user);
 			},
 			logout: function() {
 
-				$rootScope.model = {};
-				$rootScope.model.results = {};
+				$rootScope.model.results = undefined;
+				$rootScope.model = undefined;
+
 
 				if(Auth.user && Auth.user.profile) {
 					Auth.user.profile.$destroy();
