@@ -23,7 +23,7 @@ app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
         // Also save the model UID to the user_models collection for ease of retrieval.
         // $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
-        $firebase(baseRef.child('user_models').child(model.creatorUID)).$push(ref.name());
+        $firebase(baseRef.child('user_models').child(model.creatorUID)).$push(ref.key());
 
         console.log("Firebase replied with : " + ref.key());
         var uid = ref.key();

@@ -2,7 +2,7 @@
  * Created by chin on 28/10/2014.
  */
 
-app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket, $document) {
+app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket, $window) {
 
   google.load("visualization", "1");
   google.setOnLoadCallback(setUp);
@@ -59,10 +59,17 @@ app.controller('GraphCtrl', function($scope, $rootScope, $location, $filter, Mod
       tooltips: tooltipStrings, xTitle: xAxisHeader, yTitle: yAxisHeader, zTitle: zAxisHeader, restrictXRotation: false
     };
 
-	  $document.ready( function() {
+    surfacePlot.draw(data, options);
+    surfacePlot2.draw(data, options);
+
+    // http://almende.github.io/chap-links-library/js/graph3d/doc/
+    // http://www.sitepoint.com/creating-visualization-app-using-google-charts-api-angularjs/
+
+
+	 /* $window.onload( function() {
 		  surfacePlot.draw(data, options);
 		  surfacePlot2.draw(data, options);
-	  });
+	  });*/
 
   }
 
