@@ -6,7 +6,7 @@
 
 /* global app:true */
 
-var app = angular.module('confeaApp', [
+var prep = angular.module('prep', [
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -18,7 +18,9 @@ var app = angular.module('confeaApp', [
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
- app.config(function ($routeProvider) {
+// angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
+
+ prep.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
@@ -66,14 +68,16 @@ var app = angular.module('confeaApp', [
 	    })
       .when('/graph', {
         templateUrl: 'views/graph.html',
-        controller: 'GraphCtrl',
-        resolve: {
+        controller: 'GraphCtrl'
+       /* resolve: {
           user: function(Auth) {
             return Auth.resolveUser();
           }
-        }
+        }*/
       })
       .otherwise({
         redirectTo: '/'
       });
   });
+
+angular.bootstrap(document.getElementById("textContainer"), ["prep"]);

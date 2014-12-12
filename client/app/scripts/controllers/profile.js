@@ -2,7 +2,7 @@
 
 'use strict'
 
-app.controller('ProfileCtrl', function($scope, $rootScope, $location, $routeParams, Profile, Auth) {
+prep.controller('ProfileCtrl', function($scope, $rootScope, $location, $routeParams, Profile, Auth) {
 
   var uid = $routeParams.userId;
 

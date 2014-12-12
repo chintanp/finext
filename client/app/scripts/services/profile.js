@@ -4,7 +4,7 @@
 
 'use strict'
 
-app.factory('Profile', function($window, FIREBASE_URL, $filter, $firebase, ModelSync, $q) {
+prep.factory('Profile', function($window, FIREBASE_URL, $filter, $firebase, ModelSync, $q) {
 
   var ref = new $window.Firebase(FIREBASE_URL);
   var ref1 = new Firebase(FIREBASE_URL + '/models');

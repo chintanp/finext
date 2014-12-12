@@ -5,7 +5,7 @@
 
 'use strict';
 
-app.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
+prep.factory('ModelSync', function($firebase, $rootScope, FIREBASE_URL, socket) {
 
   var ref = new Firebase(FIREBASE_URL + 'models');
   var baseRef = new Firebase(FIREBASE_URL);

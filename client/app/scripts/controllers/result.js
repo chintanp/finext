@@ -4,7 +4,7 @@
 
 // Controller for formatting results etc.
 
-app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Auth, socket) {
+prep.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Auth, socket) {
 
 
   $rootScope.resultsAvailable = false;
