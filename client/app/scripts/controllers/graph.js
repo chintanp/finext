@@ -5,7 +5,7 @@ google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(function () {
 	angular.bootstrap(document.body, ['postp']);
 });
-angular.module('postp.controllers', []).
+angular.module('postp').
 	controller('GraphCtrl', ['$scope',function($scope) {
 		var data = google.visualization.arrayToDataTable([
 			['Year', 'Sales', 'Expenses'],
@@ -16,6 +16,7 @@ angular.module('postp.controllers', []).
 		]);
 		var options = {
 			title: 'Company Performance'
+
 		};
 		var chart = new google.visualization.LineChart(document.getElementById('chartdiv'));
 		chart.draw(data, options);

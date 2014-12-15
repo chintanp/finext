@@ -18,9 +18,12 @@ var prep = angular.module('prep', [
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
+angular.module('postp', []);
+
+
 // angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
 
- prep.config(function ($routeProvider) {
+ angular.module("page", ["prep", "postp"], function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
