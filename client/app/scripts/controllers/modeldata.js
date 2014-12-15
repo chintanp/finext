@@ -4,7 +4,7 @@
 
 'use strict';
 
-prep.controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth) {
+angular.module('prep').controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth) {
 
   $scope.signedIn = Auth.signedIn;
 

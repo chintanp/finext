@@ -2,7 +2,7 @@
 
 // Is the user dependency injected here ?
 
-prep.controller('AuthCtrl',
+angular.module('prep').controller('AuthCtrl',
 	function($scope, $rootScope, $firebaseAuth, FIREBASE_URL, $location, Auth) {
 
     var ref = new Firebase(FIREBASE_URL);

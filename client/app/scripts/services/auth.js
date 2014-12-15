@@ -1,6 +1,6 @@
 'use strict';
 
-prep.factory('Auth',
+angular.module('prep').factory('Auth',
 	function($firebase, $firebaseAuth, FIREBASE_URL, $rootScope) {
 
 		var ref = new Firebase(FIREBASE_URL);
