@@ -80,4 +80,6 @@ var prep = angular.module('prep', [
       });
   });
 
-angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
+angular.element(document).ready(function() {
+	angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
+});
