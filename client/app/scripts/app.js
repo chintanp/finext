@@ -12,14 +12,20 @@ var prep = angular.module('prep', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-		'ngDropdowns',
+	'ngDropdowns',
+	'ngHammer',
     'mobile-angular-ui',
-		'firebase'
+    'LocalStorageModule',
+	'firebase'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
 // angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
-
+	
+ prep.config(['localStorageServiceProvider', function(localStorageServiceProvider) {
+        localStorageServiceProvider.setPrefix('ng-three-viewer');
+        }]);
+        	
  prep.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
