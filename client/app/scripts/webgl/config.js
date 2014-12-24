@@ -23,15 +23,15 @@ var SETUP = {
     },
     DEBUG_MODE: false,
     SAMPLES: {
-        GLTFURL : '/v1/dist/gltf/duck.json',
+        GLTFURL : '/obj/gltf/duck.json ',
         GLTFNAME: 'glTF_Duck',
-        JSONURL: '/v1/dist/js/female.js',
+        JSONURL: '/obj/js/female.js',
         JSONNAME: 'Textured_Lady',
-        OBJURL: '/v1/dist/obj/male02.obj',
-        MTLURL: '/v1/dist/obj/male02.mtl',
+        OBJURL: '/obj/male02.obj',
+        MTLURL: '/obj/male02.mtl',
         OBJNAME: 'No_Texture_Guy',
         OBJMTLNAME: 'Textured_Guy',
-        GRIDTEXTURE: '/v2/dist/obj/UV_Grid_Sm.jpg'
+        GRIDTEXTURE: '/obj/UV_Grid_Sm.jpg'
     },
     'LOAD_DELAY': 1500
 };

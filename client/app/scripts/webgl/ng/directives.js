@@ -33,7 +33,8 @@ prep.directive('select', ['ViewerFactory', function(ViewerFactory){
             });
         }
     };
-}]).directive('fileLoader', function() {
+}])
+/*.directive('fileLoader', function() {
     return {
         restrict: 'A',
         templateUrl: '/views/partials/file-loader.html'
@@ -49,7 +50,10 @@ prep.directive('select', ['ViewerFactory', function(ViewerFactory){
         templateUrl: '/views/partials/about.html'
     }
 
-}).directive('stopEvent', function () {
+})
+
+*/
+.directive('stopEvent', function () {
     return {
         restrict: 'A',
         link: function (scope, elem, attrs){

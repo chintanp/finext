@@ -1,6 +1,6 @@
 'use strict';
 
-prep.controller('GraphCtrl', ['$scope', 'ViewerFactory', function ($scope, ViewerFactory) {
+prep.controller('GraphCtrl', ['$scope', '$rootScope', 'ViewerFactory', function ($scope, $rootScope, ViewerFactory) {
 
     // Initialize the Viewer factory with the container ID information.
     // This is done via the AppController bootstrap.

@@ -1,6 +1,6 @@
 'use strict';
 
-prep.controller('FileLoaderController', ['$scope', 'MessageBus', 'ViewerFactory', 'StorageService', function ($scope, MessageBus, ViewerFactory, StorageService){
+prep.controller('FileLoaderController', ['$scope', '$rootScope', 'MessageBus', 'ViewerFactory', 'StorageService', function ($scope, $rootScope, MessageBus, ViewerFactory, StorageService){
 
     $scope.firstTime = true;
 
