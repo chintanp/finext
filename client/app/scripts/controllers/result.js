@@ -20,6 +20,11 @@ angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $lo
     $location.path('/');
   };
 
+  $scope.showGraph = function() {
+
+    $location.path('/graph');
+  };
+
   if($rootScope.model.results) {
     $rootScope.resultsAvailable = true;
     $rootScope.resultSet = $rootScope.model.results || {};
