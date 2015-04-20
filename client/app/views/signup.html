@@ -36,7 +36,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="username">Username</label>
 				<div class="col-md-5">
-					<input id="username" name="username" type="text" placeholder="Enter your Username" class="form-control input-md" ng-model="user.username">
+					<input id="username" name="username" tab-index="1" required type="text" placeholder="Enter your Username" class="form-control input-md" ng-model="user.username">
 
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="email">Email</label>
 				<div class="col-md-5">
-					<input id="email" name="email" type="text" placeholder="Email ID" class="form-control input-md" ng-model="user.email">
+					<input id="email" name="email" required tab-index="2" type="text" placeholder="Email ID" class="form-control input-md" ng-model="user.email">
 
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="password1">Password</label>
 				<div class="col-md-5">
-					<input id="password1" name="password1" type="password" placeholder="Choose a Password" class="form-control input-md" ng-model="user.password">
+					<input id="password1" name="password1" tab-index="3" required type="password" placeholder="Choose a Password" class="form-control input-md" ng-model="user.password">
 
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="password2">Retype Password</label>
 				<div class="col-md-5">
-					<input id="password2" name="password2" type="password" placeholder="Re-type the same password" class="form-control input-md">
+					<input id="password2" name="password2" tab-index="4" required type="password" placeholder="Re-type the same password" class="form-control input-md">
 
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="signup"></label>
 				<div class="col-md-5">
-					<button type="submit" id="signup" name="signup" class="btn btn-success btn-block">REGISTER</button>
+					<button type="submit" id="signup" tab-index="5" name="signup" class="btn btn-success btn-block">REGISTER</button>
 				</div>
 			</div>
 

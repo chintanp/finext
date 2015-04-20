@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FINEXT
 ======
 
@@ -30,4 +31,11 @@ TODO
     
   
   
+=======
+STAAD Macros
+============
 
+STAAD Pro is a Bentley systems software, popular with Structural Designers for finite element analysis and design of structures based on various codes and standards. 
+>>>>>>> 02cfc5b3100c714e95f139557af48e3cf83b29ec
+
+Macros allow programmatic control of the software. 

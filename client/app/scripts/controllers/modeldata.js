@@ -4,42 +4,54 @@
 
 'use strict';
 
-app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket) {
-
-	//var myFireBaseRef = new Firebase("http://finext.firebaseio.com/modelInfo");
+angular.module('prep').controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth) {
 
   $scope.signedIn = Auth.signedIn;
 
+
 	if(Auth.signedIn()) {
-		$scope.user = Auth.user;
+		$rootScope.user = Auth.user;
 	}
 
-  // console.log(user);
+  if(typeof $rootScope.model === 'undefined') {
+    $rootScope.model = {
+      length: '',
+      breadth: '',
+      thickness: '',
+      density: '',
+      elasticity: '',
+      poisson: '',
+      divx: '',
+      divy: ''
+    };
 
-	$scope.logout = function() {
-		Auth.logout();
-		$location.path('/');
-	};
+    $rootScope.model.loadData = {};
+    $rootScope.model.loadData.loadTypeSelected = {};
+    $rootScope.model.loadData.loadValue = {};
 
+    $rootScope.model.endTypeSelected = {};
+    $rootScope.model.elementTypeSelected = {};
+  }
 
+  /*else {
+    $scope.model =  { length : $rootScope.model.length || ' ',
+      breadth : $rootScope.model.breadth || '',
+      thickness : $rootScope.model.thickness || '',
+      density : $rootScope.model.density || '',
+      elasticity: $rootScope.model.elasticity || '',
+      poisson: $rootScope.model.poisson || '',
+      divx : $rootScope.model.divx || '',
+      divy : $rootScope.model.divy || ''
+    };
 
-  //$scope.logout = Auth.logout;
+    $scope.model.loadData = $rootScope.model.loadData || '';
+    $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || '';
+    $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || '';
 
-	//$scope.username = Auth.
-	$scope.modelInfo = ModelSync.all; /*{ length : " ",
-	 breadth : " ",
-	 thickness : " ",
-	 divx : " ",
-	 divy : " "
-	 };
-	 */
+    $scope.model.endTypeSelected = $rootScope.model.endTypeSelected || '';
+    $scope.model.elementTypeSelected = $rootScope.model.elementTypeSelected || '';
 
-	$scope.model = { length : ' ',
-		breadth : '',
-		thickness : '',
-		divx : '',
-		divy : ''
-	};
+  }*/
 
 	// Types updated to match the backend, now start from one, all except context.
 
@@ -58,8 +70,6 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		}
 	];
 
-	$scope.model.endTypeSelected = {};
-
 	$scope.loadTypeOptions = [
 		{
 			text: 'Concentrated at Center',
@@ -71,10 +81,6 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		}
 	];
 
-	$scope.model.loadData = {};
-	$scope.model.loadData.loadTypeSelected = {};
-	$scope.model.loadData.loadValue = {};
-
 	$scope.elementTypeOptions = [
 		{
 			text: '4-Noded',
@@ -85,8 +91,6 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 			value: 2
 		}
 	];
-
-	$scope.model.elementTypeSelected = {};
 
 	$scope.contextTypeOptions = [
 		{
@@ -102,13 +106,16 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 
 	$scope.contextTypeSelected = {};
 
+  //angular.copy($scope.user, Auth.user);
 
 	$scope.solve = function() {
 
-		$scope.model.creator = $scope.user.profile.username;
-		$scope.model.creatorUID = $scope.user.uid;
+   // angular.copy($scope.user, Auth.user);
 
-		ModelSync.create($scope.model).then(function() {
+		$rootScope.model.creator = $scope.user.profile.username;
+		$rootScope.model.creatorUID = $scope.user.uid;
+
+		ModelSync.create($rootScope.model).then(function() {
 
 			//console.log("$push returned : in CTRL: " + ref.name());
 			// May reset the UI to initial state.
@@ -119,10 +126,11 @@ app.controller('InputCtrl', function($scope, $location,  ModelSync, Auth, socket
 		});
 	};
 
-	/*socket.on('newz', function(data) {
-	 console.log("The server sent: " + data);
-	 //alert("The server sent: " + data);
-	 socket.emit('event', {my: 'data'});
-	 });*/
+  $scope.logout = function() {
+  /*  $rootScope.model = {};
+    $rootScope.model.results = {};*/
+    Auth.logout();
+    $location.path('/');
+  };
 
 });

@@ -2,37 +2,63 @@
 
 // Is the user dependency injected here ?
 
-app.controller('AuthCtrl',
-	function($scope, $location, Auth, user) {
+angular.module('prep').controller('AuthCtrl',
+	function($scope, $rootScope, $firebaseAuth, FIREBASE_URL, $location, Auth) {
+
+    var ref = new Firebase(FIREBASE_URL);
+
+    $rootScope.auth = $firebaseAuth(ref);
 
 		if(Auth.signedIn()) {
 			$location.path('/input');
 		}
 
-		/*$scope.$on('$firebaseSimpleLogin:login', function(e, user) {
-			console.log('User ' + user.id + ' successfully logged in. ')
-			$location.path('/input');
-		});*/
-
 		$scope.login = function() {
-			Auth.login($scope.user).then(function() {
+
+      $rootScope.auth.$authWithPassword($scope.user).then(function(authData) {
+        console.log("Logged in as:", authData.uid);
+	      Auth.login(authData);
+        $location.path('/input');
+      }).catch(function(error) {
+        console.error("Authentication failed:", error);
+      });
+			/*Auth.login($scope.user).then(function() {
 				$location.path('/input');
 			}, function(error) {
 				$scope.error = error.toString();
-			});
+			});*/
+
 		};
 
 		$scope.register = function() {
-			Auth.register($scope.user).then(function(user) {
+
+      $rootScope.auth.$createUser($scope.user.email, $scope.user.password).then(function() {
+        console.log("User created successfully!");
+
+        return $rootScope.auth.$authWithPassword($scope.user);
+      }).then(function(authData) {
+        console.log("Logged in as:", authData.uid);
+        var user = {};
+        user.username = $scope.user.username;
+        user.email = $scope.user.email;
+        user.md5_hash = CryptoJS.MD5($scope.user.email).toString();
+        user.uid = authData.uid;
+        Auth.createProfile(user);
+	      Auth.login(user);
+        $location.path('/input');
+
+      }).catch(function(error) {
+        console.error("Error: ", error);
+      });
+			/*Auth.register($scope.user).then(function() {
 				return Auth.login($scope.user).then(function () {
-					user.username = $scope.user.username;
-					return Auth.createProfile(user);
+
 				}).then(function () {
 					$location.path('/input');
 				});
 			}, function(error) {
 				$scope.error = error.toString();
-			});
+			});*/
 		};
 
 

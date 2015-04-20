@@ -65,20 +65,22 @@ io.on('connection', function(socket) {
 				console.log("Divisions in Y out of range");
 			}
 
+			var results = plate_analyser(body.length, body.breadth, body.thickness, body.density, body.elasticity, body.poisson, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue);
 
-			var delta_n = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).delta;
-			var disp_rots = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).disp_rot;
-			var W = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).w;
-			var MX = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).mx;
-			var MY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).my;
-			var MXY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).mxy;
-			var QX = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qx
-			var QY = plate_analyser(body.length, body.breadth, body.thickness, body.divx, body.divy, body.elementTypeSelected.value, body.endTypeSelected.value, body.loadData.loadTypeSelected.value, body.loadData.loadValue).qy;
+			var delta_n = results.delta;
+			var disp_rots = results.disp_rot;
+			var W = results.w;
+			var MX = results.mx;
+			var MY = results.my;
+			var MXY = results.mxy;
+			var QX = results.qx;
+			var QY = results.qy;
+			var inputs = results.inputs;
 
 			var modelRef = new Firebase( FIREBASE_URL + '/models/');
 			var resultRef = modelRef.child(g_uid).child("results");
 
-			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY});
+			resultRef.set({displacements : delta_n, disp_rot: disp_rots, w: W, mx: MX,  my: MY,  mxy: MXY,  qx: QX,  qy: QY, inputs: inputs});
 
 			var resultSet = {
 				displacements: delta_n,
@@ -88,7 +90,8 @@ io.on('connection', function(socket) {
 				my: MY,
 				mxy: MXY,
 				qx: QX,
-				qy: QY
+				qy: QY,
+				inputs: inputs
 			};
 
 			// Emit the event and send result data along

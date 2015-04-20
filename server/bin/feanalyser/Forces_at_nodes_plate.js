@@ -43,7 +43,9 @@ var Forces_at_nodes_plate = function(input, Element_Forces) {
 
 	}
 
-	return { MX: this.MX,  MY: this.MY,  MXY: this.MXY,  QX: this.QX,  QY: this.QY };
+	var forces = { MX: this.MX,  MY: this.MY,  MXY: this.MXY,  QX: this.QX,  QY: this.QY };
+
+	return forces;
 }
 
 module.exports = Forces_at_nodes_plate;

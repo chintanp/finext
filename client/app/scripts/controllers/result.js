@@ -4,9 +4,10 @@
 
 // Controller for formatting results etc.
 
-app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, ModelSync, Auth, socket) {
+angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Auth, socket) {
 
-	$rootScope.resultsAvailable = false;
+
+  $rootScope.resultsAvailable = false;
 
   $scope.signedIn = Auth.signedIn;
 
@@ -19,8 +20,20 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Mo
     $location.path('/');
   };
 
-	$rootScope.resultSet = {};
-	$rootScope.resultSet.displacements = [];
+  $scope.showGraph = function() {
+
+    $location.path('/graph');
+  };
+
+  if($rootScope.model.results) {
+    $rootScope.resultsAvailable = true;
+    $rootScope.resultSet = $rootScope.model.results || {};
+  }
+  else {
+    $rootScope.resultsAvailable = false;
+    $rootScope.resultSet = {};
+  }
+
 
 	socket.on('ModelSolved', function(data) {
 
@@ -33,6 +46,7 @@ app.controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Mo
   });
 
 	$scope.logout = function() {
+    $rootScope.model = {};
 		Auth.logout();
 		$location.path('/');
 	};

@@ -2,7 +2,7 @@
  * Created by chin on 06/10/2014.
  */
 
-app.factory('socket', function($rootScope) {
+angular.module('prep').factory('socket', function($rootScope) {
 
 	//Connect to the socket and expose events
 

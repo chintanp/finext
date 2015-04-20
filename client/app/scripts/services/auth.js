@@ -1,15 +1,15 @@
 'use strict';
 
-app.factory('Auth',
-	function($firebase, $firebaseSimpleLogin, FIREBASE_URL, $rootScope) {
+angular.module('prep').factory('Auth',
+	function($firebase, $firebaseAuth, $firebaseObject, FIREBASE_URL, $rootScope) {
 
 		var ref = new Firebase(FIREBASE_URL);
 
-		var auth = $firebaseSimpleLogin(ref);
+		$rootScope.auth = $firebaseAuth(ref);
 
 		var Auth = {
 			register: function(user) {
-				return auth.$createUser(user.email, user.password);
+				return $rootScope.auth.$createUser(user.email, user.password);
 			},
 			createProfile: function(user) {
 				var profile = {
@@ -17,54 +17,112 @@ app.factory('Auth',
 					md5_hash: user.md5_hash
 				};
 
-        // Now referring to ref/profile - and then should create profile based on name: user.uid
-				var profileRef = $firebase(ref.child("profile"));
+				// Now referring to ref/profile - and then should create profile based on name: user.uid
+				var profileRef = new Firebase(FIREBASE_URL).child("profile");
 
-        // $set - creates a child with name user.uid and has data profile
-				return profileRef.$set(user.uid, profile);
+				// $set - creates a child with name user.uid and has data profile
+				return profileRef.set(user.uid, profile);
 			},
 			login: function(user) {
-				return auth.$login('password', user);
+				/*return $rootScope.auth.$authWithPassword(user).then(function(authData) {
+				 console.log("Logged in as:", authData.uid);
+				 }).catch(function(error) {
+				 console.error("Authentication failed:", error);
+				 });*//*
+
+				$rootScope.auth.$authWithPassword(user).then(function(authData) {
+					console.log("Logged in as:", authData.uid);
+					var user = {};
+					user.username = '';
+					user.username = $rootScope.user.username;
+					user.md5_hash = CryptoJS.MD5($rootScope.user.email).toString();
+					user.uid = authData.uid;
+					return this.createProfile(user);
+				}).catch(function(error) {
+					console.error("Authentication failed:", error);
+				});*/
+
+				console.log("Logged in: ");
+				angular.copy(user, Auth.user);
+
+			/*	$rootScope.model = {};
+				$rootScope.model.results = {};*/
+			 angular.copy(user, $rootScope.user);
+				Auth.user.profile = $firebaseObject(ref.child('profile').child(Auth.user.uid));
+
+				console.log(Auth.user);
 			},
 			logout: function() {
-				return auth.$logout();
+
+				$rootScope.model.results = undefined;
+				$rootScope.model = undefined;
+
+
+				if(Auth.user && Auth.user.profile) {
+					Auth.user.profile.$destroy();
+				}
+				angular.copy({}, Auth.user);
+				return $rootScope.auth.$unauth();
 			},
 			resolveUser: function() {
-				return auth.$getCurrentUser();
+
+				var authData = $rootScope.auth.$getAuth();
+
+				if (authData) {
+					console.log("Logged in as:", authData.uid);
+				} else {
+					console.log("Logged out");
+				}
+				// return $rootScope.auth.$getCurrentUser();
 			},
 			signedIn: function() {
-				return !!Auth.user.provider;
+
+				var authData = $rootScope.auth.$getAuth();
+
+				if (authData) {
+					/*angular.copy(user, Auth.user);
+					Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();*/
+					return true;
+				} else {
+					return false;
+				}
 			},
 
-      user: {}
+			user: {}
 		};
 
-	/*	$rootScope.signedIn = function() {
-			return Auth.signedIn();
-		};*/
+		/*	$rootScope.signedIn = function() {
+		 return Auth.signedIn();
+		 };*/
 
-		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
-			console.log("Logged in: ");
-			angular.copy(user, Auth.user);
+		/*$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
+		 console.log("Logged in: ");
+		 angular.copy(user, Auth.user);
 
-      //Auth.user = user;
+		  $rootScope.model = {};
+		 $rootScope.model.results = {};
 
-      // TODO check the properties of Auth.user, does angular.copy work as expected, ?
-			Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();
+		 //Auth.user = user;
 
-			console.log(Auth.user);
+		 Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();
 
-		});
+		 //$scope.$apply(Auth.user);
 
-		$rootScope.$on('$firebaseSimpleLogin:logout', function() {
-			console.log("Logged out: ");
+		 console.log(Auth.user);
 
-			if(Auth.user && Auth.user.profile) {
-				Auth.user.profile.$destroy();
-			}
-			angular.copy({}, Auth.user);
-		});
+		 });*/
 
+		/* $rootScope.$on('$firebaseSimpleLogin:logout', function() {
+		 console.log("Logged out: ");
+
+		 $rootScope.model = {};
+		 $rootScope.model.results = {};
+
+		 if(Auth.user && Auth.user.profile) {
+		 Auth.user.profile.$destroy();
+		 }
+		 angular.copy({}, Auth.user);
+		 });*/
 		return Auth;
 
 	});

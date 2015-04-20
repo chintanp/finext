@@ -6,41 +6,47 @@
 
 /* global app:true */
 
-var app = angular.module('confeaApp', [
-    'ngAnimate',
+var prep = angular.module('prep', [
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-		'ngDropdowns',
-		'firebase',
-    'ngTable'
+	'ngDropdowns',
+    'mobile-angular-ui',
+	'firebase'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
 
- app.config(function ($routeProvider) {
+// angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
+
+ prep.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'InputCtrl'
+        controller: ''
       })
 	    .when('/input', {
 		    templateUrl: 'views/input.html',
-		    controller: 'InputCtrl'
+		    controller: 'InputCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
 	    })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/users/:userId', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
-        controller: 'AuthCtrl',
-		    resolve: {
-			    user: function(Auth) {
-				    return Auth.resolveUser();
-			    }
-		    }
+        controller: 'AuthCtrl'
       })
 	    .when('/login', {
 		    templateUrl: 'views/login.html',
@@ -53,9 +59,27 @@ var app = angular.module('confeaApp', [
 	    })
 	    .when('/results', {
 		    templateUrl: 'views/results.html',
-		    controller: 'ResultCtrl'
+		    controller: 'ResultCtrl',
+        resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }
 	    })
+      .when('/graph', {
+        templateUrl: 'views/graph.html'
+
+       /* resolve: {
+          user: function(Auth) {
+            return Auth.resolveUser();
+          }
+        }*/
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
+
+angular.element(document).ready(function() {
+	angular.bootstrap(document.getElementById("textContainer"), ["prep"]);
+});
