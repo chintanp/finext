@@ -1,9 +1,42 @@
 'use strict';
 
 angular.module('prep').factory('Auth',
-	function($firebase, $firebaseAuth, $firebaseObject, FIREBASE_URL, $rootScope) {
 
-		var ref = new Firebase(FIREBASE_URL);
+  function($http, Session, $rootScope) {
+
+
+    var auth = {};
+
+    auth.login = function (credentials) {
+      return $http
+        .post('/login', credentials)
+        .then(function (res) {
+          Session.create(res.data.id, res.data.user.id,
+            res.data.user.role);
+          return res.data.user;
+        });
+    };
+
+    auth.isAuthenticated = function () {
+      return !!Session.userId;
+    };
+
+    auth.isAuthorized = function (authorizedRoles) {
+      if (!angular.isArray(authorizedRoles)) {
+        authorizedRoles = [authorizedRoles];
+      }
+      return (auth.isAuthenticated() &&
+      authorizedRoles.indexOf(Session.userRole) !== -1);
+    };
+
+    return auth;
+
+
+
+
+
+
+		/*var ref = new Firebase(FIREBASE_URL);
 
 		$rootScope.auth = $firebaseAuth(ref);
 
@@ -24,11 +57,11 @@ angular.module('prep').factory('Auth',
 				return profileRef.set(user.uid, profile);
 			},
 			login: function(user) {
-				/*return $rootScope.auth.$authWithPassword(user).then(function(authData) {
+				/!*return $rootScope.auth.$authWithPassword(user).then(function(authData) {
 				 console.log("Logged in as:", authData.uid);
 				 }).catch(function(error) {
 				 console.error("Authentication failed:", error);
-				 });*//*
+				 });*!//!*
 
 				$rootScope.auth.$authWithPassword(user).then(function(authData) {
 					console.log("Logged in as:", authData.uid);
@@ -40,13 +73,13 @@ angular.module('prep').factory('Auth',
 					return this.createProfile(user);
 				}).catch(function(error) {
 					console.error("Authentication failed:", error);
-				});*/
+				});*!/
 
 				console.log("Logged in: ");
 				angular.copy(user, Auth.user);
 
-			/*	$rootScope.model = {};
-				$rootScope.model.results = {};*/
+			/!*	$rootScope.model = {};
+				$rootScope.model.results = {};*!/
 			 angular.copy(user, $rootScope.user);
 				Auth.user.profile = $firebaseObject(ref.child('profile').child(Auth.user.uid));
 
@@ -80,8 +113,8 @@ angular.module('prep').factory('Auth',
 				var authData = $rootScope.auth.$getAuth();
 
 				if (authData) {
-					/*angular.copy(user, Auth.user);
-					Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();*/
+					/!*angular.copy(user, Auth.user);
+					Auth.user.profile = $firebase(ref.child('profile').child(Auth.user.uid)).$asObject();*!/
 					return true;
 				} else {
 					return false;
@@ -91,11 +124,11 @@ angular.module('prep').factory('Auth',
 			user: {}
 		};
 
-		/*	$rootScope.signedIn = function() {
+		/!*	$rootScope.signedIn = function() {
 		 return Auth.signedIn();
-		 };*/
+		 };*!/
 
-		/*$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
+		/!*$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
 		 console.log("Logged in: ");
 		 angular.copy(user, Auth.user);
 
@@ -110,9 +143,9 @@ angular.module('prep').factory('Auth',
 
 		 console.log(Auth.user);
 
-		 });*/
+		 });*!/
 
-		/* $rootScope.$on('$firebaseSimpleLogin:logout', function() {
+		/!* $rootScope.$on('$firebaseSimpleLogin:logout', function() {
 		 console.log("Logged out: ");
 
 		 $rootScope.model = {};
@@ -122,7 +155,7 @@ angular.module('prep').factory('Auth',
 		 Auth.user.profile.$destroy();
 		 }
 		 angular.copy({}, Auth.user);
-		 });*/
-		return Auth;
+		 });*!/
+		return Auth;*/
 
 	});

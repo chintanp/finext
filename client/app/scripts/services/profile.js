@@ -10,7 +10,7 @@ angular.module('prep').factory('Profile', function($window, FIREBASE_URL, $filte
   var ref1 = new Firebase(FIREBASE_URL + '/models');
   var ref2 = new Firebase(FIREBASE_URL);
 
-  var profile = {
+  var Profile = {
     get: function (userId) {
       return $firebaseObject(ref.child('profile').child(userId));
     },
@@ -45,12 +45,13 @@ angular.module('prep').factory('Profile', function($window, FIREBASE_URL, $filte
           for (var i = 0; i < data.length; i++) {
             var value = data[i].$value;
             if (value === key) {
-              ref.child('user_models').child(userId)).remove(data[i].$id);
+              ref.child('user_models').child(userId).remove(data[i].$id);
               alert("Record removed");
             }
           }
         })
     }
   }
+
   return Profile;
 });

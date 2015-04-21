@@ -2,213 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87d1d7c5-bb85-43f5-94e3-20690d45204e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/js/01_-_Default1noCulling.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/01_-_Default1noCulling.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/js/02_-_Default1noCulling.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/js/03_-_Default1noCulling.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/UV_Grid_Sm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/arrow1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/arrow2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/binding.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/body-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chap4.ppt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/context.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/duck.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/duckCM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/fea.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/highlight-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/icons/icon128x128.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/icons/icon16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/icons/icon48x48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/icons/icon60x60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/assets/image1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/assets/image2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/font/league_gothic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/font/league_gothic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/font/league_gothic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/male-02-1noCulling.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/monster.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/monster.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mvc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/octocat-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/open-source2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/open_source.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/openstaad_main.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/orig_02_-_Defaul1noCulling.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tar-gz-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/images/yeoman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zip-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/ColourGradient.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/DDSLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/Detector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/MTLLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/MathBox-bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/OBJLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/OBJMTLLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/OrbitControls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/SurfacePlot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/THREEx.FullScreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/THREEx.KeyboardState.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/THREEx.WindowResize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/TrackballControls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/partials/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/al.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/angular-local-storage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/app-controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/partials/bad-time.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/barebones.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/beige.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/beige.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/blood.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/blood.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/three/camera.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/partials/chrome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/classList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/multiplex/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/notes-server/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/cube/cube.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/cube/cube.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/default.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/directives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/domready.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/duck.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/duck0FS.glsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/duck0VS.glsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/embedded-media.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/markdown/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/postmessage/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/markdown/example.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/js/female.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/file-loader-controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/partials/file-loader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/filters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/glTF-parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/glTFAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/glTFLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three/glTFLoaderUtils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/graph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/views/graph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/graph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/graph3d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/hammer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/head.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/highlight/highlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/js/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/multiplex/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/notes-server/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/jquery.hammer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/font/league_gothic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/font/league_gothic_license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/leap/leap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/male02.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/male02.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finext/manifest.webapp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/markdown/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/markdown/marked.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/multiplex/master.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/math.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/math/math.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/message-bus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/template/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/monster.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/monster0FS.glsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/obj/gltf/monster0VS.glsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/moon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/moon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/ngHammer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/night.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/night.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/notes/notes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/notes-server/notes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/notes/notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/print/paper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/params.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/print/pdf.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/postmessage/postmessage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/print-pdf/print-pdf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/views/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/services/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/pygment_trac.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/qunit-1.12.0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/qunit-1.12.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/remotes/remotes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/directives/resultgraph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/reveal.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/reveal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/reveal.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/reveal.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/three/scene.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/scripts/scripts.e2d8427d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/scripts/scripts.ef832532.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/search/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/serif.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/serif.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/template/settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/three/setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/simple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/simple.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/sky.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/sky.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/examples/slide-backgrounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/snippets.glsl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/solarized.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/source/solarized.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/storage-service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown-element-attributes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown-element-attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown-slide-attributes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown-slide-attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test-markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/views/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/test_graph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/theme/template/theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/three.69.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/threex.dynamictexture.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/views/partials/toolbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/three/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/lib/vector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/scripts/vendor.07c4881b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/dist/styles/vendor.a2e79e50.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/ng/viewer-factory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watcher_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/webgl/three/wrangler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/css/zenburn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/zoom-js/zoom.js" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\app\scripts\controllers\about.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\app\scripts\controllers\nav.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\app\scripts\controllers\signup.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\app\scripts\services\user.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\fmlin.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\fmquad.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\form_KK.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\formbeeb.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\formbees.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\formdeeb.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\formdees.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\gauss.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\mesher.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\package.json" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\finext\client\serverjs\platelem_q8.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/services/session.js" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\firebase\node_modules\faye-websocket\node_modules\websocket-driver\lib\websocket\driver\http_parser.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\mathjs\.npmignore" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\mathjs\docs\reference\functions\filter.md" afterPath="" />
@@ -407,468 +202,13 @@
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\mathjs\test\util\object.test.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\mathjs\test\util\string.test.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\node_modules\mathjs\test\util\types.test.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/ArgumentsError.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/ArgumentsError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ArrayNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ArrayNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/AssignmentNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/AssignmentNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/BlockNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/BlockNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/CHANGELOG.md" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/CHANGELOG.md" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Complex.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Complex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ConditionalNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ConditionalNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ConstantNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/ConstantNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/DimensionError.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/DimensionError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bin/feanalyser/Forces_at_nodes_plate.js" afterPath="$PROJECT_DIR$/server/bin/feanalyser/Forces_at_nodes_plate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/FunctionNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/FunctionNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/HISTORY.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Help.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Help.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/IndexError.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/IndexError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/IndexNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/IndexNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/Infinity.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/Infinity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LN10.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LN10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LN2.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LN2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LOG10E.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LOG10E.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LOG2E.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/LOG2E.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Matrix.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/NOTICE" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/NOTICE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/NaN.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/NaN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/Node.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/Node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/OperatorNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/OperatorNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/Parser.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/Parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Procfile" afterPath="$PROJECT_DIR$/server/Procfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/README.md" afterPath="$PROJECT_DIR$/server/node_modules/firebase/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/README.md" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/README.md" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/README.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/lib/README" afterPath="$PROJECT_DIR$/server/node_modules/firebase/lib/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/ROADMAP.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/ROADMAP.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Range.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/RangeNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/RangeNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/SQRT1_2.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/SQRT1_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/SQRT2.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/SQRT2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/chaining/Selector.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/chaining/Selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/SymbolNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/SymbolNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Unit.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/Unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/UnsupportedTypeError.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/UnsupportedTypeError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/UpdateNode.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/UpdateNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/abs.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/abs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/abs.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/abs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/abs.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/abs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/acos.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/acos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/acos.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/acos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/acos.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/acos.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/add.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/add.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/add.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/add.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/alphabetical.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/alphabetical.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/angle_configuration.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/angle_configuration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/app.js" afterPath="$PROJECT_DIR$/client/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/arg.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/arg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/arg.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/arg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/arg.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/arg.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/array.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/array.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/asin.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/asin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/asin.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/asin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/asin.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/asin.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/atan.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/atan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/atan.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/atan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/atan.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/atan.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/atan2.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/atan2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/atan2.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/atan2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/atan2.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/atan2.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/controllers/auth.js" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/auth.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/services/auth.js" afterPath="$PROJECT_DIR$/client/app/scripts/services/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/autobahn_client.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/autobahn_client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/base.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/basic_usage.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/basic_usage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/basic_usage.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/basic_usage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/bignumber.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/bignumber.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/bignumber.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/bignumber.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/bignumber.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/bignumber.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/bignumber.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/bignumber.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/bignumbers.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/bignumbers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/bignumbers.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/bignumbers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/boolean.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/boolean.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/boolean.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/boolean.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/boolean.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/boolean.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/boolean.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/boolean.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/bower.json" afterPath="$PROJECT_DIR$/client/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/categorical.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/categorical.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/ceil.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/ceil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/ceil.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/ceil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/ceil.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/ceil.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/chained_operations.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/chained_operations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/chained_operations.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/chained_operations.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/bin/cli.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/bin/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/client.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/client.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/client.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/clone.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/clone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/clone.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/clone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/clone.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/clone.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/collection.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/type/collection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/combinations.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/combinations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/combinations.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/combinations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/combinations.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/combinations.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/command_line_interface.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/command_line_interface.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/compare.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/compare.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/compile.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/compile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/compile.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/compile.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/complex.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/complex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/complex.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/complex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/complex.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/complex.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/complex_numbers.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/complex_numbers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/complex_numbers.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/complex_numbers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/concat.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/concat.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/concat.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/concat.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/configuration.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/conj.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/conj.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/conj.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/conj.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/conj.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/conj.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/constants.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/constants.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/constants.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/cos.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/cos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cos.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cos.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cos.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cosh.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cosh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cosh.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cosh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/cot.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/cot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cot.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/cot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cot.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cot.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/coth.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/coth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/coth.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/coth.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/csc.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/csc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/csc.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/csc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/csc.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/csc.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/csch.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/csch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/csch.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/csch.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/cube.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/cube.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/cube.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/cube.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cube.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/cube.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/custom_separators.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/custom_separators.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/node_modules/decimal.js/decimal.min.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/node_modules/decimal.js/decimal.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/deepEqual.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/deepEqual.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/det.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/det.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/det.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/det.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/det.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/det.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/diag.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/diag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/diag.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/diag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/diag.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/diag.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/distribution.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/distribution.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/distribution.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/distribution.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/distribution.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/distribution.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/divide.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/divide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/divide.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/divide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/divide.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/divide.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotDivide.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotDivide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotDivide.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotDivide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotDivide.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotDivide.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotMultiply.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotMultiply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotMultiply.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotMultiply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotMultiply.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotMultiply.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotPow.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/dotPow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotPow.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/dotPow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotPow.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/dotPow.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft75.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft75.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft76.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft76.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/e.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/e.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/equal.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/equal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/expression/eval.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/expression/eval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/eval.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/eval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/eval.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/eval.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api/event.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/eventsource.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/eventsource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/exp.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/exp.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/exp.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/exp.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/expressions.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/expressions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/expressions.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/expressions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/extension.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/extension.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/eye.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/eye.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/eye.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/eye.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/eye.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/eye.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/factorial.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/factorial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/factorial.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/factorial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/factorial.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/factorial.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/false.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/false.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/lib/firebase-node.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/lib/firebase-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/lib/firebase-web.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/lib/firebase-web.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/fix.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/fix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/fix.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/fix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/fix.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/fix.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/floor.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/floor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/floor.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/floor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/floor.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/floor.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/forEach.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/forEach.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/forEach.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/forEach.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/forEach.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/forEach.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/format.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/format.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/format.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/format.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/format.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/format.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/gcd.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/gcd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/gcd.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/gcd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/gcd.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/gcd.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/getting_started.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/getting_started.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/haproxy.conf" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/haproxy.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/header.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/headers.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/headers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/expression/help.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/expression/help.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/help.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/help.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/help.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/help.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/home.html" afterPath="$PROJECT_DIR$/client/app/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/views/home.html" afterPath="$PROJECT_DIR$/server/dist/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/i.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/i.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/im.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/im.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/im.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/im.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/im.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/im.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/import.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/import.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/import.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/import.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/import.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/import.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.html" afterPath="$PROJECT_DIR$/client/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/index.html" afterPath="$PROJECT_DIR$/server/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/error/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/node/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/index.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/index.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/index.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/index.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/input.html" afterPath="$PROJECT_DIR$/client/app/views/input.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/views/input.html" afterPath="$PROJECT_DIR$/server/dist/views/input.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/introduction.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/inv.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/inv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/inv.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/inv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/inv.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/inv.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/.bin/jade" afterPath="$PROJECT_DIR$/server/node_modules/.bin/jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/keywords.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/keywords.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/larger.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/larger.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/largerEq.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/largerEq.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/latex.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/latex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/lcm.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/lcm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/lcm.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/lcm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/lcm.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/lcm.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/log.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/log.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/log.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/log.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/log.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/log.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/log10.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/log10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/log10.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/log10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/log10.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/log10.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/login.html" afterPath="$PROJECT_DIR$/client/app/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/views/login.html" afterPath="$PROJECT_DIR$/server/dist/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/map.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/map.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/map.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/map.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/math.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/math.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.map" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.min.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/dist/math.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/.bin/mathjs" afterPath="$PROJECT_DIR$/server/node_modules/.bin/mathjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/matrices.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/matrices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/matrices.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/matrices.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/matrix.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/matrix.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/matrix.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/matrix.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/max.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/max.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/max.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/max.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/max.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/max.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/mean.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/mean.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/mean.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/mean.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/mean.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/mean.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/median.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/median.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/median.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/median.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/median.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/median.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/min.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/min.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/min.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/min.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/mod.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/mod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/mod.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/mod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/mod.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/mod.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/controllers/modeldata.js" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/modeldata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/services/modelsync.js" afterPath="$PROJECT_DIR$/client/app/scripts/services/modelsync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/multiply.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/multiply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/multiply.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/multiply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/multiply.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/multiply.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/norm.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/norm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/norm.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/norm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/norm.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/norm.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/null.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/null.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/number.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/number.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/number.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/number.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/number.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/numbers.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/numbers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/object.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/object.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/old_browsers.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/old_browsers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/ones.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/ones.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/ones.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/ones.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/ones.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/ones.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/package.json" afterPath="$PROJECT_DIR$/server/node_modules/firebase/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/package.json" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/package.json" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/node_modules/decimal.js/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/node_modules/decimal.js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/parse.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/parse.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/expression/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/parse.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/parse.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/parser.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/parser.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/parser.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/permutations.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/permutations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/permutations.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/permutations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/permutations.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/permutations.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/phi.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/phi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/pi.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/pi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/pickRandom.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/pickRandom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/pickRandom.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/pickRandom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/pickRandom.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/pickRandom.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bin/feanalyser/plate_analyser.js" afterPath="$PROJECT_DIR$/server/bin/feanalyser/plate_analyser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/pow.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/pow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/pow.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/pow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/pow.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/pow.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/pretty_printing_with_mathjax.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/pretty_printing_with_mathjax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/print.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/print.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/print.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/print.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/print.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/print.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/prod.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/prod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/prod.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/prod.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/prod.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/prod.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/random.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/random.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/random.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/random.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/random.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/random.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/randomInt.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/probability/randomInt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/randomInt.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/probability/randomInt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/randomInt.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/randomInt.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/range.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/range.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/range.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/range.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/re.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/complex/re.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/re.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/complex/re.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/re.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/re.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/requirejs_loading.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/requirejs_loading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/resize.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/resize.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/resize.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/resize.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/controllers/result.js" afterPath="$PROJECT_DIR$/client/app/scripts/controllers/result.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/results.html" afterPath="$PROJECT_DIR$/client/app/views/results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/views/results.html" afterPath="$PROJECT_DIR$/server/dist/views/results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/round.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/round.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/round.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/round.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/round.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/round.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/sec.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/sec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sec.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sec.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sec.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sech.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sech.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sech.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sech.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/select.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/select.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/select.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/server.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/server.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/sign.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/sign.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sign.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sign.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/signup.html" afterPath="$PROJECT_DIR$/client/app/views/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/dist/views/signup.html" afterPath="$PROJECT_DIR$/server/dist/views/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/sin.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/sin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sin.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sin.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sin.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sinh.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/sinh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sinh.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sinh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/size.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/size.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/size.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/size.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/size.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/size.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/smaller.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/smaller.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/smallerEq.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/smallerEq.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/services/socket.js" afterPath="$PROJECT_DIR$/client/app/scripts/services/socket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/sqrt.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/sqrt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/sqrt.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/sqrt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sqrt.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sqrt.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/square.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/square.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/square.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/square.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/square.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/square.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/squeeze.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/squeeze.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/squeeze.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/squeeze.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/squeeze.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/squeeze.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/sse.html" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/sse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/std.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/std.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/std.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/std.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/std.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/std.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi/stream_reader.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi/stream_reader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/streams.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/streams.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/string.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/string.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/string.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/string.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/string.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/subset.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/subset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/subset.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/subset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/subset.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/subset.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/subtract.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/subtract.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/subtract.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/subtract.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/subtract.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/subtract.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/sum.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/sum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/sum.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/sum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sum.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/sum.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/tan.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/trigonometry/tan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/tan.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/tan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/tan.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/tan.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/tanh.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/trigonometry/tanh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/tanh.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/tanh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/tau.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/tau.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/examples/tcp_server.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/examples/tcp_server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/units/to.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/units/to.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/units/to.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/units/to.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/to.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/to.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/transpose.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/transpose.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/transpose.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/transpose.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/transpose.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/transpose.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/true.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/true.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/typeof.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/utils/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/typeof.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/utils/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/typeof.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/typeof.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/types.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/util/types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/unaryMinus.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/unaryMinus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/unaryMinus.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/unaryMinus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unaryMinus.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unaryMinus.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/unaryPlus.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/unaryPlus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/unaryPlus.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/unaryPlus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unaryPlus.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unaryPlus.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unequal.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unequal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/unit.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/construction/unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/unit.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/construction/unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unit.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/unit.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/units.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/units.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/units.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/datatypes/units.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/units.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/units.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/var.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/statistics/var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/var.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/statistics/var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/var.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/var.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/version.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/version.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/constants/version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket.js" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/webworkers/webworkers.html" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/webworkers/webworkers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/webworkers/worker.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/examples/browser/webworkers/worker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/services/profile.js" afterPath="$PROJECT_DIR$/client/app/scripts/services/profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/ws.html" afterPath="$PROJECT_DIR$/server/node_modules/firebase/node_modules/faye-websocket/examples/ws.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bin/www.js" afterPath="$PROJECT_DIR$/server/bin/www.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/xgcd.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/arithmetic/xgcd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/xgcd.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/arithmetic/xgcd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/xgcd.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/xgcd.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/zeros.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/expression/docs/function/matrix/zeros.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/zeros.js" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/lib/function/matrix/zeros.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/zeros.md" afterPath="$PROJECT_DIR$/server/node_modules/mathjs/docs/reference/functions/zeros.md" />
     </list>
     <ignored path="finext_d.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -889,56 +229,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/index.html">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.612904">
-              <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angularfire.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bower_components/angularfire/dist/angularfire.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firebase.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bower_components/firebase/firebase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultgraph.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/resultgraph.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state vertical-scroll-proportion="-18.74074">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/auth.js">
+        <entry file="file://$PROJECT_DIR$/client/app/scripts/services/auth.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/scripts/services/session.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.4838705">
+              <caret line="49" column="148" selection-start-line="49" selection-start-column="148" selection-end-line="49" selection-end-column="148" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50691247">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -967,33 +317,32 @@
         <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/profile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/scripts/services/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73006135">
-              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/scripts/services/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-              <folding />
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="e#350#1410#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1007,8 +356,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/client/app/scripts/services/modelsync.js" />
-        <option value="$PROJECT_DIR$/client/app/scripts/services/auth.js" />
         <option value="$PROJECT_DIR$/client/app/scripts/services/profile.js" />
+        <option value="$PROJECT_DIR$/client/app/views/login.html" />
+        <option value="$PROJECT_DIR$/client/app/scripts/controllers/auth.js" />
+        <option value="$PROJECT_DIR$/client/app/scripts/services/auth.js" />
+        <option value="$PROJECT_DIR$/client/app/scripts/services/session.js" />
+        <option value="$PROJECT_DIR$/client/app/scripts/controllers/application.js" />
+        <option value="$PROJECT_DIR$/client/app/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -1070,8 +424,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1151,6 +505,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finext_d" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1292,6 +668,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="finext_node" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="bin/www.js" working-dir="$PROJECT_DIR$/server">
@@ -1373,7 +755,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1164" extended-state="6" />
+    <frame x="-4" y="-4" width="1928" height="1164" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15481833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1385,7 +767,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270349" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3365949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3362745" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1469,22 +851,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/resultgraph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/lib/MathBox-bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/obj/gltf/duck.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1496,13 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="0" selection-start-line="79" selection-start-column="4" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1595,14 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.309038">
           <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1720,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.612904">
+        <state vertical-scroll-proportion="0.0">
           <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
           <folding />
         </state>
@@ -1730,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1738,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7085346">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1746,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1754,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1754386">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1762,7 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.43865">
           <caret line="153" column="91" selection-start-line="153" selection-start-column="91" selection-end-line="153" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1779,7 +1125,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1802,14 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/services/modelsync.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1826,26 +1164,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/services/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/services/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73006135">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#350#1410#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.4838705">
+          <caret line="49" column="148" selection-start-line="49" selection-start-column="148" selection-end-line="49" selection-end-column="148" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.74074">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/services/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/services/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50691247">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding />
         </state>
       </provider>

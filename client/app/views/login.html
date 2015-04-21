@@ -31,14 +31,14 @@
 
 
 	<div class="signin-form ">
-		<form class="form-horizontal" ng-submit="login()">
+		<form class="form-horizontal" ng-submit="login(credentials)">
 			<p ng-show="error" class="text-danger"></p>
 
 			<!-- Text input-->
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="email">Email</label>
 				<div class="col-md-5">
-					<input id="email" name="email" type="email" placeholder="Email ID" class="form-control input-md" ng-model="user.email">
+					<input id="email" name="email" type="email" placeholder="Email ID" class="form-control input-md" ng-model="credentials.email">
 
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="password">Password</label>
 				<div class="col-md-5">
-					<input id="password" name="password" type="password" placeholder="Enter your Password" class="form-control input-md" ng-model="user.password">
+					<input id="password" name="password" type="password" placeholder="Enter your Password" class="form-control input-md" ng-model="credentials.password">
 
 				</div>
 			</div>
