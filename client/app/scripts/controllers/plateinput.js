@@ -4,16 +4,12 @@
 
 'use strict';
 
-angular.module('prep').controller('InputCtrl', function($scope, $location, $rootScope, ModelSync, Auth) {
+angular.module('prep').controller('PlateInputCtrl',
 
-  $scope.signedIn = Auth.signedIn;
+  function($scope, $location, $rootScope, ModelSync) {
 
 
-	if(Auth.signedIn()) {
-		$rootScope.user = Auth.user;
-	}
-
-  if(typeof $rootScope.model === 'undefined') {
+	if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {
       length: '',
       breadth: '',
@@ -32,26 +28,6 @@ angular.module('prep').controller('InputCtrl', function($scope, $location, $root
     $rootScope.model.endTypeSelected = {};
     $rootScope.model.elementTypeSelected = {};
   }
-
-  /*else {
-    $scope.model =  { length : $rootScope.model.length || ' ',
-      breadth : $rootScope.model.breadth || '',
-      thickness : $rootScope.model.thickness || '',
-      density : $rootScope.model.density || '',
-      elasticity: $rootScope.model.elasticity || '',
-      poisson: $rootScope.model.poisson || '',
-      divx : $rootScope.model.divx || '',
-      divy : $rootScope.model.divy || ''
-    };
-
-    $scope.model.loadData = $rootScope.model.loadData || '';
-    $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || '';
-    $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || '';
-
-    $scope.model.endTypeSelected = $rootScope.model.endTypeSelected || '';
-    $scope.model.elementTypeSelected = $rootScope.model.elementTypeSelected || '';
-
-  }*/
 
 	// Types updated to match the backend, now start from one, all except context.
 
@@ -112,8 +88,8 @@ angular.module('prep').controller('InputCtrl', function($scope, $location, $root
 
    // angular.copy($scope.user, Auth.user);
 
-		$rootScope.model.creator = $scope.user.profile.username;
-		$rootScope.model.creatorUID = $scope.user.uid;
+		/*$rootScope.model.creator = $scope.user.profile.username;
+		$rootScope.model.creatorUID = $scope.user.uid;*/
 
 		ModelSync.create($rootScope.model).then(function() {
 
@@ -125,12 +101,4 @@ angular.module('prep').controller('InputCtrl', function($scope, $location, $root
 
 		});
 	};
-
-  $scope.logout = function() {
-  /*  $rootScope.model = {};
-    $rootScope.model.results = {};*/
-    Auth.logout();
-    $location.path('/');
-  };
-
 });

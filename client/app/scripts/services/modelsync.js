@@ -5,7 +5,9 @@
 
 'use strict';
 
-angular.module('prep').factory('ModelSync', function($firebaseArray, $firebaseObject, $rootScope, FIREBASE_URL, socket) {
+angular.module('prep').factory('ModelSync',
+
+  function($firebaseArray, $firebaseObject, $rootScope, FIREBASE_URL, socket) {
 
   var ref = new Firebase(FIREBASE_URL + 'models');
   var baseRef = new Firebase(FIREBASE_URL);
@@ -18,12 +20,14 @@ angular.module('prep').factory('ModelSync', function($firebaseArray, $firebaseOb
     all: models,
 
     create: function(model) {
+
       $rootScope.model = model;
-      return models.$add(model).then(function(ref) {
+
+      return models.$add(model).then( function(ref) {
 
         // Also save the model UID to the user_models collection for ease of retrieval.
         // $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
-        baseRef.child('user_models').child(model.creatorUID).push(ref.key());
+        //baseRef.child('user_models').child(model.creatorUID).push(ref.key());
 
         console.log("Firebase replied with : " + ref.key());
         var uid = ref.key();
@@ -35,40 +39,16 @@ angular.module('prep').factory('ModelSync', function($firebaseArray, $firebaseOb
     },
 
     find: function(modelId) {
+
       return $firebaseObject(ref.child(modelId));
+
     },
 
     delete: function(model) {
 
       ref.child('models').remove(model.$id);
-      /*models.$remove(model).then(function(ref) {
-        return ref.name();
-      });*/
+
     }
-
-    /*getResults: function(modelId) {
-     *//*console.log("ModelId:" + modelId);
-
-     $rootScope. resultSet = {};
-     $rootScope.resultSet.displacements = [];
-
-     $rootScope.resultSet.displacements = $firebase(ref.child(modelId).child("results")).$asArray();
-     *//**//*results.$loaded().then(function(data) {
-     console.log("Data in getResults: " + data);
-     if(data) {
-     console.log("Data received from firebase");
-     $rootScope.resultsAvailable = true;
-     $rootScope.resultSet = data;
-     }*//**//*
-     if($rootScope.resultSet.displacements) {
-     $rootScope.resultsAvailable = true;
-     $rootScope.resultSet.displacements = JSON.parse($rootScope.resultSet.displacements);
-     }
-     *//*
-
-
-     return;
-     }*/
   };
 
   return ModelSync;

@@ -14,15 +14,15 @@
       <div class="btn-group pull-right">
 
         <ul class="nav navbar-nav navbar-collapse collapse">
-          <li class="active">
-            <a ng-href="#/users/{{ user.uid }}" class="smothscroll">
+          <li class="active" disabled="disabled">
+            <!--<a ng-href="#/users/{{ user.uid }}" disabled="disabled" class="smothscroll">
               <img width="25" height="25" ng-src="http://www.gravatar.com/avatar/{{ user.profile.md5_hash }}" class="nav-pic">
                 <span class="" ng-bind="user.profile.username">Loading...
                 </span>
-            </a>
+            </a>-->
           </li>
         </ul>
-        <button type="submit" ng-click="logout()" class="btn btn-large btn-primary btn-navbar">LOGOUT</button>
+        <button disabled="disabled" type="submit" ng-click="logout()" class="btn btn-large btn-primary btn-navbar">LOGOUT</button>
 
       </div>
     </div>
@@ -151,7 +151,7 @@
                 <button type="reset" tabindex="14" class="btn btn-lg col-lg-2 col-xs-4  ">RESET</button>
               </div>
               <div class="col-xs-offset-2" style="padding-left: 20">
-                <button type="submit" tabindex="15" class="btn btn-lg btn-success col-lg-2 col-xs-4" ng-show="signedIn()">SOLVE</button>
+                <button type="submit" tabindex="15" class="btn btn-lg btn-success col-lg-2 col-xs-4" >SOLVE</button>
               </div>
           </form>
 

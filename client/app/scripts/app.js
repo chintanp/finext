@@ -42,25 +42,34 @@ var prep = angular.module('prep', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'ApplicationCtrl'
+        controller: ''
+      })
+      .when('/plateanalyser', {
+        templateUrl: 'views/plate_input.html',
+        controller: 'PlateInputCtrl'
+        /*resolve: {
+         user: function(Auth) {
+         return Auth.resolveUser();
+         }
+         }*/
       })
 	    .when('/input', {
 		    templateUrl: 'views/input.html',
-		    controller: 'InputCtrl',
-        resolve: {
+		    controller: 'InputCtrl'
+        /*resolve: {
           user: function(Auth) {
             return Auth.resolveUser();
           }
-        }
+        }*/
 	    })
       .when('/users/:userId', {
         templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl',
-        resolve: {
+        controller: 'ProfileCtrl'
+        /*resolve: {
           user: function(Auth) {
             return Auth.resolveUser();
           }
-        }
+        }*/
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
@@ -68,21 +77,21 @@ var prep = angular.module('prep', [
       })
 	    .when('/login', {
 		    templateUrl: 'views/login.html',
-		    controller: 'AuthCtrl',
-		    resolve: {
+		    controller: 'AuthCtrl'
+		    /*resolve: {
 			    user: function(Auth) {
 				    return Auth.resolveUser();
 			    }
-		    }
+		    }*/
 	    })
 	    .when('/results', {
 		    templateUrl: 'views/results.html',
-		    controller: 'ResultCtrl',
-        resolve: {
+		    controller: 'ResultCtrl'
+        /*resolve: {
           user: function(Auth) {
             return Auth.resolveUser();
           }
-        }
+        }*/
 	    })
       .when('/graph', {
         templateUrl: 'views/graph.html'

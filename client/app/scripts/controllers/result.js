@@ -4,21 +4,13 @@
 
 // Controller for formatting results etc.
 
-angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $location, $filter, Auth, socket) {
+angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $location, $filter, socket) {
 
 
   $rootScope.resultsAvailable = false;
 
-  $scope.signedIn = Auth.signedIn;
 
-  if(Auth.signedIn()) {
-    $scope.user = Auth.user;
-  }
 
-  $scope.logout = function() {
-    Auth.logout();
-    $location.path('/');
-  };
 
   $scope.showGraph = function() {
 
@@ -44,12 +36,6 @@ angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $lo
       $rootScope.resultsAvailable = true;
     }
   });
-
-	$scope.logout = function() {
-    $rootScope.model = {};
-		Auth.logout();
-		$location.path('/');
-	};
 
 
 

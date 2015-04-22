@@ -7,7 +7,10 @@
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/auth.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/modelsync.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/session.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/views/home.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/views/login.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/views/plate_input.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/views/results.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/views/test.html" charset="UTF-8" />
   </component>
 </project>

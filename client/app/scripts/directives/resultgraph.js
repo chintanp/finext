@@ -7,13 +7,14 @@ prep.directive('resultgraph', function() {
 		restrict: 'A',
 
 		link: function(scope, element, attrs)
-		{	
+		{
 
-			
 			DomReady.ready(function() {
+
 				ThreeBox.preload([
 					'/scripts/lib/snippets.glsl.html',
 				], function () {
+
 					// MathBox boilerplate
 					var mathbox = window.mathbox = mathBox({
 						cameraControls: true,
@@ -26,7 +27,7 @@ prep.directive('resultgraph', function() {
 						scale:          1,
 					}).start();
 					// Viewport camera/setup
-					mathbox
+					/*mathbox
 						// Cartesian viewport
 						.viewport({
 							type: 'cartesian',
@@ -74,9 +75,9 @@ prep.directive('resultgraph', function() {
 							axis: [0, 2],
 							color: 0xc0c0c0,
 							lineWidth: 1,
-						})
+						})*/
 					// Move axis
-					setTimeout(function () {
+					/*setTimeout(function () {
 						mathbox.set('#c', { zero: true });
 						mathbox.animate('#a', {
 							offset: [0, 0, -1],
@@ -140,7 +141,7 @@ prep.directive('resultgraph', function() {
 							n: 2,
 							data: [[0, 0, 0], [1, 1, 1], [-1, -1, -1], [0, 1, .5]],
 						});
-					}, 6000);
+					}, 6000);*/
 				});
 			});
 		}
