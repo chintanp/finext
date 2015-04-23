@@ -6,8 +6,9 @@
 
 angular.module('prep').controller('PlateInputCtrl',
 
-  function($scope, $location, $rootScope, ModelSync) {
+  function($scope, $location, $rootScope, ModelSync, ngDialog) {
 
+  ngDialog.open({ template: "<p> This is a modal </p>"});
 
 	if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {
