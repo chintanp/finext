@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/client/app/index.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/controllers/application.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/controllers/auth.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/client/app/scripts/controllers/plateinput.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/scripts/controllers/plate_input.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/auth.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/modelsync.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/scripts/services/session.js" charset="UTF-8" />

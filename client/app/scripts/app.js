@@ -13,7 +13,6 @@ var prep = angular.module('prep', [
     'ngSanitize',
     'ngTouch',
     'ngDropdowns',
-     'ngDialog',
     'mobile-angular-ui',
 	'firebase'
   ])
