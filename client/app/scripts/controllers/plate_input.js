@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, ModelSync) {
+angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, $modal, ModelSync) {
 
 
 
@@ -116,6 +116,16 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
 
     });
   };
+
+  $scope.open_graph = function() {
+
+    var modalInstance = $modal.open({
+      templateUrl: 'myModalContent.html',
+      size: 'sm'
+    });
+
+  };
+
 
 
 

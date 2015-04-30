@@ -26,6 +26,7 @@ prep.directive('resultgraph', function() {
 						stats:          false,
 						scale:          1,
 					}).start();
+          mathbox.grid();
 					// Viewport camera/setup
 					/*mathbox
 						// Cartesian viewport
