@@ -28,23 +28,6 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
     $rootScope.model.elementTypeSelected = {};
   }
 
-  /*else {
-   $scope.model =  { length : $rootScope.model.length || ' ',
-   breadth : $rootScope.model.breadth || '',
-   thickness : $rootScope.model.thickness || '',
-   density : $rootScope.model.density || '',
-   elasticity: $rootScope.model.elasticity || '',
-   poisson: $rootScope.model.poisson || '',
-   divx : $rootScope.model.divx || '',
-   divy : $rootScope.model.divy || ''
-   };
-   $scope.model.loadData = $rootScope.model.loadData || '';
-   $scope.model.loadData.loadTypeSelected = $rootScope.model.loadData.loadTypeSelected || '';
-   $scope.model.loadData.loadValue = $rootScope.model.loadData.loadValue || '';
-   $scope.model.endTypeSelected = $rootScope.model.endTypeSelected || '';
-   $scope.model.elementTypeSelected = $rootScope.model.elementTypeSelected || '';
-   }*/
-
   // Types updated to match the backend, now start from one, all except context.
 
   $scope.endTypeOptions = [
@@ -117,14 +100,6 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
     });
   };
 
-  $scope.open_graph = function() {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
-      size: 'sm'
-    });
-
-  };
 
 
 

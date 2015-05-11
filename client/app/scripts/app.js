@@ -63,28 +63,6 @@ var prep = angular.module('prep', [
           }
         }*/
 	    })
-      .when('/users/:userId', {
-        templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl'
-        /*resolve: {
-          user: function(Auth) {
-            return Auth.resolveUser();
-          }
-        }*/
-      })
-      .when('/signup', {
-        templateUrl: 'views/signup.html',
-        controller: 'AuthCtrl'
-      })
-	    .when('/login', {
-		    templateUrl: 'views/login.html',
-		    controller: 'AuthCtrl'
-		    /*resolve: {
-			    user: function(Auth) {
-				    return Auth.resolveUser();
-			    }
-		    }*/
-	    })
 	    .when('/results', {
 		    templateUrl: 'views/results.html',
 		    controller: 'ResultCtrl'
@@ -94,15 +72,6 @@ var prep = angular.module('prep', [
           }
         }*/
 	    })
-      .when('/graph', {
-        templateUrl: 'views/graph.html'
-
-       /* resolve: {
-          user: function(Auth) {
-            return Auth.resolveUser();
-          }
-        }*/
-      })
       .otherwise({
         redirectTo: '/'
       });
