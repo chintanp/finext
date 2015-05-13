@@ -6,8 +6,6 @@
 
 angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, $modal, ModelSync) {
 
-
-
   if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {
       length: '',
@@ -87,8 +85,6 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
 
     // angular.copy($scope.user, Auth.user);
 
-
-
     ModelSync.create($rootScope.model).then(function() {
 
       //console.log("$push returned : in CTRL: " + ref.name());
@@ -99,9 +95,4 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
 
     });
   };
-
-
-
-
-
 });

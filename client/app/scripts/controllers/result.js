@@ -6,11 +6,7 @@
 
 angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $location, $filter, socket) {
 
-
   $rootScope.resultsAvailable = false;
-
-
-
 
   $scope.showGraph = function() {
 
@@ -26,7 +22,6 @@ angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $lo
     $rootScope.resultSet = {};
   }
 
-
 	socket.on('ModelSolved', function(data) {
 
     console.log("model Solved with displacements: " + data.displacements);
@@ -36,7 +31,4 @@ angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $lo
       $rootScope.resultsAvailable = true;
     }
   });
-
-
-
 });
