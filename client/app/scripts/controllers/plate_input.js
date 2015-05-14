@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, $modal, ModelSync) {
+angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, ModelSync) {
 
   if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {

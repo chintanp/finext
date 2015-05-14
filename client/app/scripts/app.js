@@ -13,8 +13,7 @@ var prep = angular.module('prep', [
     'ngSanitize',
     'ngTouch',
     'ngDropdowns',
-    'ui.bootstrap',
-    'mobile-angular-ui',
+     'mobile-angular-ui',
 	'firebase'
   ])
 	.constant('FIREBASE_URL', 'https://finext.firebaseio.com/');
