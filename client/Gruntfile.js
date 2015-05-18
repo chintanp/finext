@@ -385,8 +385,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
-    'useminPrepare',
+    'wiredep'
+     /*'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
     'concat',
@@ -397,7 +397,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin'*/
   ]);
 
   grunt.registerTask('default', [
