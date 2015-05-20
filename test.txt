@@ -1,0 +1,8 @@
+15:05:09 web.1  | started with pid 4888
+15:05:10 web.1  | 
+15:05:10 web.1  | > finext_server@0.0.1 test F:\Projects\finext\server
+15:05:10 web.1  | > set NODE_ENV=development && node ./bin/www.js
+15:05:11 web.1  | 
+15:05:12 web.1  | exited with code 5
+15:05:12 system | sending SIGKILL to all processes
+15:05:12        | app.get('env'): development 
