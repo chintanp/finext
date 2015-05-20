@@ -2,8 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87d1d7c5-bb85-43f5-94e3-20690d45204e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/scripts/jquery.js" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\print\paper.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\print\pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\README.md" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\beige.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\blood.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\default.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\moon.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\night.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\serif.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\simple.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\sky.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\blood.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\default.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\night.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\source\solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\template\mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\template\settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\css\theme\template\theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\app.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\icons\icon128x128.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\icons\icon16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\icons\icon48x48.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\icons\icon60x60.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\finext\manifest.webapp" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\binding.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\body-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\chap4.ppt" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\highlight-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\hr.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\mvc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\octocat-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\openstaad_main.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\tar-gz-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\images\zip-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\javascripts\main.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\js\reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\js\reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\css\zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\font\league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\font\league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\font\league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\font\league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\font\league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\js\classList.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\js\head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\lib\js\html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\highlight\highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\leap\leap.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\markdown\example.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\markdown\example.md" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\markdown\markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\markdown\marked.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\math\math.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\multiplex\client.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\multiplex\index.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\multiplex\master.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\notes-server\client.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\notes-server\index.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\notes-server\notes.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\notes\notes.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\notes\notes.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\postmessage\example.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\postmessage\postmessage.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\print-pdf\print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\remotes\remotes.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\search\search.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\plugin\zoom-js\zoom.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\.htaccess" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\404.html" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\favicon.ico" afterPath="" />
@@ -62,10 +136,28 @@
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\views\results.html" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\views\signup.html" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\server\dist\views\test.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/Gruntfile.js" afterPath="$PROJECT_DIR$/client/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Procfile" afterPath="$PROJECT_DIR$/server/Procfile" />
+      <change type="DELETED" beforePath="F:\Projects\finext\stylesheets\print.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\stylesheets\pygment_trac.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\stylesheets\stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\assets\image1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\assets\image2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\barebones.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\embedded-media.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\math.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\examples\slide-backgrounds.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\qunit-1.12.0.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\qunit-1.12.0.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown-element-attributes.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown-element-attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown-slide-attributes.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown-slide-attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\Projects\finext\watcher_list.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.html" afterPath="$PROJECT_DIR$/client/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="finext_d.iws" />
@@ -87,21 +179,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plate_input.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/views/plate_input.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.451612">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.258064">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,61 +209,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.967742">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43824703">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="www.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/bin/www.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/prod.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/result.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plate_input.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/plate_input.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/views/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/views/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -229,6 +311,8 @@
         <option value="$PROJECT_DIR$/client/Gruntfile.js" />
         <option value="$PROJECT_DIR$/server/Procfile" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/server/package.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -288,8 +372,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,69 +414,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext_d" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext_d" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext_d" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -412,7 +432,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -430,15 +454,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,71 +473,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext_d" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext_d" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,11 +499,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\finext\server\dist" />
       <recent name="F:\Projects\finext" />
       <recent name="F:\Projects\finext\client\app\scripts" />
       <recent name="E:\angular\finext_d\client\app\obj" />
       <recent name="E:\angular\finext_d\client\app" />
-      <recent name="E:\angular\finext_d\client\app\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\angular\finext_d\client" />
@@ -668,7 +630,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1156" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18671548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32526475" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -753,22 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/views/plate_input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -821,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7085346">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -981,13 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1754386">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/bin/www.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1005,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/highlight/highlight.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.780702">
-          <caret line="31" column="35624" selection-start-line="31" selection-start-column="35624" selection-end-line="31" selection-end-column="35624" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/lib/domready.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.852349">
@@ -1023,14 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,14 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1106,18 +1009,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/index.html">
+    <entry file="file://$PROJECT_DIR$/client/app/scripts/controllers/result.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.451612">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/client/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="404" column="3" selection-start-line="404" selection-start-column="3" selection-end-line="404" selection-end-column="3" />
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/prod.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1130,18 +1041,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/client/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <caret line="404" column="3" selection-start-line="404" selection-start-column="3" selection-end-line="404" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/prod.sh">
+    <entry file="file://$PROJECT_DIR$/client/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.258064">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.967742">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/bin/www.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43824703">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
         </state>
       </provider>

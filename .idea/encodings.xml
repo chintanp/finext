@@ -10,5 +10,14 @@
     <file url="file://$PROJECT_DIR$/client/app/views/home.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/views/plate_input.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/views/results.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/scripts/controllers/plate_input.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/scripts/controllers/result.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/scripts/services/modelsync.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/views/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/views/plate_input.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/dist/app/views/results.html" charset="UTF-8" />
   </component>
 </project>
