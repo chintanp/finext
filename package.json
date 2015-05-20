@@ -4,8 +4,8 @@
   "private": true,
   "main": "./bin/www.js",
   "scripts": {
-    "start": "set NODE_ENV=production && node ./bin/www.js",
-    "test": "set NODE_ENV=development && node ./bin/www.js"
+    "start": "cd server && set NODE_ENV=production && node ./bin/www.js",
+    "test": "cd server && set NODE_ENV=development && node ./bin/www.js"
   },
   "dependencies": {
     "body-parser": "~1.0.0",
