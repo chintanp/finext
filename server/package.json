@@ -12,14 +12,15 @@
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "express": "~4.0.0",
+    "firebase": "latest",
+    "mathjs": "~0.25.0",
     "morgan": "~1.0.0",
+    "node-uuid": "^1.4.3",
+    "numeric": "1.2.6",
     "request": "^2.44.0",
     "socket.io": "^1.1.0",
     "static-favicon": "~1.0.0",
-    "sylvester": "0.0.21",
-    "mathjs": "~0.25.0",
-    "numeric": "1.2.6",
-    "firebase": "latest"
+    "sylvester": "0.0.21"
   },
   "engines": {
     "node": "0.10.32"

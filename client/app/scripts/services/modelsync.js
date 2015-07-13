@@ -7,13 +7,13 @@
 
 angular.module('prep').factory('ModelSync',
 
-  function($firebaseArray, $firebaseObject, $rootScope, FIREBASE_URL, socket) {
+  function($rootScope, FIREBASE_URL, socket) {
 
-  var ref = new Firebase(FIREBASE_URL + 'models');
+  /*var ref = new Firebase(FIREBASE_URL + 'models');
   var baseRef = new Firebase(FIREBASE_URL);
 
   var models = $firebaseArray(ref);
-
+*/
   // CRUD functions exposed in this service, to work on modelInfo object.
   var ModelSync = {
 
@@ -23,7 +23,7 @@ angular.module('prep').factory('ModelSync',
 
       $rootScope.model = model;
 
-      return models.$add(model).then( function(ref) {
+      /*return models.$add(model).then( function(ref) {
 
         // Also save the model UID to the user_models collection for ease of retrieval.
         // $firebase(ref.parent().parent().child('user_models').$set(model.creatorUID, ref.name()));
@@ -35,7 +35,8 @@ angular.module('prep').factory('ModelSync',
 
         socket.emit('BeginSolve', {id: uid});
         //localStorage.setItem("id", uid);
-      });
+      });*/
+
     },
 
     find: function(modelId) {

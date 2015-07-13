@@ -28,6 +28,9 @@ app.use(cookieParser());
 if(app.get('env') === 'development'  || app.get('env') === 'development ') {
 	console.log('In development'  + 'and _dirname = ' + __dirname);
 	console.log('Process.env.PORT: ' + process.env.PORT )
+
+	// app.use(express.static(path.join(__dirname, '/dist')));
+
 	app.use(express.static(path.join(__dirname, '../client')));
 	app.use(express.static(path.join(__dirname, '../client/.tmp')));
 	//app.use(express.static(path.join(__dirname, '../client/bower_components')));

@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, ModelSync) {
+angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, socket) {
 
   if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {
@@ -85,7 +85,9 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
 
     // angular.copy($scope.user, Auth.user);
 
-    ModelSync.create($rootScope.model).then(function() {
+    // send the model data to the backend and request the creation of a unique id
+    socket.emit('BeginSolve', $rootScope.model);
+  /*  ModelSync.create($rootScope.model).then(function() {
 
       //console.log("$push returned : in CTRL: " + ref.name());
       // May reset the UI to initial state.
@@ -93,6 +95,6 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
       alert("Data saved, new model created");
       $location.path('/results');
 
-    });
+    });*/
   };
 });
