@@ -96,5 +96,6 @@ angular.module('prep').controller('PlateInputCtrl', function($scope, $location, 
       $location.path('/results');
 
     });*/
+    $location.path('/results');
   };
 });
