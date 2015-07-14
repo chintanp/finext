@@ -1,6 +1,6 @@
 var	http = require('http'),
-	request = require('request'),
-	uuid = require('node-uuid');
+	request = require('request');
+	// uuid = require('node-uuid');
 
 
 var debug = require('debug')('my-application');
@@ -32,7 +32,7 @@ io.on('connection', function(socket) {
 	socket.on('BeginSolve', function(body) {
 
 		// A v1 type uuid
-		uuid_v1 = uuid.v1();
+		// uuid_v1 = uuid.v1();
 
 		console.log("server evented: " + body);
 

@@ -49,7 +49,13 @@ if(app.get('env') === 'development'  || app.get('env') === 'development ') {
 // Production settings
 
 if(app.get('env') === 'production' || app.get('env') === 'production ') {
-	app.use(express.static(path.join(__dirname, '/dist')));
+
+	app.use(express.static(path.join(__dirname, '../client')));
+	app.use(express.static(path.join(__dirname, '../client/.tmp')));
+	//app.use(express.static(path.join(__dirname, '../client/bower_components')));
+	app.use(express.static(path.join(__dirname, '../client/app')));
+
+	//app.use(express.static(path.join(__dirname, '/dist')));
 
 	// Production error handler
 	// no stacktrace leaked to the user
