@@ -71,6 +71,15 @@ var prep = angular.module('prep', [
           }
         }*/
 	    })
+      .when('/graph', {
+        templateUrl: 'views/graph.html',
+        controller: 'GraphCtrl'
+        /*resolve: {
+         user: function(Auth) {
+         return Auth.resolveUser();
+         }
+         }*/
+      })
       .otherwise({
         redirectTo: '/'
       });
