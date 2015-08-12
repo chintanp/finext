@@ -118,11 +118,7 @@
       <change type="DELETED" beforePath="F:\Projects\finext\test\test.html" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\test\test.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\watcher_list.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/graph.html" afterPath="$PROJECT_DIR$/client/app/views/graph.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/directives/graph.js" afterPath="$PROJECT_DIR$/client/app/scripts/directives/graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.html" afterPath="$PROJECT_DIR$/client/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/results.html" afterPath="$PROJECT_DIR$/client/app/views/results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="finext_d.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -226,8 +222,8 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.040515654">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state vertical-scroll-proportion="-0.81031305">
+              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -300,8 +296,8 @@
         <option value="$PROJECT_DIR$/client/app/scripts/controllers/graph.js" />
         <option value="$PROJECT_DIR$/client/app/views/graph.html" />
         <option value="$PROJECT_DIR$/client/app/index.html" />
-        <option value="$PROJECT_DIR$/client/app/scripts/directives/graph.js" />
         <option value="$PROJECT_DIR$/client/app/views/results.html" />
+        <option value="$PROJECT_DIR$/client/app/scripts/directives/graph.js" />
       </list>
     </option>
   </component>
@@ -662,7 +658,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1688" height="1014" extended-state="6" />
+    <frame x="-4" y="-4" width="1688" height="1014" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15119047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1129,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.040515654">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state vertical-scroll-proportion="-0.81031305">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding />
         </state>
       </provider>

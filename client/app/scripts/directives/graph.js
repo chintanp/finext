@@ -9,6 +9,8 @@ angular.module('prep').directive('ghVisualization', function ($rootScope) {
   return {
     restrict: 'E',
 
+    template: '<div id="chart"></div>',
+
     link: function (scope, element, attrs) {
 
       var yaw=0.5,pitch=0.5, width=800 , height=300, drag=false;
@@ -36,9 +38,9 @@ angular.module('prep').directive('ghVisualization', function ($rootScope) {
       var selected=surfaces[0];
       //d3.selectAll().remove();
 
-      var ul=d3.select('body')
-        .append('ul');
-      var svg=d3.select('body')
+      /*var ul=d3.select('body')
+        .append('ul');*/
+      var svg=d3.select('#chart')
         .append('svg')
         .attr('height',height)
         .attr('width',width);
