@@ -12,7 +12,10 @@ angular.module('prep').directive('ghVisualization', function ($rootScope) {
     template: '<div id="chart"></div>',
 
     link: function (scope, element, attrs) {
-
+      
+      // Place a break-point here, to evaluate scope.$root.resultSet
+      // This is what populates the table below.
+      
       var yaw=0.5,pitch=0.5, width=800 , height=300, drag=false;
 
       function dataFromFormular(func){
