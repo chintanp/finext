@@ -1,4 +1,4 @@
-angular.module('prep').directive('ghVisualization', function ($rootScope) {
+angular.module('prep').directive('ghVisualization', function () {
 
   // constants
   var margin = 20,
@@ -8,10 +8,19 @@ angular.module('prep').directive('ghVisualization', function ($rootScope) {
 
   return {
     restrict: 'E',
-
+    transclude: true,
     template: '<div id="chart"></div>',
 
-    link: function (scope, element, attrs) {
+    controller: function ($scope, $element) {
+
+      $scope.changeText = function(data){
+        $scope.text = 'New directive text';
+        console.log("from directive" + data)
+      };
+
+      $scope.$on('changeText',function(event, data){
+        $scope.changeText(data)
+      });
 
       var yaw=0.5,pitch=0.5, width=800 , height=300, drag=false;
 

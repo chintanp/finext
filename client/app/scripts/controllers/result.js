@@ -110,6 +110,9 @@ angular.module('prep').controller('ResultCtrl', function($scope, $rootScope, $lo
 
     console.log("model Solved with displacements: " + data.displacements);
     $rootScope.resultSet = data;
+    $scope.resultSet = data;
+
+    $rootScope.$broadcast('changeText', $scope.resultSet);
 
     if (data) {
       $rootScope.resultsAvailable = true;
