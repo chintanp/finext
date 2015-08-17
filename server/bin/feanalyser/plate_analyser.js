@@ -547,9 +547,25 @@ var plate_analyser = function(len, wid, thk, dens, elas, poiss, div_x, div_y, el
 	QX = forces.QX;
 	QY = forces.QY;
 
+	// Populate inputs with all the inputs
+	inputs.length = len;
+	inputs.width = wid;
+	inputs.height = thk;
+	inputs.density = dens;
+	inputs.elasticity = elas;
+	inputs.poisson = poiss;
+	inputs.divx = div_x;
+	inputs.divy = div_y;
+	inputs.element_type = element_type;
+	inputs.end_type = end_type;
+	inputs.load_type = load_type;
+	inputs.load = loadVal;
+
 	inputs.geom = inputs.geom._data;
 	inputs.nf = inputs.nf._data;
 	inputs.connec = inputs.connec._data;
+
+
 
 	var results = { delta: deltan, disp_rot: disp_rots._data, w: W._data, mx: MX._data, my: MY._data, mxy: MXY._data, qx: QX._data, qy: QY._data, inputs: inputs };
 
