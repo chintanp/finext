@@ -119,7 +119,7 @@
       <change type="DELETED" beforePath="F:\Projects\finext\test\test.js" afterPath="" />
       <change type="DELETED" beforePath="F:\Projects\finext\watcher_list.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/scripts/directives/graph.js" afterPath="$PROJECT_DIR$/client/app/scripts/directives/graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bin/feanalyser/plate_analyser.js" afterPath="$PROJECT_DIR$/server/bin/feanalyser/plate_analyser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/index.html" afterPath="$PROJECT_DIR$/client/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="finext_d.iws" />
@@ -214,8 +214,8 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41509435">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6981132">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -244,8 +244,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state vertical-scroll-proportion="-21.290323">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -296,10 +296,10 @@
         <option value="$PROJECT_DIR$/client/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/client/app/scripts/controllers/graph.js" />
         <option value="$PROJECT_DIR$/client/app/views/graph.html" />
-        <option value="$PROJECT_DIR$/client/app/index.html" />
         <option value="$PROJECT_DIR$/client/app/views/results.html" />
         <option value="$PROJECT_DIR$/client/app/scripts/controllers/result.js" />
         <option value="$PROJECT_DIR$/server/bin/feanalyser/plate_analyser.js" />
+        <option value="$PROJECT_DIR$/client/app/index.html" />
         <option value="$PROJECT_DIR$/client/app/scripts/directives/graph.js" />
       </list>
     </option>
@@ -362,8 +362,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -566,6 +564,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1090,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,15 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,10 +1174,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.290323">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/scripts/directives/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41509435">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.6981132">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding />
         </state>
       </provider>
