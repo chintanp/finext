@@ -6,6 +6,22 @@
 
 angular.module('prep').controller('PlateInputCtrl', function($scope, $location, $rootScope, socket) {
 
+
+  var commands = {
+    'set :item :val' : function(item, val) {
+      $rootScope.model[item] = parseFloat(val);
+      $scope.$apply();
+    },
+    'solve model' : function() {
+      $scope.solve();
+    }
+
+  };
+  annyang.addCommands(commands);
+  annyang.debug();
+  annyang.start();
+
+
   if(typeof $rootScope.model === 'undefined') {
     $rootScope.model = {
       length: '',
